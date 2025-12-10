@@ -31,17 +31,12 @@ export default function Footer() {
           
           {/* 1. KOLOM KIRI: LOGO & DESKRIPSI */}
           <div className="lg:col-span-2 space-y-6">
-            
-            {/* PERBAIKAN DISINI: Membuat Kotak Putih di Belakang Logo */}
-            {/* Ditambahkan 'bg-white' dan 'p-3' (padding) */}
             <Link href="/" className="inline-block bg-white p-3 rounded-sm">
               <Image
                 src="/images/logo-dexter.png" 
                 alt="Dexter League"
-                width={140} // Ukuran disesuaikan sedikit agar pas di dalam kotak
+                width={140} 
                 height={45}
-                // FILTER 'brightness-0 invert' DIHAPUS TOTAL.
-                // Agar logo tampil dengan warna aslinya (Hitam & Pink) di atas background putih.
                 className="object-contain" 
               />
             </Link>
@@ -83,18 +78,18 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-gray-300 group">
                 <Phone size={20} className="mt-1 flex-shrink-0 group-hover:text-pink-600 transition-colors" />
-                <span className="text-base font-medium group-hover:text-white transition-colors">+62 812 3456 7890</span>
+                <span className="text-base font-medium group-hover:text-white transition-colors">+62 877 8150 4968</span>
               </li>
               <li className="flex items-start gap-3 text-gray-300 group">
                 <Mail size={20} className="mt-1 flex-shrink-0 group-hover:text-pink-600 transition-colors" />
-                <span className="text-base font-medium group-hover:text-white transition-colors">hello@dexterleague.com</span>
+                <span className="text-base font-medium group-hover:text-white transition-colors">hello@dexter.id</span>
               </li>
-              <li className="flex items-start gap-3 text-gray-300 group">
+                <li className="flex items-start gap-3 text-gray-300 group">
                 <MapPin size={20} className="mt-1 flex-shrink-0 group-hover:text-pink-600 transition-colors" />
                 <span className="text-base font-medium leading-relaxed group-hover:text-white transition-colors">
-                  Jl. Teknologi No. 10,<br />Jakarta Selatan, 12345
+                    LEEON Office, Jl Moch. Kahfi II No. 23,<br />Cipedak, Jagakarsa, Jakarta Selatan 12630
                 </span>
-              </li>
+               </li>
             </ul>
           </div>
 
