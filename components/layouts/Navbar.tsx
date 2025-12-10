@@ -6,6 +6,16 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
+// Import komponen Shadcn
+import {
+  NavigationMenu,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  navigationMenuTriggerStyle,
+} from "@/components/ui/navigation-menu";
+import { cn } from "@/lib/utils"; 
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
@@ -20,46 +30,57 @@ export default function Navbar() {
 
   return (
     <header className="w-full bg-white border-b border-gray-100 shadow-sm sticky top-0 z-50">
-      <div className="container mx-auto px-6 h-24 flex items-center justify-between bg-white relative z-50">
+      <div className="container mx-auto px-6 h-24 flex items-center justify-between bg-white relative z-50 font-sans">
         
-        {/* LOGO */}
+        {/* BAGIAN 1: LOGO UTAMA */}
         <Link href="/" className="flex-shrink-0" onClick={() => setIsOpen(false)}>
           <Image
             src="/images/logo-dexter.png"
             alt="Dexter League"
             width={180} 
             height={55}
-            className="object-contain h-10 w-auto md:h-14" 
+            className="object-contain h-10 w-auto lg:h-14" 
             priority
           />
         </Link>
 
-        {/* DESKTOP MENU */}
-        <nav className="hidden md:flex items-center gap-10">
-          {navLinks.map((link) => (
-            <Link
-              key={link.name}
-              href={link.href}
-              className={`text-base font-medium transition-colors hover:text-pink-600 ${
-                link.name === "Home" ? "text-pink-600 font-bold" : "text-gray-600"
-              }`}
-            >
-              {link.name}
-            </Link>
-          ))}
+        {/* BAGIAN 2: MENU DESKTOP (Tampil di layar besar) */}
+        <div className="hidden lg:flex items-center gap-4">
+          <NavigationMenu>
+            <NavigationMenuList>
+              {navLinks.map((link) => (
+                <NavigationMenuItem key={link.name}>
+                  {/* FIX: Gunakan asChild agar Link Next.js tidak bentrok */}
+                  <NavigationMenuLink asChild>
+                    <Link 
+                      href={link.href} 
+                      className={cn(
+                        navigationMenuTriggerStyle(),
+                        "!text-lg font-medium bg-transparent hover:bg-transparent hover:text-pink-600 focus:bg-transparent",
+                        link.name === "Home" && "text-pink-600 font-bold"
+                      )}
+                    >
+                      {link.name}
+                    </Link>
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
+              ))}
+            </NavigationMenuList>
+          </NavigationMenu>
 
+          {/* Tombol Action Desktop */}
           <Button 
             asChild 
-            className="bg-[#E91E63] hover:bg-[#D81B60] text-white rounded-full px-8 py-6 font-bold text-base shadow-md"
+            className="bg-[#E91E63] hover:bg-[#D81B60] text-white rounded-full px-8 py-6 font-bold text-base shadow-md ml-4"
           >
             <Link href="/contact-us">
               #tell us your story
             </Link>
           </Button>
-        </nav>
+        </div>
 
-        {/* MOBILE TOGGLE BUTTON */}
-        <div className="md:hidden -mr-2">
+        {/* BAGIAN 3: TOMBOL HAMBURGER (Tampil di layar kecil/tablet) */}
+        <div className="lg:hidden -mr-2">
           <Button
             variant="ghost"
             onClick={toggleMenu}
@@ -76,8 +97,9 @@ export default function Navbar() {
         </div>
       </div>
 
+      {/* BAGIAN 4: MENU OVERLAY MOBILE (Isi Hamburger Menu) */}
       {isOpen && (
-        <div className="md:hidden fixed top-24 left-0 w-full bg-white z-40 shadow-2xl border-b border-gray-200 flex flex-col items-center py-10 gap-8 animate-in fade-in slide-in-from-top-2">
+        <div className="lg:hidden fixed top-24 left-0 w-full bg-white z-40 shadow-2xl border-b border-gray-200 flex flex-col items-center py-10 gap-8 animate-in fade-in slide-in-from-top-2 font-sans">
             <nav className="flex flex-col items-center gap-6">
             {navLinks.map((link) => (
                 <Link
@@ -91,6 +113,7 @@ export default function Navbar() {
             ))}
             </nav>
 
+            {/* Tombol Action Mobile */}
             <Button 
             asChild 
             onClick={toggleMenu}
