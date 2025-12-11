@@ -1,14 +1,17 @@
 import { ProjectDetail } from '@/types/portfolio';
+import poto from "@/public/assets/portfolio/6.jpg";
+import potopoto from "@/public/assets/portfolio/19.jpg";
 
 export const portfolioData: ProjectDetail[] = [
   {
     id: '1',
     slug: 'neofinance-dashboard',
     title: 'NeoFinance Dashboard',
-    thumbnail: '/images/portfolio/neofinance-thumb.jpg',
-    heroImage: '/images/portfolio/neofinance-thumb.jpg',
+    thumbnail: poto.src,
+    heroImage: potopoto.src,
     clientName: 'FinCorp Global',
-    service: [
+    service: 'Web Development',
+    services: [
       'Web Development',
       'Web Development',
       'Web Development',
@@ -40,10 +43,15 @@ export const portfolioData: ProjectDetail[] = [
     id: '2',
     slug: 'ecommerce-platform',
     title: 'E-Commerce Platform',
-    thumbnail: '/images/portfolio/ecommerce-thumb.jpg',
-    heroImage: '/images/portfolio/ecommerce-thumb.jpg',
+    thumbnail: poto.src,
+    heroImage: potopoto.src,
     clientName: 'RetailTech Solutions',
-    service: ['Mobile App Development'],
+    service: 'Mobile App Development',
+    services: [
+      'Web Development',
+      'Web Development',
+      'Web Development',
+    ],
     devices: [
       { name: 'Mobile' },
       { name: 'Web' },
@@ -71,10 +79,15 @@ export const portfolioData: ProjectDetail[] = [
     id: '3',
     slug: 'healthcare-system',
     title: 'Healthcare Management System',
-    thumbnail: '/images/portfolio/healthcare-thumb.jpg',
-    heroImage: '/images/portfolio/healthcare-thumb.jpg',
+    thumbnail: poto.src,
+    heroImage: potopoto.src,
     clientName: 'MediCare Plus',
-    service: ['Full Stack Development'],
+    service: 'Full Stack Development',
+    services: [
+      'Web Development',
+      'Web Development',
+      'Web Development',
+    ],
     devices: [
       { name: 'Mobile' },
       { name: 'Web' },

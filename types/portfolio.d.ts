@@ -14,7 +14,8 @@ export interface ProjectDetail {
   thumbnail: string;
   heroImage: string;
   clientName: string;
-  service: string[];
+  service: string;
+  services: string[];
   devices: Device[];
   status: 'Completed' | 'In Progress' | 'Planning';
   technologies: Technology[];
