@@ -3,10 +3,10 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation"; // Hook untuk tahu URL aktif
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
-// Import komponen Shadcn
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -18,6 +18,7 @@ import { cn } from "@/lib/utils";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname(); // Ambil URL aktif
   const toggleMenu = () => setIsOpen(!isOpen);
 
   const navLinks = [
@@ -28,11 +29,17 @@ export default function Navbar() {
     { name: "Contact", href: "/contact-us" },
   ];
 
+  // Logic cek aktif
+  const isActive = (href: string) => {
+    if (href === "/") return pathname === "/";
+    return pathname.startsWith(href);
+  };
+
   return (
     <header className="w-full bg-white border-b border-gray-100 shadow-sm sticky top-0 z-50">
-      <div className="container mx-auto px-6 h-24 flex items-center justify-between bg-white relative z-50 font-sans">
+      <div className="container mx-auto px-6 h-24 flex items-center justify-between bg-white relative z-50 font-poppins">
         
-        {/* BAGIAN 1: LOGO UTAMA */}
+        {/* LOGO */}
         <Link href="/" className="flex-shrink-0" onClick={() => setIsOpen(false)}>
           <Image
             src="/images/logo-dexter.png"
@@ -44,20 +51,26 @@ export default function Navbar() {
           />
         </Link>
 
-        {/* BAGIAN 2: MENU DESKTOP (Tampil di layar besar) */}
+        {/* --- DESKTOP MENU --- */}
         <div className="hidden lg:flex items-center gap-4">
           <NavigationMenu>
             <NavigationMenuList>
               {navLinks.map((link) => (
                 <NavigationMenuItem key={link.name}>
-                  {/* FIX: Gunakan asChild agar Link Next.js tidak bentrok */}
                   <NavigationMenuLink asChild>
                     <Link 
                       href={link.href} 
                       className={cn(
                         navigationMenuTriggerStyle(),
-                        "!text-lg font-medium bg-transparent hover:bg-transparent hover:text-pink-600 focus:bg-transparent",
-                        link.name === "Home" && "text-pink-600 font-bold"
+                        // Base Style (Ukuran Font Besar)
+                        "!text-lg font-medium bg-transparent hover:bg-transparent hover:text-primary focus:bg-transparent",
+                        
+                        // --- PERBAIKAN DISINI ---
+                        // Tambahkan tanda seru (!) pada text-primary
+                        // Agar memaksa warnanya jadi PINK saat menu itu aktif
+                        isActive(link.href) 
+                          ? "!text-primary font-bold"  // <--- UBAH JADI INI
+                          : "text-gray-600"
                       )}
                     >
                       {link.name}
@@ -68,10 +81,9 @@ export default function Navbar() {
             </NavigationMenuList>
           </NavigationMenu>
 
-          {/* Tombol Action Desktop */}
           <Button 
             asChild 
-            className="bg-[#E91E63] hover:bg-[#D81B60] text-white rounded-full px-8 py-6 font-bold text-base shadow-md ml-4"
+            className="bg-primary hover:bg-[#D81B60] text-white rounded-full px-8 py-6 font-bold text-base shadow-md ml-4"
           >
             <Link href="/contact-us">
               #tell us your story
@@ -79,7 +91,7 @@ export default function Navbar() {
           </Button>
         </div>
 
-        {/* BAGIAN 3: TOMBOL HAMBURGER (Tampil di layar kecil/tablet) */}
+        {/* --- MOBILE HAMBURGER --- */}
         <div className="lg:hidden -mr-2">
           <Button
             variant="ghost"
@@ -97,27 +109,32 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* BAGIAN 4: MENU OVERLAY MOBILE (Isi Hamburger Menu) */}
+      {/* --- MOBILE MENU OVERLAY --- */}
       {isOpen && (
-        <div className="lg:hidden fixed top-24 left-0 w-full bg-white z-40 shadow-2xl border-b border-gray-200 flex flex-col items-center py-10 gap-8 animate-in fade-in slide-in-from-top-2 font-sans">
+        <div className="lg:hidden fixed top-24 left-0 w-full bg-white z-40 shadow-2xl border-b border-gray-200 flex flex-col items-center py-10 gap-8 animate-in fade-in slide-in-from-top-2 font-poppins">
             <nav className="flex flex-col items-center gap-6">
             {navLinks.map((link) => (
                 <Link
                 key={link.name}
                 href={link.href}
                 onClick={toggleMenu}
-                className="text-xl font-medium text-gray-700 hover:text-pink-600 transition-colors"
+                className={cn(
+                    "text-xl font-medium transition-colors hover:text-primary",
+                    // Mobile juga dipaksa pink jika aktif
+                    isActive(link.href) 
+                      ? "text-primary font-bold" 
+                      : "text-gray-700"
+                )}
                 >
                 {link.name}
                 </Link>
             ))}
             </nav>
 
-            {/* Tombol Action Mobile */}
             <Button 
             asChild 
             onClick={toggleMenu}
-            className="bg-[#E91E63] hover:bg-[#D81B60] text-white rounded-md w-4/5 max-w-sm py-6 text-lg font-bold shadow-md"
+            className="bg-primary hover:bg-[#D81B60] text-white rounded-md w-4/5 max-w-sm py-6 text-lg font-bold shadow-md"
             >
             <Link href="/contact-us">
                 #TellUsYourStory
