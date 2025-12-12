@@ -7,7 +7,7 @@ interface TechnologyUsedSectionProps {
 export default function TechnologyUsedSection({ project }: TechnologyUsedSectionProps) {
     return (
         <section className="mb-16">
-            <h3 className="text-[18px] font-bold text-slate-800 mb-4">Technology Used</h3>
+            <h3 className="text-[24px] font-bold text-slate-800 mb-6">Technology Used</h3>
             <div className="flex flex-wrap gap-3">
                 {project.technologies.map((tech, index) => (
                     <div key={index} className="bg-slate-50 border border-slate-200 px-4 py-2.5 rounded-full flex items-center gap-2">

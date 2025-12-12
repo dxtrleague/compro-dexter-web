@@ -13,11 +13,10 @@ export const portfolioData: ProjectDetail[] = [
     service: 'Web Development',
     services: [
       'Web Development',
-      'Web Development',
-      'Web Development',
+      'UI/UX Design',
+      'API Integration',
     ],
     devices: [
-      { name: 'Mobile' },
       { name: 'Web' },
     ],
     status: 'Completed',
@@ -31,12 +30,13 @@ export const portfolioData: ProjectDetail[] = [
       'NeoFinance is a cutting-edge financial management dashboard designed for enterprise clients who need real-time visibility into their multi-currency assets. The platform integrates seamlessly with major banking APIs, providing a unified view of liquidity, liabilities, and investment performance across global markets.',
       'Our team worked closely with financial analysts to ensure the data visualization was not only accurate but also actionable. The system includes automated reporting tools, risk assessment algorithms, and a secure multi-user permission system compliant with international banking regulations.'
     ],
-    challenge: 'The main challenge was handling real time data synchronization from 15+ different banking sources with varied API standards, while maintaining sub second latency for the dashboard updates.',
+    challenge: 'The main challenge was handling real time data synchronization from 15+ different banking sources with varied API standards, while maintaining sub second latency for dashboard updates.',
     solution: 'We implemented an event-driven microservices architecture using Node.js and Redis for caching. This allowed us to normalize incoming data streams instantly and push updates to the client via WebSockets.',
     projectOverview: [
-      '/images/portfolio/neofinance-main-dashboard.jpg',
-      '/images/portfolio/neofinance-mobile-view.jpg',
-      '/images/portfolio/neofinance-analytics-module.jpg'
+      potopoto.src,
+      potopoto.src,
+      potopoto.src,
+      potopoto.src
     ]
   },
   {
@@ -48,13 +48,12 @@ export const portfolioData: ProjectDetail[] = [
     clientName: 'RetailTech Solutions',
     service: 'Mobile App Development',
     services: [
-      'Web Development',
-      'Web Development',
-      'Web Development',
+      'Mobile App Development',
+      'Payment Gateway',
+      'Cloud Hosting',
     ],
     devices: [
       { name: 'Mobile' },
-      { name: 'Web' },
     ],
     status: 'Completed',
     technologies: [
@@ -70,9 +69,10 @@ export const portfolioData: ProjectDetail[] = [
     challenge: 'Building a scalable architecture that could handle flash sales with up to 10,000 concurrent users without compromising performance.',
     solution: 'Implemented a microservices architecture with load balancing, CDN integration, and optimized database queries with proper indexing strategies.',
     projectOverview: [
-      '/images/portfolio/ecommerce-main.jpg',
-      '/images/portfolio/ecommerce-mobile.jpg',
-      '/images/portfolio/ecommerce-analytics.jpg'
+      potopoto.src,
+      potopoto.src,
+      potopoto.src,
+      potopoto.src
     ]
   },
   {
@@ -84,9 +84,9 @@ export const portfolioData: ProjectDetail[] = [
     clientName: 'MediCare Plus',
     service: 'Full Stack Development',
     services: [
-      'Web Development',
-      'Web Development',
-      'Web Development',
+      'Full Stack Development',
+      'Database Design',
+      'Security Implementation',
     ],
     devices: [
       { name: 'Mobile' },
@@ -106,9 +106,10 @@ export const portfolioData: ProjectDetail[] = [
     challenge: 'Ensuring HIPAA compliance while maintaining user-friendly interfaces and seamless data flow between different medical systems.',
     solution: 'Developed a robust security framework with end-to-end encryption, role-based access control, and comprehensive audit logging.',
     projectOverview: [
-      '/images/portfolio/healthcare-dashboard.jpg',
-      '/images/portfolio/healthcare-mobile.jpg',
-      '/images/portfolio/healthcare-reports.jpg'
+      potopoto.src,
+      potopoto.src,
+      potopoto.src,
+      potopoto.src
     ]
   }
 ];
