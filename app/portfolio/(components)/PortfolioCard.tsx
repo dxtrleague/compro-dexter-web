@@ -20,7 +20,7 @@ export default function PortfolioCard({ project }: PortfolioCardProps) {
   
   return (
     // Tambahkan padding-y di sekitar card agar ada 'lebihan' seperti di design
-    <div className="py-4"> 
+    <div className="py-4 font-poppins"> 
         <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 flex flex-col md:flex-row group transition-shadow hover:shadow-xl">
           
           {/* Bagian Kiri: Gambar ( proporsi tetap 2/5) */}
