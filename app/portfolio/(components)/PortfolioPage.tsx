@@ -3,7 +3,7 @@ import PortfolioCard from "./PortfolioCard";
 
 export default function PortfolioPage() {
   return (
-    <main className="bg-gray-50/50 font-sans">
+    <main className="bg-gray-50/50 font-poppins">
       <div className="container mx-auto px-6 py-16 md:py-24">
         {/* --- BAGIAN JUDUL --- */}
         <div className="text-center mb-16">

@@ -1,0 +1,34 @@
+import React from 'react';
+import { partnerData } from "@/datas/partner_data";
+
+const ClientSection: React.FC = () => {
+  return (
+    <section className="py-12 bg-white font-poppins">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-8">
+          <h2 className="text-2xl font-bold text-gray-800">Our Super Partners</h2>
+          <p className="text-gray-600 mt-2">Dipercaya oleh perusahaan terkemuka</p>
+        </div>
+
+        {/* Layout Grid Horizontal */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center">
+          {partnerData.map((partner) => (
+            <div 
+              key={partner.id} 
+              className="w-full flex justify-center p-4 grayscale hover:grayscale-0 transition-all duration-300"
+            >
+              <img
+                src={partner.logo}
+                alt={`${partner.name} logo`}
+                className="max-h-12 w-auto object-contain"
+                loading="lazy"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ClientSection;
