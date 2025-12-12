@@ -159,11 +159,7 @@ export default async function DetailPortfolio({ params }: { params: Promise<{ sl
                 </div>
             </div>
 
-            <div className="w-full bg-slate-100">
-                <div className="container py-24 px-6 mx-auto">
-                    <TellUs />
-                </div>
-            </div>
+            <TellUs />
         </>
     );
 }
