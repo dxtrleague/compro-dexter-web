@@ -1,3 +1,4 @@
+import { missionData } from "@/datas/mision_datas";
 import MissionCard from "../ui/MissionCard";
 import VisionCard from "../ui/VisionCard";
 
@@ -16,7 +17,9 @@ export default function VisionMission() {
 
                     {/* Grid */}
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl">
-                        <MissionCard />
+                        {missionData.map((mission) => (
+                            <MissionCard key={mission.id} mission={mission} />
+                        ))}
                     </div>
                 </div>
             </div>

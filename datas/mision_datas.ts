@@ -1,4 +1,7 @@
-export const missionData = [
+import { Mission } from '@/types/mission';
+
+
+export const missionData: Mission[] = [
     {
         id: 1,
         title: "01",
