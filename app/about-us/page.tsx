@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import TellUs from "@/components/layouts/TellUs";
 import HeroSection from './(components)/layout/HeroSection';
+import VisionMission from './(components)/layout/VisionMission';
 
 export const metadata: Metadata = {
     title: 'Portfolio - Dexter League',
@@ -11,6 +12,7 @@ export default function AboutUs() {
     return (
         <>
             <HeroSection />
+            <VisionMission />
             <TellUs />
         </>
     );
