@@ -5,8 +5,8 @@ import VisionMission from './(components)/layout/VisionMission';
 import CoreValues from './(components)/layout/CoreValues';
 
 export const metadata: Metadata = {
-    title: 'Portfolio - Dexter League',
-    description: 'Lihat proyek-proyek yang telah kami kerjakan, dari pengembangan web hingga aplikasi mobile dan solusi digital lainnya.',
+    title: 'About Us - Dexter League',
+    description: 'Pelajari lebih lanjut tentang Dexter League, visi, misi, dan nilai-nilai inti yang menjadi landasan kami dalam memberikan solusi teknologi inovatif.',
   };
 
 export default function AboutUs() {

@@ -1,7 +1,7 @@
 "use client";
 
+import { servicesData } from "@/datas/servicesData";
 import ServiceList from "./ServicesCard";
-import TellUs from "@/components/layouts/TellUs";
 
 export default function Services() {
   return (
@@ -19,7 +19,12 @@ export default function Services() {
             Comprehensive digital solutions tailored to accelerate your business growth and technological capabilities.
           </p>
         </div>
-        <ServiceList />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {servicesData.map((service) => (
+            <ServiceList key={service.id} service={service} />
+          ))}
+        </div>
+        
       </div>
     </main>
   );
