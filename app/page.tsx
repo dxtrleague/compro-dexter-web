@@ -9,11 +9,7 @@ export default function Home() {
       <Hero />
       <Client />
       <Partner />
-                  <div className="w-full bg-slate-100">
-                      <div className="container py-24 px-6 mx-auto">
-                          <TellUs />
-                      </div>
-                  </div>
+      <TellUs />
     </main>
   );
 }
