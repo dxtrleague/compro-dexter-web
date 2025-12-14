@@ -1,7 +1,7 @@
 import React from 'react';
 import { partnerData } from "@/datas/partner_data";
 
-const ClientSection: React.FC = () => {
+const PartnerSection: React.FC = () => {
   return (
     <section className="py-12 bg-white font-poppins">
       <div className="container mx-auto px-4">
@@ -11,11 +11,11 @@ const ClientSection: React.FC = () => {
         </div>
 
         {/* Layout Grid Horizontal */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center">
+       <div className="flex flex-wrap justify-center gap-8 items-center">
           {partnerData.map((partner) => (
             <div 
               key={partner.id} 
-              className="w-full flex justify-center p-4 grayscale hover:grayscale-0 transition-all duration-300"
+              className="w-[40%] md:w-[30%] lg:w-[14%] flex justify-center p-4 transition-all duration-300"
             >
               <img
                 src={partner.logo}
@@ -31,4 +31,4 @@ const ClientSection: React.FC = () => {
   );
 };
 
-export default ClientSection;
+export default PartnerSection;
