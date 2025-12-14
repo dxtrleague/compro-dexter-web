@@ -9,7 +9,7 @@ interface CoreValuesCardsProps {
 export default function CoreValuesCards({ coreValue }: CoreValuesCardsProps) {
     const Icon = coreValue.icon;
     return (
-            <Card className="group h-full flex flex-col p-8 rounded-2xl bg-[#F8FAFC] shadow-sm transition-all hover:shadow-md hover:-translate-y-1">
+            <Card key={coreValue.id} className="group h-full flex flex-col p-8 rounded-2xl bg-[#F8FAFC] shadow-sm transition-all hover:shadow-md hover:-translate-y-1">
                 <CardHeader className="p-0">
 
                     {/* Icon */}
