@@ -50,9 +50,9 @@ export default function PortfolioCard({ project }: PortfolioCardProps) {
                   <p className="text-gray-800 font-medium">{project.clientName}</p>
                 </div>
                 
-                {/* 2. Status (Menggantikan Date) */}
+                {/* 2. Devices (Menggantikan Date) */}
                 <div>
-                  <p className="font-semibold text-gray-500 uppercase tracking-wider text-xs mb-1">STATUS</p>
+                  <p className="font-semibold text-gray-500 uppercase tracking-wider text-xs mb-1">DEVICES</p>
                   <p className="text-gray-800 font-medium">{project.devices.map(device => device.name).join(', ')}</p>
                 </div>
                 
