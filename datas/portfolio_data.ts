@@ -110,6 +110,330 @@ export const portfolioData: ProjectDetail[] = [
       '/images/portfolio/healthcare-mobile.jpg',
       '/images/portfolio/healthcare-reports.jpg'
     ]
+  },
+    {
+    id: '4',
+    slug: 'healthcare-system',
+    title: 'Healthcare Management System',
+    thumbnail: poto.src,
+    heroImage: poto.src,
+    clientName: 'MediCare Plus',
+    service: 'Full Stack Development',
+    services: [
+      'Web Development',
+      'Web Development',
+      'Web Development',
+    ],
+    devices: [
+      { name: 'Mobile' },
+      { name: 'Web' },
+    ],
+    status: 'In Progress',
+    technologies: [
+      { name: 'Vue.js', color: 'bg-green-500' },
+      { name: 'Python', color: 'bg-blue-600' },
+      { name: 'PostgreSQL', color: 'bg-blue-700' },
+      { name: 'Docker', color: 'bg-blue-400' }
+    ],
+    about: [
+      'A comprehensive healthcare management system that streamlines patient records, appointment scheduling, and medical billing for hospitals and clinics.',
+      'The system includes telemedicine capabilities, prescription management, and integration with various medical devices and lab systems.'
+    ],
+    challenge: 'Ensuring HIPAA compliance while maintaining user-friendly interfaces and seamless data flow between different medical systems.',
+    solution: 'Developed a robust security framework with end-to-end encryption, role-based access control, and comprehensive audit logging.',
+    projectOverview: [
+      '/images/portfolio/healthcare-dashboard.jpg',
+      '/images/portfolio/healthcare-mobile.jpg',
+      '/images/portfolio/healthcare-reports.jpg'
+    ]
+  },
+    {
+    id: '5',
+    slug: 'healthcare-system',
+    title: 'Healthcare Management System',
+    thumbnail: poto.src,
+    heroImage: potopoto.src,
+    clientName: 'MediCare Plus',
+    service: 'Full Stack Development',
+    services: [
+      'Web Development',
+      'Web Development',
+      'Web Development',
+    ],
+    devices: [
+      { name: 'Mobile' },
+      { name: 'Web' },
+    ],
+    status: 'In Progress',
+    technologies: [
+      { name: 'Vue.js', color: 'bg-green-500' },
+      { name: 'Python', color: 'bg-blue-600' },
+      { name: 'PostgreSQL', color: 'bg-blue-700' },
+      { name: 'Docker', color: 'bg-blue-400' }
+    ],
+    about: [
+      'A comprehensive healthcare management system that streamlines patient records, appointment scheduling, and medical billing for hospitals and clinics.',
+      'The system includes telemedicine capabilities, prescription management, and integration with various medical devices and lab systems.'
+    ],
+    challenge: 'Ensuring HIPAA compliance while maintaining user-friendly interfaces and seamless data flow between different medical systems.',
+    solution: 'Developed a robust security framework with end-to-end encryption, role-based access control, and comprehensive audit logging.',
+    projectOverview: [
+      '/images/portfolio/healthcare-dashboard.jpg',
+      '/images/portfolio/healthcare-mobile.jpg',
+      '/images/portfolio/healthcare-reports.jpg'
+    ]
+  },
+    {
+    id: '6',
+    slug: 'healthcare-system',
+    title: 'Healthcare Management System',
+    thumbnail: poto.src,
+    heroImage: poto.src,
+    clientName: 'MediCare Plus',
+    service: 'Full Stack Development',
+    services: [
+      'Web Development',
+      'Web Development',
+      'Web Development',
+    ],
+    devices: [
+      { name: 'Mobile' },
+      { name: 'Web' },
+    ],
+    status: 'In Progress',
+    technologies: [
+      { name: 'Vue.js', color: 'bg-green-500' },
+      { name: 'Python', color: 'bg-blue-600' },
+      { name: 'PostgreSQL', color: 'bg-blue-700' },
+      { name: 'Docker', color: 'bg-blue-400' }
+    ],
+    about: [
+      'A comprehensive healthcare management system that streamlines patient records, appointment scheduling, and medical billing for hospitals and clinics.',
+      'The system includes telemedicine capabilities, prescription management, and integration with various medical devices and lab systems.'
+    ],
+    challenge: 'Ensuring HIPAA compliance while maintaining user-friendly interfaces and seamless data flow between different medical systems.',
+    solution: 'Developed a robust security framework with end-to-end encryption, role-based access control, and comprehensive audit logging.',
+    projectOverview: [
+      '/images/portfolio/healthcare-dashboard.jpg',
+      '/images/portfolio/healthcare-mobile.jpg',
+      '/images/portfolio/healthcare-reports.jpg'
+    ]
+  },
+      {
+    id: '7',
+    slug: 'healthcare-system',
+    title: 'Healthcare Management System',
+    thumbnail: poto.src,
+    heroImage: poto.src,
+    clientName: 'MediCare Plus',
+    service: 'Full Stack Development',
+    services: [
+      'Web Development',
+      'Web Development',
+      'Web Development',
+    ],
+    devices: [
+      { name: 'Mobile' },
+      { name: 'Web' },
+    ],
+    status: 'In Progress',
+    technologies: [
+      { name: 'Vue.js', color: 'bg-green-500' },
+      { name: 'Python', color: 'bg-blue-600' },
+      { name: 'PostgreSQL', color: 'bg-blue-700' },
+      { name: 'Docker', color: 'bg-blue-400' }
+    ],
+    about: [
+      'A comprehensive healthcare management system that streamlines patient records, appointment scheduling, and medical billing for hospitals and clinics.',
+      'The system includes telemedicine capabilities, prescription management, and integration with various medical devices and lab systems.'
+    ],
+    challenge: 'Ensuring HIPAA compliance while maintaining user-friendly interfaces and seamless data flow between different medical systems.',
+    solution: 'Developed a robust security framework with end-to-end encryption, role-based access control, and comprehensive audit logging.',
+    projectOverview: [
+      '/images/portfolio/healthcare-dashboard.jpg',
+      '/images/portfolio/healthcare-mobile.jpg',
+      '/images/portfolio/healthcare-reports.jpg'
+    ]
+  },
+      {
+    id: '8',
+    slug: 'healthcare-system',
+    title: 'Healthcare Management System',
+    thumbnail: poto.src,
+    heroImage: potopoto.src,
+    clientName: 'MediCare Plus',
+    service: 'Full Stack Development',
+    services: [
+      'Web Development',
+      'Web Development',
+      'Web Development',
+    ],
+    devices: [
+      { name: 'Mobile' },
+      { name: 'Web' },
+    ],
+    status: 'In Progress',
+    technologies: [
+      { name: 'Vue.js', color: 'bg-green-500' },
+      { name: 'Python', color: 'bg-blue-600' },
+      { name: 'PostgreSQL', color: 'bg-blue-700' },
+      { name: 'Docker', color: 'bg-blue-400' }
+    ],
+    about: [
+      'A comprehensive healthcare management system that streamlines patient records, appointment scheduling, and medical billing for hospitals and clinics.',
+      'The system includes telemedicine capabilities, prescription management, and integration with various medical devices and lab systems.'
+    ],
+    challenge: 'Ensuring HIPAA compliance while maintaining user-friendly interfaces and seamless data flow between different medical systems.',
+    solution: 'Developed a robust security framework with end-to-end encryption, role-based access control, and comprehensive audit logging.',
+    projectOverview: [
+      '/images/portfolio/healthcare-dashboard.jpg',
+      '/images/portfolio/healthcare-mobile.jpg',
+      '/images/portfolio/healthcare-reports.jpg'
+    ]
+  },
+      {
+    id: '9',
+    slug: 'healthcare-system',
+    title: 'Healthcare Management System',
+    thumbnail: poto.src,
+    heroImage: poto.src,
+    clientName: 'MediCare Plus',
+    service: 'Full Stack Development',
+    services: [
+      'Web Development',
+      'Web Development',
+      'Web Development',
+    ],
+    devices: [
+      { name: 'Mobile' },
+      { name: 'Web' },
+    ],
+    status: 'In Progress',
+    technologies: [
+      { name: 'Vue.js', color: 'bg-green-500' },
+      { name: 'Python', color: 'bg-blue-600' },
+      { name: 'PostgreSQL', color: 'bg-blue-700' },
+      { name: 'Docker', color: 'bg-blue-400' }
+    ],
+    about: [
+      'A comprehensive healthcare management system that streamlines patient records, appointment scheduling, and medical billing for hospitals and clinics.',
+      'The system includes telemedicine capabilities, prescription management, and integration with various medical devices and lab systems.'
+    ],
+    challenge: 'Ensuring HIPAA compliance while maintaining user-friendly interfaces and seamless data flow between different medical systems.',
+    solution: 'Developed a robust security framework with end-to-end encryption, role-based access control, and comprehensive audit logging.',
+    projectOverview: [
+      '/images/portfolio/healthcare-dashboard.jpg',
+      '/images/portfolio/healthcare-mobile.jpg',
+      '/images/portfolio/healthcare-reports.jpg'
+    ]
+  },
+      {
+    id: '10',
+    slug: 'healthcare-system',
+    title: 'Healthcare Management System',
+    thumbnail: poto.src,
+    heroImage: poto.src,
+    clientName: 'MediCare Plus',
+    service: 'Full Stack Development',
+    services: [
+      'Web Development',
+      'Web Development',
+      'Web Development',
+    ],
+    devices: [
+      { name: 'Mobile' },
+      { name: 'Web' },
+    ],
+    status: 'In Progress',
+    technologies: [
+      { name: 'Vue.js', color: 'bg-green-500' },
+      { name: 'Python', color: 'bg-blue-600' },
+      { name: 'PostgreSQL', color: 'bg-blue-700' },
+      { name: 'Docker', color: 'bg-blue-400' }
+    ],
+    about: [
+      'A comprehensive healthcare management system that streamlines patient records, appointment scheduling, and medical billing for hospitals and clinics.',
+      'The system includes telemedicine capabilities, prescription management, and integration with various medical devices and lab systems.'
+    ],
+    challenge: 'Ensuring HIPAA compliance while maintaining user-friendly interfaces and seamless data flow between different medical systems.',
+    solution: 'Developed a robust security framework with end-to-end encryption, role-based access control, and comprehensive audit logging.',
+    projectOverview: [
+      '/images/portfolio/healthcare-dashboard.jpg',
+      '/images/portfolio/healthcare-mobile.jpg',
+      '/images/portfolio/healthcare-reports.jpg'
+    ]
+  },
+      {
+    id: '11',
+    slug: 'healthcare-system',
+    title: 'Healthcare Management System',
+    thumbnail: poto.src,
+    heroImage: potopoto.src,
+    clientName: 'MediCare Plus',
+    service: 'Full Stack Development',
+    services: [
+      'Web Development',
+      'Web Development',
+      'Web Development',
+    ],
+    devices: [
+      { name: 'Mobile' },
+      { name: 'Web' },
+    ],
+    status: 'In Progress',
+    technologies: [
+      { name: 'Vue.js', color: 'bg-green-500' },
+      { name: 'Python', color: 'bg-blue-600' },
+      { name: 'PostgreSQL', color: 'bg-blue-700' },
+      { name: 'Docker', color: 'bg-blue-400' }
+    ],
+    about: [
+      'A comprehensive healthcare management system that streamlines patient records, appointment scheduling, and medical billing for hospitals and clinics.',
+      'The system includes telemedicine capabilities, prescription management, and integration with various medical devices and lab systems.'
+    ],
+    challenge: 'Ensuring HIPAA compliance while maintaining user-friendly interfaces and seamless data flow between different medical systems.',
+    solution: 'Developed a robust security framework with end-to-end encryption, role-based access control, and comprehensive audit logging.',
+    projectOverview: [
+      '/images/portfolio/healthcare-dashboard.jpg',
+      '/images/portfolio/healthcare-mobile.jpg',
+      '/images/portfolio/healthcare-reports.jpg'
+    ]
+  },
+      {
+    id: '12',
+    slug: 'healthcare-system',
+    title: 'Healthcare Management System',
+    thumbnail: poto.src,
+    heroImage: poto.src,
+    clientName: 'MediCare Plus',
+    service: 'Full Stack Development',
+    services: [
+      'Web Development',
+      'Web Development',
+      'Web Development',
+    ],
+    devices: [
+      { name: 'Mobile' },
+      { name: 'Web' },
+    ],
+    status: 'In Progress',
+    technologies: [
+      { name: 'Vue.js', color: 'bg-green-500' },
+      { name: 'Python', color: 'bg-blue-600' },
+      { name: 'PostgreSQL', color: 'bg-blue-700' },
+      { name: 'Docker', color: 'bg-blue-400' }
+    ],
+    about: [
+      'A comprehensive healthcare management system that streamlines patient records, appointment scheduling, and medical billing for hospitals and clinics.',
+      'The system includes telemedicine capabilities, prescription management, and integration with various medical devices and lab systems.'
+    ],
+    challenge: 'Ensuring HIPAA compliance while maintaining user-friendly interfaces and seamless data flow between different medical systems.',
+    solution: 'Developed a robust security framework with end-to-end encryption, role-based access control, and comprehensive audit logging.',
+    projectOverview: [
+      '/images/portfolio/healthcare-dashboard.jpg',
+      '/images/portfolio/healthcare-mobile.jpg',
+      '/images/portfolio/healthcare-reports.jpg'
+    ]
   }
 ];
 

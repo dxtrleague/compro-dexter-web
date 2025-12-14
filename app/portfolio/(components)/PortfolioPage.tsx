@@ -1,7 +1,44 @@
+"use client";
+
+import { useState, useEffect, useRef } from "react";
 import { portfolioData } from "@/datas/portfolio_data";
 import PortfolioCard from "./PortfolioCard";
+import { Loader2 } from "lucide-react";
 
 export default function PortfolioPage() {
+  const [visibleCount, setVisibleCount] = useState(4);
+  const [isLoading, setIsLoading] = useState(false);
+  const observerTarget = useRef<HTMLDivElement>(null);
+
+  const visibleProjects = portfolioData.slice(0, visibleCount);
+  const hasMore = visibleCount < portfolioData.length;
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting && hasMore && !isLoading) {
+          setIsLoading(true);
+          // Simulasi loading delay agar terlihat efek infinite scroll
+          setTimeout(() => {
+            setVisibleCount((prev) => prev + 4);
+            setIsLoading(false);
+          }, 1500);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (observerTarget.current) {
+      observer.observe(observerTarget.current);
+    }
+
+    return () => {
+      if (observerTarget.current) {
+        observer.unobserve(observerTarget.current);
+      }
+    };
+  }, [hasMore, isLoading]);
+
   return (
     <main className="bg-gray-50/50 font-poppins">
       <div className="container mx-auto px-6 py-16 md:py-24">
@@ -17,10 +54,24 @@ export default function PortfolioPage() {
 
         {/* --- BAGIAN KONTEN UTAMA (LIST) --- */}
         <div className="space-y-12 md:space-y-16">
-          {portfolioData.map((project) => (
+          {visibleProjects.map((project) => (
             <PortfolioCard key={project.id} project={project} />
           ))}
         </div>
+
+        {/* --- INFINITE SCROLL LOADING --- */}
+        {hasMore && (
+          <div ref={observerTarget} className="flex justify-center items-center py-12 min-h-[100px]">
+            {isLoading ? (
+              <div className="flex flex-col items-center gap-3 text-gray-500 animate-pulse">
+                <Loader2 className="w-8 h-8 animate-spin text-pink-600" />
+                <span className="text-sm font-medium">Memuat proyek lainnya...</span>
+              </div>
+            ) : (
+              <div className="h-4 w-full" />
+            )}
+          </div>
+        )}
       </div>
     </main>
   );
