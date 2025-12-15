@@ -1,0 +1,67 @@
+import React from 'react';
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+
+const AboutSection = () => {
+  return (
+    <section className="py-16 md:py-24 bg-white font-poppins">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-20">
+          
+          {/* Bagian Kiri: Judul, Sub Judul, dan CTA */}
+          <div className="w-full lg:w-1/2 flex flex-col items-start space-y-6">
+            {/* Judul */}
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 leading-tight">
+              Affordable, Quality Software for Everyone
+            </h2>
+            
+            {/* Sub Judul */}
+            <p className="text-lg md:text-xl text-gray-600 font-medium leading-relaxed">
+              We believe that software should be accessible, customizable, and affordable, without compromising quality. Our mission is to empower businesses of all sizes through technology, and we’re committed to accelerating digital transformation in Indonesia by openly sharing our best practices and expertise.
+            </p>
+            
+            {/* 2 CTA Buttons */}
+            <div className="flex flex-wrap gap-4 pt-4">
+              {/* CTA 1: Our Service (Full Ungu, Tulisan Putih) */}
+              <Button 
+                asChild 
+                className="bg-primary hover:bg-[#D81B60] text-white rounded-full px-8 py-6 text-lg font-bold shadow-md transition-transform hover:scale-105"
+              >
+                <Link href="/about-us">
+                  Get to know us
+                </Link>
+              </Button>
+
+              {/* CTA 2: Download Profile (Border Ungu, Tulisan Ungu, No Background) */}
+              <Button 
+                asChild
+                className="bg-transparent border-2 border-[#9C27B0] text-[#9C27B0] hover:bg-[#F3E5F5] rounded-full px-8 py-6 text-lg font-bold shadow-sm transition-all box-border"
+              >
+                <Link href="/contact-us" >
+                  Talk to us
+                </Link>
+              </Button>
+            </div>
+          </div>
+
+          {/* Bagian Kanan: Gambar */}
+          <div className="w-full lg:w-1/2 relative">
+            <div className="relative w-full aspect-square md:aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
+              {/* Pastikan path gambar sesuai dengan aset Anda */}
+              <Image
+                src="/assets/home/hero.png" 
+                alt="About Us Illustration"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default AboutSection;
