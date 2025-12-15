@@ -1,8 +1,3 @@
-export interface Technology {
-  name: string;
-  color: string;
-}
-
 export interface Device {
   name: string;
 }
@@ -18,7 +13,7 @@ export interface ProjectDetail {
   services: string[];
   devices: Device[];
   status: 'Completed' | 'In Progress' | 'Planning';
-  technologies: Technology[];
+  technologies: string[];
   about: string[];
   challenge: string;
   solution: string;
