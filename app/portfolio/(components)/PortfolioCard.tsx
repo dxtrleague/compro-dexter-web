@@ -1,7 +1,7 @@
 import { ProjectDetail } from '@/types/portfolio';
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Smartphone, Monitor } from "lucide-react";
 
 interface PortfolioCardProps {
   project: ProjectDetail;
@@ -53,7 +53,17 @@ export default function PortfolioCard({ project }: PortfolioCardProps) {
                 {/* 2. Devices (Menggantikan Date) */}
                 <div>
                   <p className="font-semibold text-gray-500 uppercase tracking-wider text-xs mb-1">DEVICES</p>
-                  <p className="text-gray-800 font-medium">{project.devices.map(device => device.name).join(', ')}</p>
+                  <div className="flex gap-4 items-center"> 
+                    {project.devices.map((device, index) => (
+                      <span key={index} className="text-gray-800 font-medium">
+                        {device.name === 'Mobile' ? (
+                          <Smartphone className="w-6 h-6 text-slate-600" /> // Ukuran ikon diperkecil agar lebih pas
+                        ) : (
+                          <Monitor className="w-6 h-6 text-slate-600" /> // Ukuran ikon diperkecil agar lebih pas
+                        )}
+                      </span>
+                    ))}
+                  </div>
                 </div>
                 
                 {/* 3. Service */}
