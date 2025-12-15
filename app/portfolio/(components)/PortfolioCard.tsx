@@ -78,7 +78,7 @@ export default function PortfolioCard({ project }: PortfolioCardProps) {
             </div>
 
             {/* Bagian Bawah: Teknologi (Badges) dan Link Detail */}
-            <div className="flex justify-between items-center"> {/* Menggunakan items-center untuk menyejajarkan badge dan link */}
+            <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4 lg:gap-0"> {/* Menggunakan items-center untuk menyejajarkan badge dan link */}
               
               {/* Teknologi dalam bentuk Badge (kiri) */}
               <div className="flex flex-wrap gap-2">
