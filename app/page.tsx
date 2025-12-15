@@ -1,6 +1,9 @@
 import Hero from "./(components)/Hero";
 import Client from "./(components)/clients";
 import Partner from "./(components)/partners";
+import About from "./(components)/about";
+import Affordable from "./(components)/affordable";
+import TechstackSection from "./(components)/TechstackSection";
 import TellUs from "@/components/layouts/TellUs";
 
 export default function Home() {
@@ -9,6 +12,9 @@ export default function Home() {
       <Hero />
       <Client />
       <Partner />
+      <About />
+      <Affordable />
+      <TechstackSection />
       <TellUs />
     </main>
   );
