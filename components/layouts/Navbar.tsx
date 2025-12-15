@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation"; // Hook untuk tahu URL aktif
+import { usePathname } from "next/navigation"; 
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
@@ -18,26 +18,28 @@ import { cn } from "@/lib/utils";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const pathname = usePathname(); // Ambil URL aktif
+  const pathname = usePathname(); 
   const toggleMenu = () => setIsOpen(!isOpen);
+
+  // Variable 'isContactPage' SUDAH DIHAPUS karena tombol mau ditampilkan terus
 
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about-us" },
-    { name: "Service", href: "/services" },
+    { name: "Services", href: "/services" },
     { name: "Portfolio", href: "/portfolio" },
     { name: "Contact", href: "/contact-us" },
   ];
 
-  // Logic cek aktif
+  // Logic cek link aktif
   const isActive = (href: string) => {
     if (href === "/") return pathname === "/";
     return pathname.startsWith(href);
   };
 
   return (
-    <header className="w-full bg-white border-b border-gray-100 shadow-sm sticky top-0 z-50">
-      <div className="container mx-auto px-6 h-24 flex items-center justify-between bg-white relative z-50 font-poppins">
+    <header className="w-full bg-white/80 backdrop-blur-md border-b border-gray-100 shadow-sm sticky top-0 z-50 transition-all duration-300">
+      <div className="container mx-auto px-6 h-24 flex items-center justify-between bg-transparent relative z-50 font-poppins">
         
         {/* LOGO */}
         <Link href="/" className="flex-shrink-0" onClick={() => setIsOpen(false)}>
@@ -62,14 +64,11 @@ export default function Navbar() {
                       href={link.href} 
                       className={cn(
                         navigationMenuTriggerStyle(),
-                        // Base Style (Ukuran Font Besar)
-                        "!text-lg font-medium bg-transparent hover:bg-transparent hover:text-primary focus:bg-transparent",
-                        
-                        // --- PERBAIKAN DISINI ---
-                        // Tambahkan tanda seru (!) pada text-primary
-                        // Agar memaksa warnanya jadi PINK saat menu itu aktif
+                        // Base Style
+                        "!text-lg font-medium bg-transparent hover:bg-transparent hover:text-primary focus:bg-transparent transition-colors",
+                        // Active State
                         isActive(link.href) 
-                          ? "!text-primary font-bold"  // <--- UBAH JADI INI
+                          ? "!text-primary font-bold" 
                           : "text-gray-600"
                       )}
                     >
@@ -81,11 +80,13 @@ export default function Navbar() {
             </NavigationMenuList>
           </NavigationMenu>
 
+          {/* --- TOMBOL DESKTOP --- */}
+          {/* Kondisi '!isContactPage' dihapus, tombol selalu muncul */}
           <Button 
             asChild 
-            className="bg-primary hover:bg-[#D81B60] text-white rounded-full px-8 py-6 font-bold text-base shadow-md ml-4"
+            className="bg-primary hover:bg-[#D81B60] text-white rounded-full px-8 py-6 font-bold text-base shadow-md ml-4 transition-transform hover:scale-105"
           >
-            <Link href="/contact-us">
+            <Link href="#tell-us-your-story">
               #tell us your story
             </Link>
           </Button>
@@ -120,7 +121,6 @@ export default function Navbar() {
                 onClick={toggleMenu}
                 className={cn(
                     "text-xl font-medium transition-colors hover:text-primary",
-                    // Mobile juga dipaksa pink jika aktif
                     isActive(link.href) 
                       ? "text-primary font-bold" 
                       : "text-gray-700"
@@ -131,14 +131,16 @@ export default function Navbar() {
             ))}
             </nav>
 
+            {/* --- TOMBOL MOBILE --- */}
+            {/* Kondisi dihapus, tombol selalu muncul */}
             <Button 
-            asChild 
-            onClick={toggleMenu}
-            className="bg-primary hover:bg-[#D81B60] text-white rounded-md w-4/5 max-w-sm py-6 text-lg font-bold shadow-md"
+              asChild 
+              onClick={toggleMenu}
+              className="bg-primary hover:bg-[#D81B60] text-white rounded-md w-4/5 max-w-sm py-6 text-lg font-bold shadow-md"
             >
-            <Link href="/contact-us">
-                #TellUsYourStory
-            </Link>
+              <Link href="#tell-us-your-story">
+                  #TellUsYourStory
+              </Link>
             </Button>
         </div>
       )}
