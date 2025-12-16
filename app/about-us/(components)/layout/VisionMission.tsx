@@ -16,9 +16,11 @@ export default function VisionMission() {
                     <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#9C27B0]">Our Mission</h2>
 
                     {/* Grid */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10 w-full max-w-6xl">
+                    <div className="grid grid-cols-1 md:flex md:flex-wrap md:justify-center lg:grid lg:grid-cols-3 gap-6 lg:gap-10">
                         {missionData.map((mission) => (
-                            <MissionCard key={mission.id} mission={mission} />
+                            <div key={mission.id} className="md:max-w-[calc(50%-0.75rem)] lg:max-w-xl">
+                                <MissionCard mission={mission} />
+                            </div>
                         ))}
                     </div>
                 </div>
