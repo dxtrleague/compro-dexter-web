@@ -15,8 +15,6 @@ const Hero = () => {
           priority 
           className="object-cover object-center"
         />
-        {/* Overlay Gelap */}
-        <div className="absolute inset-0 bg-black/40"></div>
       </div>
 
       {/* --- CONTENT (Teks & Tombol) --- */}
