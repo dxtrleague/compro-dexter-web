@@ -9,16 +9,16 @@ interface MissionCardProps {
 export default function MissionCard({ mission }: MissionCardProps) {
     return(
         <>
-            <Card className="group h-full p-8 rounded-2xl shadow-lg transition-all hover:shadow-md hover:-translate-y-1">
-                <CardContent className="p-0 space-y-4">
+            <Card className="group h-full p-4 sm:p-6 lg:p-8 rounded-2xl shadow-lg transition-all hover:shadow-md hover:-translate-y-1">
+                <CardContent className="p-0 space-y-3 lg:space-y-4">
 
                     {/* Title */}
-                    <CardTitle className="text-[64px] font-bold text-slate-200 leading-none group-hover:text-primary/85">
+                    <CardTitle className="text-[36px] sm:text-[48px] lg:text-[64px] font-bold text-slate-200 leading-none group-hover:text-primary/85">
                         {mission.title}
                     </CardTitle>
 
                     {/* Description */}
-                    <CardDescription className="text-base text-slate-600">
+                    <CardDescription className="text-sm sm:text-base text-slate-600">
                         {mission.description}
                     </CardDescription>
                 </CardContent>
