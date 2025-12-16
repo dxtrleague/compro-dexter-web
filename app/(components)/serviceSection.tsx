@@ -11,7 +11,7 @@ const ServiceSection = () => {
           <p className="text-gray-600 mt-2">Handal di semua bidang digital</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 gap-y-32">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-y-32 gap-y-12">
           {servicesData.map((service: Services, index: number) => {
             const Icon = service.icon;
 
