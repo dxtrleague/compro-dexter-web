@@ -4,7 +4,9 @@ import Partner from "./(components)/partners";
 import About from "./(components)/about";
 import Affordable from "./(components)/affordable";
 import TechstackSection from "./(components)/TechstackSection";
+import PortfolioHome from "./(components)/portfolioSection";
 import ServiceSection from "./(components)/serviceSection";
+
 import TellUs from "@/components/layouts/TellUs";
 
 export default function Home() {
@@ -17,6 +19,7 @@ export default function Home() {
       <Affordable />
       <TechstackSection />
       <ServiceSection />
+      <PortfolioHome />
       <TellUs />
     </main>
   );
