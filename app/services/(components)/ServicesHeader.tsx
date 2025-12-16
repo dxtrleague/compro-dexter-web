@@ -24,7 +24,6 @@ export default function Services() {
             <ServiceList key={service.id} service={service} />
           ))}
         </div>
-        
       </div>
     </main>
   );
