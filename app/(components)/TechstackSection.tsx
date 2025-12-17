@@ -13,7 +13,7 @@ export default function TechstackSection() {
             </div>
 
             {/* Data techstack */}
-            <div className="px-16 flex flex-wrap justify-center gap-x-24 gap-y-12 md:gap-y-4">
+            <div className="px-4 lg:px-16 flex flex-wrap justify-center gap-x-24 gap-y-12 md:gap-y-4">
                 {techstackData.map((tech, index) => (
                     <div
                         key={index}
