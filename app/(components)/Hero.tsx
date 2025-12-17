@@ -9,7 +9,7 @@ const Hero = () => {
       {/* --- LAYER 1: HERO IMAGE --- */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/assets/home/hero.png" 
+          src="assets/home/hero.png" 
           alt="Hero Background"
           fill 
           priority 

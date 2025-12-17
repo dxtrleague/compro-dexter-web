@@ -33,7 +33,7 @@ export default function Footer() {
           <div className="lg:col-span-2 space-y-6">
             <Link href="/" className="inline-block bg-white p-3 rounded-sm">
               <Image
-                src="/images/logo-dexter.png" 
+                src="images/logo-dexter.png" 
                 alt="Dexter League"
                 width={140} 
                 height={45}

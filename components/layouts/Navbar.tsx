@@ -44,7 +44,7 @@ export default function Navbar() {
         {/* LOGO */}
         <Link href="/" className="flex-shrink-0" onClick={() => setIsOpen(false)}>
           <Image
-            src="/images/logo-dexter.png"
+            src="images/logo-dexter.png"
             alt="Dexter League"
             width={180} 
             height={55}

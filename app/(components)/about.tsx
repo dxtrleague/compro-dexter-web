@@ -14,7 +14,7 @@ const AboutSection = () => {
             <div className="relative w-full aspect-square md:aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
               {/* Pastikan path gambar sesuai dengan aset Anda */}
               <Image
-                src="/assets/home/hero.png" 
+                src="assets/home/hero.png" 
                 alt="About Us Illustration"
                 fill
                 className="object-cover"
@@ -51,7 +51,7 @@ const AboutSection = () => {
                 asChild
                 className="bg-transparent border-2 border-[#9C27B0] text-[#9C27B0] hover:bg-[#F3E5F5] rounded-full px-8 py-6 text-lg font-bold shadow-sm transition-all box-border"
               >
-                <Link href="/assets/compro-dxtr.pdf" target="_blank" download>
+                <Link href="assets/compro-dxtr.pdf" target="_blank" download>
                   Download Profile
                 </Link>
               </Button>
