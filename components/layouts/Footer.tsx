@@ -1,16 +1,18 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Separator } from "@/components/ui/separator"; 
-import { 
-  Facebook, 
-  Github, 
-  Instagram, 
-  Linkedin, 
-  Twitter, 
-  Phone, 
-  Mail, 
-  MapPin 
-} from "lucide-react"; 
+import { Separator } from "@/components/ui/separator";
+
+import logoDexter from "@/public/images/logo-dexter.png";
+import {
+  Facebook,
+  Github,
+  Instagram,
+  Linkedin,
+  Twitter,
+  Phone,
+  Mail,
+  MapPin
+} from "lucide-react";
 
 export default function Footer() {
   const sitemapLinks = [
@@ -25,26 +27,26 @@ export default function Footer() {
     // Footer Background Gelap (#3B3B3B)
     <footer className="bg-[#3B3B3B] text-white pt-16 pb-8 font-sans">
       <div className="container mx-auto px-6">
-        
+
         {/* --- GRID UTAMA --- */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-          
+
           {/* 1. KOLOM KIRI: LOGO & DESKRIPSI */}
           <div className="lg:col-span-2 space-y-6">
             <Link href="/" className="inline-block bg-white p-3 rounded-sm">
               <Image
-                src="images/logo-dexter.png" 
+                src={logoDexter.src}
                 alt="Dexter League"
-                width={140} 
+                width={140}
                 height={45}
-                className="object-contain" 
+                className="object-contain"
               />
             </Link>
 
             <p className="text-gray-300 text-base leading-relaxed max-w-sm mt-4">
               Creative thinking drives progress. That’s why we use it to unlock new possibilities for your business.
             </p>
-            
+
             {/* Social Icons */}
             <div className="flex items-center gap-4 pt-2">
               <Link href="#" className="text-gray-400 hover:text-pink-600 transition-colors"><Linkedin size={20} /></Link>
@@ -61,8 +63,8 @@ export default function Footer() {
             <ul className="flex flex-col space-y-3">
               {sitemapLinks.map((link) => (
                 <li key={link.name}>
-                  <Link 
-                    href={link.href} 
+                  <Link
+                    href={link.href}
                     className="text-gray-300 hover:text-pink-600 transition-colors text-base font-medium"
                   >
                     {link.name}
@@ -84,12 +86,12 @@ export default function Footer() {
                 <Mail size={20} className="mt-1 flex-shrink-0 group-hover:text-pink-600 transition-colors" />
                 <span className="text-base font-medium group-hover:text-white transition-colors">hello@dexter.id</span>
               </li>
-                <li className="flex items-start gap-3 text-gray-300 group">
+              <li className="flex items-start gap-3 text-gray-300 group">
                 <MapPin size={20} className="mt-1 flex-shrink-0 group-hover:text-pink-600 transition-colors" />
                 <span className="text-base font-medium leading-relaxed group-hover:text-white transition-colors">
-                    LEEON Office, Jl Moch. Kahfi II No. 23,<br />Cipedak, Jagakarsa, Jakarta Selatan 12630
+                  LEEON Office, Jl Moch. Kahfi II No. 23,<br />Cipedak, Jagakarsa, Jakarta Selatan 12630
                 </span>
-               </li>
+              </li>
             </ul>
           </div>
 
