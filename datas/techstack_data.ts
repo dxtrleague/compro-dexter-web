@@ -1,46 +1,55 @@
 import { TechStack } from '@/types/techstack';
 
+import reactImage from "@/public/assets/techstack/react.png";
+import nextjsImage from "@/public/assets/techstack/nextjs.png";
+import flutterImage from "@/public/assets/techstack/flutter.png";
+import golangImage from "@/public/assets/techstack/golang.png";
+import postgresImage from "@/public/assets/techstack/postgres.png";
+import mysqlImage from "@/public/assets/techstack/mysql.png";
+import figmaImage from "@/public/assets/techstack/figma.png";
+import dockerImage from "@/public/assets/techstack/docker.png";
+
 export const techstackData: TechStack[] = [
   {
     id: '1',
     name: 'React.js',
-    imageUrl: 'assets/techstack/react.png'
+    imageUrl: reactImage.src
   },
   {
     id: '2',
     name: 'Next.js',
-    imageUrl: 'assets/techstack/nextjs.png'
+    imageUrl: nextjsImage.src
   },
 
   {
     id: '3',
     name: 'Flutter',
-    imageUrl: 'assets/techstack/flutter.png'
+    imageUrl: flutterImage.src
   },
   {
     id: '4',
     name: 'Golang',
-    imageUrl: 'assets/techstack/golang.png'
+    imageUrl: golangImage.src
   },
   {
     id: '5',
     name: 'PostgreSQL',
-    imageUrl: 'assets/techstack/postgres.png'
+    imageUrl: postgresImage.src
   },
   {
     id: '6',
     name: 'MySQL',
-    imageUrl: 'assets/techstack/mysql.png'
+    imageUrl: mysqlImage.src
   },
   {
     id: '7',
     name: 'Figma',
-    imageUrl: 'assets/techstack/figma.png'
+    imageUrl: figmaImage.src
   },
   {
     id: '8',
     name: 'Docker',
-    imageUrl: 'assets/techstack/docker.png'
+    imageUrl: dockerImage.src
   },
 ];
 

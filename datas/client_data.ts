@@ -1,20 +1,19 @@
 import { Client } from '@/types/client';
-import  ac  from "@/public/assets/client/ackita.jpg";
-import  alfa  from "@/public/assets/client/alfa.jpg";
-import  bakau  from "@/public/assets/client/bakaumu.png";
-import  bz  from "@/public/assets/client/bzwedding.png";
-import  sayur  from "@/public/assets/client/carisayur.png";
-import  elevenia  from "@/public/assets/client/elevenia.png";
-import  montree  from "@/public/assets/client/montree.png";
-import  ocbc  from "@/public/assets/client/ocbc.png";
-import  paskomnas  from "@/public/assets/client/paskomnas.png";
-import  poskota  from "@/public/assets/client/poskota.png";
-import  rasamala  from "@/public/assets/client/rasamala.jpg";
-import  smf  from "@/public/assets/client/smf.jpg";
-import  telkom  from "@/public/assets/client/telkom.png";
-import  ultravoucher  from "@/public/assets/client/ultravoucher.png";
 
-
+import ac from "@/public/assets/client/ackita.jpg";
+import alfa from "@/public/assets/client/alfa.jpg";
+import bakau from "@/public/assets/client/bakaumu.png";
+import bz from "@/public/assets/client/bzwedding.png";
+import sayur from "@/public/assets/client/carisayur.png";
+import elevenia from "@/public/assets/client/elevenia.png";
+import montree from "@/public/assets/client/montree.png";
+import ocbc from "@/public/assets/client/ocbc.png";
+import paskomnas from "@/public/assets/client/paskomnas.png";
+import poskota from "@/public/assets/client/poskota.png";
+import rasamala from "@/public/assets/client/rasamala.jpg";
+import smf from "@/public/assets/client/smf.jpg";
+import telkom from "@/public/assets/client/telkom.png";
+import ultravoucher from "@/public/assets/client/ultravoucher.png";
 
 export const clientData: Client[] = [
   {
