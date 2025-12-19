@@ -5,11 +5,17 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+import {
+  Card,
+  CardContent,
+  CardTitle,
+  CardDescription,
+} from "@/components/ui/card";
+
 // Import data
 import { portfolioData } from "@/datas/portfolio_data";
 
 export default function PortfolioHome() {
-  // Ambil 4 data pertama
   const displayedPortfolio = portfolioData.slice(0, 4);
 
   return (
@@ -29,11 +35,12 @@ export default function PortfolioHome() {
         {/* GRID CARD */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           {displayedPortfolio.map((item) => (
-            <div 
+            <Card 
               key={item.id} 
-              className="group bg-white border border-gray-100 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col"
+              // REFACTOR CARD:
+              className="group border-gray-100 bg-white p-0 gap-0 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col lg:shadow-xl"
             >
-              {/* IMAGE THUMBNAIL */}
+              {/* --- IMAGE AREA --- */}
               <div className="relative w-full h-64 overflow-hidden bg-gray-100">
                 <Image
                   src={item.thumbnail}
@@ -43,18 +50,12 @@ export default function PortfolioHome() {
                 />
               </div>
 
-              {/* CONTENT */}
-              <div className="p-6 flex flex-col flex-grow">
-                {/* --- SERVICES BADGES (YANG DIUBAH) --- */}
+              {/* --- CONTENT AREA --- */}
+              <CardContent className="p-6 flex flex-col flex-grow">
                 <div className="flex flex-wrap gap-2 mb-4">
                   {item.services && item.services.slice(0, 3).map((svc, index) => (
                     <span 
                       key={index} 
-                      // UBAH DISINI:
-                      // 1. bg-slate-100: Latar abu-abu kebiruan muda (mirip gambar)
-                      // 2. text-slate-600: Teks abu-abu gelap
-                      // 3. font-medium: Ketebalan sedang
-                      // 4. (Hapus 'uppercase' & 'tracking-wide')
                       className="bg-slate-100 text-slate-600 text-[11px] md:text-xs font-bold px-3 py-1.5 rounded-full"
                     >
                       {svc}
@@ -62,17 +63,17 @@ export default function PortfolioHome() {
                   ))}
                 </div>
 
-                {/* TITLE */}
-                <h3 className="text-xl font-bold text-gray-900 mb-3 line-clamp-1">
+                {/* Title dengan CardTitle */}
+                <CardTitle className="text-xl font-bold text-gray-900 mb-3 line-clamp-1">
                   {item.title}
-                </h3>
+                </CardTitle>
 
-                {/* DESCRIPTION */}
-                <p className="text-gray-500 text-sm leading-relaxed mb-6 flex-grow line-clamp-2">
+                {/* Description dengan CardDescription */}
+                <CardDescription className="text-gray-500 text-sm leading-relaxed mb-6 flex-grow line-clamp-2">
                   {item.about && item.about.length > 0 ? item.about[0] : "No description available."}
-                </p>
+                </CardDescription>
 
-                {/* LINK DETAILS */}
+                {/* Link Details */}
                 <Link 
                   href={`/portfolio/${item.slug}`} 
                   className="inline-flex items-center text-[#E91E63] font-bold text-sm hover:underline gap-1 group/link mt-auto"
@@ -80,8 +81,9 @@ export default function PortfolioHome() {
                   See Project Details 
                   <ArrowRight size={16} className="transition-transform group-hover/link:translate-x-1" />
                 </Link>
-              </div>
-            </div>
+
+              </CardContent>
+            </Card>
           ))}
         </div>
 
