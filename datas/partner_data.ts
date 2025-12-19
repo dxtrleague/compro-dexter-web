@@ -1,17 +1,17 @@
 import { Partner } from '@/types/partner';
-import  antiKode  from "@/public/assets/partners/antikode.jpg";
-import  bayarinID  from "@/public/assets/partners/bayarinid.jpg";
-import  evorts  from "@/public/assets/partners/evorts.png";
-import  justAbout  from "@/public/assets/partners/justabout.jpg";
-import  kelindoku  from "@/public/assets/partners/kelindoku.jpg";
-import  meta  from "@/public/assets/partners/metatech.jpg";
-import  pulsa  from "@/public/assets/partners/mobilepulsa.png";
-import  sagara  from "@/public/assets/partners/sagara.png";
-import  sixtyTwo  from "@/public/assets/partners/sixtytwo.png";
-import  sonia  from "@/public/assets/partners/sonia.png";
-import  sprint  from "@/public/assets/partners/sprint.png";
-import  tic  from "@/public/assets/partners/tic.jpg";
 
+import antiKode from "@/public/assets/partners/antikode.jpg";
+import bayarinID from "@/public/assets/partners/bayarinid.jpg";
+import evorts from "@/public/assets/partners/evorts.png";
+import justAbout from "@/public/assets/partners/justabout.jpg";
+import kelindoku from "@/public/assets/partners/kelindoku.jpg";
+import meta from "@/public/assets/partners/metatech.jpg";
+import pulsa from "@/public/assets/partners/mobilepulsa.png";
+import sagara from "@/public/assets/partners/sagara.png";
+import sixtyTwo from "@/public/assets/partners/sixtytwo.png";
+import sonia from "@/public/assets/partners/sonia.png";
+import sprint from "@/public/assets/partners/sprint.png";
+import tic from "@/public/assets/partners/tic.jpg";
 
 export const partnerData: Partner[] = [
   {

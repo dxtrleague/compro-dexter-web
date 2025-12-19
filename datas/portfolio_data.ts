@@ -1,4 +1,5 @@
 import { ProjectDetail } from '@/types/portfolio';
+
 import poto from "@/public/assets/portfolio/6.jpg";
 import potopoto from "@/public/assets/portfolio/19.jpg";
 

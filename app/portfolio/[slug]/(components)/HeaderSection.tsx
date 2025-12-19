@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ProjectDetail } from "@/types/portfolio";
+import { ScrollReveal } from "@/utils/animations";
 
 interface HeaderSectionProps {
     project: ProjectDetail;
@@ -8,16 +9,21 @@ interface HeaderSectionProps {
 export default function HeaderSection({ project }: HeaderSectionProps) {
     return (
         <section className="mb-8 flex flex-col">
-            <h1 className="text-2xl md:text-[40px] font-bold text-slate-800 mb-4">{project.title}</h1>
-            {/* Client Logo Banner */}
-            <div className="rounded-2xl h-64 md:h-[450px] relative overflow-hidden bg-gray-900">
-                <Image
-                    src={project.heroImage}
-                    alt={`${project.clientName} logo`}
-                    fill
-                    style={{ objectFit: 'cover' }}
-                />
-            </div>
+            <ScrollReveal variant="top" className="w-full">
+                <h1 className="text-2xl md:text-[40px] font-bold text-slate-800 mb-4">{project.title}</h1>
+            </ScrollReveal>
+
+            <ScrollReveal variant="bottom" className="w-full">
+                {/* Client Logo Banner */}
+                <div className="rounded-2xl h-64 md:h-[450px] relative overflow-hidden bg-gray-900">
+                    <Image
+                        src={project.heroImage}
+                        alt={`${project.clientName} logo`}
+                        fill
+                        style={{ objectFit: 'cover' }}
+                    />
+                </div>
+            </ScrollReveal>
         </section>
     )
 }
