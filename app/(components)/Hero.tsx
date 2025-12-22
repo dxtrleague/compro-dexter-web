@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-[calc(100vh-96px)] overflow-hidden font-poppins">
+    <section className="relative w-full h-[calc(100vh-96px)] overflow-hidden">
       
       {/* --- LAYER 1: HERO IMAGE --- */}
       <div className="absolute inset-0 z-0">
@@ -19,15 +19,15 @@ const Hero = () => {
 
       {/* --- CONTENT (Teks & Tombol) --- */}
       <div className="container px-4 mx-auto h-full flex flex-col items-center justify-center gap-6 text-white relative z-10 pb-24">
-        <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold tracking-tight drop-shadow-md text-center leading-tight max-w-5xl">
+        <h1 className="text-[28px] md:text-5xl lg:text-6xl font-extrabold tracking-tight drop-shadow-md text-center leading-tight max-w-5xl">
           Build Better with the Right <br /> Digital Solutions
         </h1>
 
-        <p className="text-base md:text-xl max-w-2xl font-medium drop-shadow-sm text-center text-gray-100">
+        <p className="text-base md:text-xl lg:text-2xl max-w-2xl font-medium drop-shadow-sm text-center">
           Transform your business with cutting-edge technology and creative strategies designed for growth.
         </p>
         
-        <Button asChild className="bg-[#E91E63] hover:bg-[#D81B60] text-white rounded-full px-8 py-6 text-lg font-bold mt-4 shadow-lg transition-transform hover:scale-105">
+        <Button asChild className="bg-primary hover:bg-[#D81B60] rounded-full px-8 py-6 text-white text-lg font-bold mt-4 shadow-lg transition-transform hover:scale-105">
             <Link href="/about-us">Why choose us?</Link>
         </Button>
       </div>
@@ -37,7 +37,7 @@ const Hero = () => {
           <div className="w-[30px] h-[50px] border-2 border-white rounded-full flex justify-center pt-2 opacity-90">
               <div className="w-1 h-2 bg-white rounded-full animate-ping"></div>
           </div>
-          <span className="text-sm font-medium opacity-90 whitespace-nowrap">Scroll Down</span>
+          <span className="text-xs md:text-sm font-medium opacity-90 whitespace-nowrap">Scroll Down</span>
       </div>
     </section>
   );

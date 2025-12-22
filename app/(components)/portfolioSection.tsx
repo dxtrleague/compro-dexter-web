@@ -24,10 +24,10 @@ export default function PortfolioHome() {
         
         {/* HEADER */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">
             Our Portfolio
           </h2>
-          <p className="text-gray-500 text-base md:text-lg">
+          <p className="text-sm md:text-base lg:text-lg text-secondary-foreground">
             A glimpse into our recent success stories.
           </p>
         </div>
@@ -51,7 +51,7 @@ export default function PortfolioHome() {
               </div>
 
               {/* --- CONTENT AREA --- */}
-              <CardContent className="p-6 flex flex-col flex-grow">
+              <CardContent className="p-6 flex flex-col grow">
                 <div className="flex flex-wrap gap-2 mb-4">
                   {item.services && item.services.slice(0, 3).map((svc, index) => (
                     <span 
@@ -69,7 +69,7 @@ export default function PortfolioHome() {
                 </CardTitle>
 
                 {/* Description dengan CardDescription */}
-                <CardDescription className="text-gray-500 text-sm leading-relaxed mb-6 flex-grow line-clamp-2">
+                <CardDescription className="text-gray-500 text-sm leading-relaxed mb-6 grow line-clamp-2">
                   {item.about && item.about.length > 0 ? item.about[0] : "No description available."}
                 </CardDescription>
 
@@ -88,7 +88,7 @@ export default function PortfolioHome() {
         </div>
 
         {/* CTA BUTTON */}
-        <div className="w-full bg-gradient-to-r from-pink-100 to-purple-100 rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left shadow-sm">
+        <div className="w-full bg-linear-to-r from-pink-100 to-purple-100 rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left shadow-sm">
             <div>
                 <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">
                     See Our Other Projects
@@ -98,7 +98,7 @@ export default function PortfolioHome() {
                 </p>
             </div>
             
-            <Button asChild className="bg-[#E91E63] hover:bg-[#D81B60] text-white rounded-full px-8 py-6 font-bold shadow-md transition-transform hover:scale-105">
+            <Button asChild className="bg-primary hover:bg-[#D81B60] text-white rounded-full px-8 py-6 font-bold shadow-md transition-transform hover:scale-105">
                 <Link href="/portfolio">
                     Show More Projects
                 </Link>

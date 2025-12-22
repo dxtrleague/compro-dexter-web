@@ -44,6 +44,9 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
+@layer base {
+}
+
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
@@ -53,10 +56,10 @@
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
   --primary: #E91E63;
-  --primary-foreground: oklch(0.985 0 0);
+  --primary-foreground: #1E293B;
   --secondary: #3F51B5;
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
+  --secondary-foreground: #64748B;
+  --muted: #9C27B0;
   --muted-foreground: oklch(0.556 0 0);
   --accent: oklch(0.97 0 0);
   --accent-foreground: oklch(0.205 0 0);
