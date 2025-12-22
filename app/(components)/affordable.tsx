@@ -50,7 +50,7 @@ const AboutSection = () => {
             <div className="relative w-full aspect-square md:aspect-4/3 rounded-3xl overflow-hidden shadow-2xl">
               {/* Pastikan path gambar sesuai dengan aset Anda */}
               <Image
-                src="assets/home/hero.png" 
+                src="https://images.unsplash.com/photo-1758873271772-6bbc792c1514?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
                 alt="About Us Illustration"
                 fill
                 className="object-cover"
