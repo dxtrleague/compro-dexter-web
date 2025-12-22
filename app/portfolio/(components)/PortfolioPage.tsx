@@ -48,7 +48,7 @@ export default function PortfolioPage() {
             Our Portfolio
           </h1>
           <p className="font-medium mt-4 text-lg md:text-xl text-gray-500 max-w-3xl mx-auto">
-            Berikut adalah beberapa proyek yang telah kami kerjakan dengan bangga, menunjukkan keahlian dan dedikasi kami dalam setiap detail.
+          Here are some of the projects we have proudly worked on, showcasing our expertise and dedication in every detail.
           </p>
         </div>
 
@@ -65,7 +65,7 @@ export default function PortfolioPage() {
             {isLoading ? (
               <div className="flex flex-col items-center gap-3 text-gray-500 animate-pulse">
                 <Loader2 className="w-8 h-8 animate-spin text-pink-600" />
-                <span className="text-sm font-medium">Memuat proyek lainnya...</span>
+                <span className="text-sm font-medium">Loading other projects...</span>
               </div>
             ) : (
               <div className="h-4 w-full" />
