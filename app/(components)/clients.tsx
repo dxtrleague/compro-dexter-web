@@ -3,11 +3,11 @@ import { clientData } from "@/datas/client_data";
 
 const ClientSection: React.FC = () => {
   return (
-    <section className="py-12 bg-white font-poppins">
+    <section className="py-12 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800">Our Honorable Client</h2>
-          <p className="font-medium text-gray-500 mt-2">Dipercaya oleh perusahaan terkemuka</p>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary-foreground">Our Honorable Client</h2>
+          <p className="text-sm md:text-base lg:text-lg text-secondary-foreground mt-4">Dipercaya oleh perusahaan terkemuka</p>
         </div>
 
         {/* Layout Grid Horizontal */}

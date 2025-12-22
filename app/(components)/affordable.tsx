@@ -10,19 +10,19 @@ const AboutSection = () => {
         <div className="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-20">
           
           {/* Bagian Kiri: Judul, Sub Judul, dan CTA */}
-          <div className="w-full lg:w-1/2 flex flex-col items-start space-y-6">
+          <div className="w-full lg:w-1/2 flex flex-col md:items-start space-y-6">
             {/* Judul */}
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 leading-tight">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary-foreground leading-tight">
               Affordable, Quality Software for Everyone
             </h2>
             
             {/* Sub Judul */}
-            <p className="text-lg md:text-xl text-gray-600 font-medium leading-relaxed">
+            <p className="text-lg md:text-xl text-secondary-foreground font-medium leading-relaxed">
               We believe that software should be accessible, customizable, and affordable, without compromising quality. Our mission is to empower businesses of all sizes through technology, and we’re committed to accelerating digital transformation in Indonesia by openly sharing our best practices and expertise.
             </p>
             
             {/* 2 CTA Buttons */}
-            <div className="flex flex-wrap gap-4 pt-4">
+            <div className="flex flex-wrap flex-col md:flex-row gap-4 pt-4">
               {/* CTA 1: Our Service (Full Ungu, Tulisan Putih) */}
               <Button 
                 asChild 
@@ -36,7 +36,7 @@ const AboutSection = () => {
               {/* CTA 2: Download Profile (Border Ungu, Tulisan Ungu, No Background) */}
               <Button 
                 asChild
-                className="bg-transparent border-2 border-[#9C27B0] text-[#9C27B0] hover:bg-[#F3E5F5] rounded-full px-8 py-6 text-lg font-bold shadow-sm transition-all box-border"
+                className="bg-transparent border-2 border-muted text-muted hover:bg-[#F3E5F5] rounded-full px-8 py-6 text-lg font-bold shadow-sm transition-all box-border"
               >
                 <Link href="/contact-us" >
                   Talk to us
@@ -47,7 +47,7 @@ const AboutSection = () => {
 
           {/* Bagian Kanan: Gambar */}
           <div className="w-full lg:w-1/2 relative">
-            <div className="relative w-full aspect-square md:aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
+            <div className="relative w-full aspect-square md:aspect-4/3 rounded-3xl overflow-hidden shadow-2xl">
               {/* Pastikan path gambar sesuai dengan aset Anda */}
               <Image
                 src="assets/home/hero.png" 
