@@ -7,17 +7,14 @@ const ServiceSection = () => {
     <section className="w-full py-24 bg-gradient-to-b from-white to-[#FAFAFA] font-poppins">
       <div className="container mx-auto px-6">
         <div className="flex flex-col items-center mb-20">
-          <h2 className="text-4xl font-bold text-slate-900 text-center">Our Specialist</h2>
-          <p className="text-gray-600 mt-2">Handal di semua bidang digital</p>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 text-center">Our Specialist</h2>
+          <p className="font-medium text-gray-500 mt-2">Handal di semua bidang digital</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-y-32 gap-y-12">
           {servicesData.map((service: Services, index: number) => {
             const Icon = service.icon;
 
-            // Logika untuk posisi card (menjorok)
-            // Index 1 (Tengah Baris 1) -> Menjorok ke bawah (translate-y)
-            // Index 4 (Tengah Baris 2) -> Menjorok ke atas (-translate-y)
             let transformClass = "";
             if (index === 1) {
               transformClass = "md:translate-y-12";

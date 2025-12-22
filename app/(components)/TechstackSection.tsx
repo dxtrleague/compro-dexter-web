@@ -8,8 +8,8 @@ export default function TechstackSection() {
         <section className="container mx-auto py-16 flex flex-col gap-8 justify-center items-center font-poppins">
             {/* Title */}
             <div className="text-center">
-                <h2 className="text-3xl font-bold text-center">Technology We Use</h2>
-                <p className="text-gray-600 mt-2">Teknologi yang selalu kita gunakan</p>
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center">Technology We Use</h2>
+                <p className="font-medium text-gray-500 mt-2">Teknologi yang selalu kita gunakan</p>
             </div>
 
             {/* Data techstack */}
