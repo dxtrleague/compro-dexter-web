@@ -39,12 +39,11 @@ const Hero = () => {
 
             {/* Tombol 2: "Tell Dexter" */}
             <Button asChild className="bg-primary hover:bg-[#D81B60] text-white rounded-full px-8 py-6 text-lg font-bold shadow-lg transition-all hover:scale-105 w-full sm:w-auto">
-    <Link href="https://wa.me/6287781504968" target="_blank">
-        {/* Gunakan tanda seru (!) pada w dan h untuk memaksa ukuran membesar */}
-        <FaWhatsapp className="mr-1 !w-6 !h-6 md:!w-6 md:!h-6" />
-        Tell Dexter
-    </Link>
-</Button>
+              <Link href="https://wa.me/6287781504968" target="_blank">
+                  <FaWhatsapp className="mr-1 !w-6 !h-6 md:!w-6 md:!h-6" />
+                  Tell Dexter
+              </Link>
+            </Button>
             
         </div>
       </div>

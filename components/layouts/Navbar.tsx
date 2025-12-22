@@ -89,7 +89,7 @@ export default function Navbar() {
             className="bg-primary hover:bg-[#D81B60] text-white rounded-full px-8 py-6 font-bold text-base shadow-md ml-4 transition-transform hover:scale-105"
           >
             <Link href="#tell-us-your-story">
-              #tell us your story
+              #TellUsYourStory
             </Link>
           </Button>
         </div>
