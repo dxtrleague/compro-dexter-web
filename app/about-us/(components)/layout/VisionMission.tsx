@@ -12,8 +12,8 @@ export default function VisionMission() {
                 <VisionCard />
 
                 {/* Mission */}
-                <div className="w-full flex flex-col items-center space-y-8 lg:space-y-15">
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#9C27B0]">Our Mission</h2>
+                <div className="w-full flex flex-col items-center space-y-8 lg:space-y-10">
+                    <h2 className="text-3xl md:text-4xl lg:text-[45px] font-bold text-muted">Our Mission</h2>
 
                     {/* Grid */}
                     <div className="grid grid-cols-1 md:flex md:flex-wrap md:justify-center lg:grid lg:grid-cols-3 gap-6 lg:gap-10">
