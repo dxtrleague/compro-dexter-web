@@ -9,7 +9,7 @@ const contactInfo = [
     icon: <Instagram className="w-6 h-6 text-gray-600" />,
   },
   {
-    name: "Nomor Telepon",
+    name: "Phone number",
     value: "+(62) 877 8150 4968",
     href: "https://wa.me/6287781504968",
     icon: <Phone className="w-6 h-6 text-gray-600" />,
@@ -29,11 +29,11 @@ export default function ContactInfo() {
       <div>
         <h3 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-3">
           <MapPin className="w-7 h-7 text-pink-600" />
-          Lokasi Kami
+          Our Location
         </h3>
         <p className="text-lg text-gray-600 leading-relaxed">
-          LEEON Office, Jl Moch. Kahfi II No. 23,  <br />
-          Cipedak, Jagakarsa, Jakarta Selatan 12630
+          GMI Building, Jl Srengseng Sawah No. 4,   <br />
+          Srengseng Sawah, Jagakarsa, South Jakarta City, Jakarta 12630
           <br />
           Indonesia
         </p>
@@ -42,7 +42,7 @@ export default function ContactInfo() {
       {/* Bagian Kontak & Social Media */}
       <div>
         <h3 className="text-2xl font-bold text-gray-800 mb-6">
-          Social Media & Kontak
+          Social Media & Contacts
         </h3>
         <div className="space-y-6">
           {contactInfo.map((item) => (

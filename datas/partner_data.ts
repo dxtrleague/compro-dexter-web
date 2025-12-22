@@ -4,7 +4,6 @@ import antiKode from "@/public/assets/partners/antikode.jpg";
 import bayarinID from "@/public/assets/partners/bayarinid.jpg";
 import evorts from "@/public/assets/partners/evorts.png";
 import justAbout from "@/public/assets/partners/justabout.jpg";
-import kelindoku from "@/public/assets/partners/kelindoku.jpg";
 import meta from "@/public/assets/partners/metatech.jpg";
 import pulsa from "@/public/assets/partners/mobilepulsa.png";
 import sagara from "@/public/assets/partners/sagara.png";
@@ -17,61 +16,56 @@ export const partnerData: Partner[] = [
   {
     id: 1,
     name: "Client One",
-    logo: antiKode.src,
+    logo: sagara.src,
   },
   {
     id: 2,
     name: "Client Two",
-    logo: bayarinID.src,
+    logo: meta.src,
   },
   {
     id: 3,
     name: "Client Three",
-    logo: evorts.src,
+    logo: sprint.src,
   },
   {
     id: 4,
     name: "Client Four",
-    logo: justAbout.src,
+    logo: bayarinID.src,
   },
   {
     id: 5,
     name: "Client Five",
-    logo: kelindoku.src,
+    logo: antiKode.src,
   },
   {
     id: 6,
     name: "Client Six",
-    logo: meta.src,
+    logo: sixtyTwo.src,
   },
   {
     id: 7,
     name: "Client Seven",
-    logo: pulsa.src,
+    logo: sonia.src,
   },
   {
     id: 8,
     name: "Client Eight",
-    logo: sagara.src,
+    logo: tic.src,
   },
   {
     id: 9,
     name: "Client Nine",
-    logo: sixtyTwo.src,
+    logo: justAbout.src,
   },
   {
     id: 10,
     name: "Client Ten",
-    logo: sonia.src,
+    logo: pulsa.src,
   },
   {
     id: 11,
     name: "Client Eleven",
-    logo: sprint.src,
-  },
-  {
-    id: 12,
-    name: "Client Twelve",
-    logo: tic.src,
+    logo: evorts.src,
   }
 ];

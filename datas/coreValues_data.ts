@@ -18,13 +18,13 @@ export const coreValuesData: CoreValues[] = [
         id: 3,
         icon: Zap,
         title: "Keep it Simple Smart",
-        description: "We help you to build any software using the best practices and avoiding our mistakes practice."
+        description: "We will give smarter solutions for your business to run easier."
     },
     {
         id: 4,
         icon: ShieldCheck,
         title: "Transparently Credible",
-        description: "The product and business plan were yours. We keep any credentials information during development."
+        description: "The product and business plan were yours. We keep any credentials information during development and after."
     },
     {
         id: 5,
