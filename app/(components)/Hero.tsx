@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { FaWhatsapp } from "react-icons/fa"; 
+import heroImage from "@/public/assets/home/hero.png";
 
 const Hero = () => {
   return (
@@ -10,7 +11,7 @@ const Hero = () => {
       {/* LAYER 1: HERO IMAGE */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/assets/home/hero.png" 
+          src={heroImage}
           alt="Hero Background"
           fill 
           priority 
