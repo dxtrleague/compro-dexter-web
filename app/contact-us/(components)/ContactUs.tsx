@@ -6,10 +6,10 @@ export default function ContactUs() {
       <div className="container mx-auto px-6 py-16 md:py-24">
         {/* --- BAGIAN JUDUL --- */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-800 tracking-tight">
+          <h1 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold text-gray-800 tracking-tight">
             Hubungi Kami
           </h1>
-          <p className="mt-4 text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="font-medium mt-4 text-lg md:text-xl text-gray-500 max-w-3xl mx-auto">
             Punya ide cemerlang atau proyek yang ingin diwujudkan? Kami siap mendengarkan dan berkolaborasi dengan Anda.
           </p>
         </div>

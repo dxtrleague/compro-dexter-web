@@ -27,7 +27,7 @@ export default function PortfolioHome() {
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">
             Our Portfolio
           </h2>
-          <p className="text-sm md:text-base lg:text-lg text-secondary-foreground">
+          <p className="font-medium text-sm md:text-base lg:text-lg text-secondary-foreground">
             A glimpse into our recent success stories.
           </p>
         </div>

@@ -15,9 +15,6 @@ const ServiceSection = () => {
           {servicesData.map((service: Services, index: number) => {
             const Icon = service.icon;
 
-            // Logika untuk posisi card (menjorok)
-            // Index 1 (Tengah Baris 1) -> Menjorok ke bawah (translate-y)
-            // Index 4 (Tengah Baris 2) -> Menjorok ke atas (-translate-y)
             let transformClass = "";
             if (index === 1) {
               transformClass = "md:translate-y-12";
