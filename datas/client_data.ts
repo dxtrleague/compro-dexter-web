@@ -19,7 +19,7 @@ export const clientData: Client[] = [
   {
     id: 1,
     name: "Client One",
-    logo: ac.src,
+    logo: telkom.src,
   },
   {
     id: 2,
@@ -29,61 +29,61 @@ export const clientData: Client[] = [
   {
     id: 3,
     name: "Client Three",
-    logo: bakau.src,
+    logo: ocbc.src,
   },
   {
     id: 4,
     name: "Client Four",
-    logo: bz.src,
+    logo: poskota.src,
   },
   {
     id: 5,
     name: "Client Five",
-    logo: sayur.src,
+    logo: elevenia.src,
   },
   {
     id: 6,
     name: "Client Six",
-    logo: elevenia.src,
+    logo: paskomnas.src,
   },
   {
     id: 7,
     name: "Client Seven",
-    logo: montree.src,
+    logo: ultravoucher.src,
   },
   {
     id: 8,
     name: "Client Eight",
-    logo: ocbc.src,
+    logo: smf.src,
   },
   {
     id: 9,
     name: "Client Nine",
-    logo: paskomnas.src,
+    logo: montree.src,
   },
   {
     id: 10,
     name: "Client Ten",
-    logo: poskota.src,
+    logo: bz.src,
   },
   {
     id: 11,
     name: "Client Eleven",
-    logo: rasamala.src,
+    logo: bakau.src,
   },
   {
     id: 12,
     name: "Client Twelve",
-    logo: smf.src,
+    logo: sayur.src,
   },
   {
     id: 13,
     name: "Client Thirteen",
-    logo: telkom.src,
+    logo: rasamala.src,
   },
   {
     id: 14,
     name: "Client Fourteen",
-    logo: ultravoucher.src,
+    logo: ac.src,
   }
 ];

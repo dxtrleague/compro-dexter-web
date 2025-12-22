@@ -15,6 +15,6 @@ export const missionData: Mission[] = [
     {
         id: 3,
         title: "03",
-        description: "Creating easy and fast software solutionfor business requirements"
+        description: "Creating easy and fast software solution for business requirements"
     },
 ]
