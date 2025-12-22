@@ -11,7 +11,7 @@ const AboutSection = () => {
           
           {/* Bagian Kiri: Gambar */}
           <div className="w-full lg:w-1/2 relative bg-white">
-            <div className="relative w-full aspect-square md:aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
+            <div className="relative w-full aspect-square md:aspect-4/3 rounded-3xl overflow-hidden shadow-2xl">
               {/* Pastikan path gambar sesuai dengan aset Anda */}
               <Image
                 src="assets/home/hero.png" 
@@ -23,19 +23,19 @@ const AboutSection = () => {
           </div>
 
           {/* Bagian Kanan: Judul, Sub Judul, dan CTA */}
-          <div className="w-full lg:w-1/2 flex flex-col items-start space-y-6">
+          <div className="w-full lg:w-1/2 flex flex-col md:items-start space-y-6">
             {/* Judul */}
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 leading-tight">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary-foreground leading-tight">
               Empowering Your Business with Digital Excellence
             </h2>
             
             {/* Sub Judul */}
-            <p className="text-lg md:text-xl text-gray-600 font-medium leading-relaxed">
+            <p className="text-base md:text-xl text-secondary-foreground font-medium leading-relaxed">
               DexterLeague is a Software House and Digital Transformation Consultant that helps businesses grow with the right technology. We offer end-to-end services, from business analysis and UI/UX design to app development, AI engineering, and technical leadership. Smart solutions, built with purpose.
             </p>
             
             {/* 2 CTA Buttons */}
-            <div className="flex flex-wrap gap-4 pt-4">
+            <div className="flex flex-wrap flex-col md:flex-row gap-4 pt-4">
               {/* CTA 1: Our Service (Full Ungu, Tulisan Putih) */}
               <Button 
                 asChild 
@@ -49,7 +49,7 @@ const AboutSection = () => {
               {/* CTA 2: Download Profile (Border Ungu, Tulisan Ungu, No Background) */}
               <Button 
                 asChild
-                className="bg-transparent border-2 border-[#9C27B0] text-[#9C27B0] hover:bg-[#F3E5F5] rounded-full px-8 py-6 text-lg font-bold shadow-sm transition-all box-border"
+                className="bg-transparent border-2 border-muted text-muted hover:bg-[#F3E5F5] rounded-full px-8 py-6 text-lg font-bold shadow-sm transition-all box-border"
               >
                 <Link href="assets/compro-dxtr.pdf" target="_blank" download>
                   Download Profile
