@@ -25,7 +25,7 @@ const AboutSection = () => {
           {/* Bagian Kanan: Judul, Sub Judul, dan CTA */}
           <div className="w-full lg:w-1/2 flex flex-col items-start space-y-6">
             {/* Judul */}
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 leading-tight">
               Empowering Your Business with Digital Excellence
             </h2>
             

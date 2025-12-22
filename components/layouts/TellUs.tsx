@@ -11,7 +11,7 @@ export default function TellUs() {
                     <div className="bg-white rounded-2xl shadow-sm p-6 md:p-12 flex flex-col md:flex-row gap-4 items-center justify-between transition-transform hover:shadow-md">
                         <div className="flex flex-col text-center md:text-left">
                             <h2 className="text-[32px] font-bold text-slate-800 mb-2">Tell us your story</h2>
-                            <p className="text-[16px] text-slate-500">Ready to start your next big project? Let`s chat.</p>
+                            <p className="text-[16px] text-slate-500">Ready to start your next big project? Let's chat.</p>
                         </div>
                         
                         {/* Saya bungkus Link agar tombolnya berfungsi mengarah ke WA */}

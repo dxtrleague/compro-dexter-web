@@ -12,10 +12,10 @@ export default function Services() {
         
         {/* JUDUL (Header) */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 tracking-tight">
+          <h1 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold text-gray-900 mb-6 tracking-tight">
             Our Services
           </h1>
-          <p className="text-gray-500 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+          <p className="font-medium text-gray-500 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
             Comprehensive digital solutions tailored to accelerate your business growth and technological capabilities.
           </p>
         </div>

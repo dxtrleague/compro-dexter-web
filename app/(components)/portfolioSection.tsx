@@ -27,7 +27,7 @@ export default function PortfolioHome() {
           <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
             Our Portfolio
           </h2>
-          <p className="text-gray-500 text-base md:text-lg">
+          <p className="font-medium text-gray-500 text-base md:text-lg">
             A glimpse into our recent success stories.
           </p>
         </div>
