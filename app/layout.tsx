@@ -1,9 +1,8 @@
+import "./globals.css";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Poppins } from "next/font/google";
-import "./globals.css";
 import Navbar from "@/components/layouts/Navbar";
-// 1. IMPORT FOOTER DISINI
-import Footer from "@/components/layouts/Footer"; 
+import Footer from "@/components/layouts/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,7 +21,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "DexterLeague - Software House", 
+  title: "DexterLeague - Software House",
   description: "Official Website of Dexter League",
 };
 
@@ -37,8 +36,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} font-sans antialiased`}
       >
         <Navbar />
-        
-        <main className="min-h-screen">
+
+        <main>
           {children}
         </main>
 
