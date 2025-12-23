@@ -7,7 +7,7 @@ const ClientSection: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-8">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary-foreground">Our Honorable Client</h2>
-          <p className="text-sm md:text-base lg:text-lg text-secondary-foreground mt-4">Dipercaya oleh perusahaan terkemuka</p>
+          <p className="text-sm md:text-base lg:text-lg text-secondary-foreground mt-4">Trusted by leading companies</p>
         </div>
 
         {/* Layout Grid Horizontal */}
