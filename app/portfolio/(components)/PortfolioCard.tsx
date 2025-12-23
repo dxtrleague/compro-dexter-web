@@ -25,7 +25,7 @@ export default function PortfolioCard({ project }: PortfolioCardProps) {
         {/* Bagian Kiri: Gambar dengan Hover Zoom */}
         <div className="lg:w-2/5 h-44 sm:h-64 lg:h-auto relative overflow-hidden bg-gray-900 group">
           <Image
-            src={project.thumbnail}
+            src={project.heroImage}
             alt={`Gambar proyek ${project.title}`}
             fill
             style={{ objectFit: 'cover' }}
