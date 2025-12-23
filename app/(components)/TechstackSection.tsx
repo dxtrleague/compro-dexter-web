@@ -9,7 +9,7 @@ export default function TechstackSection() {
             {/* Title */}
             <div className="text-center">
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary-foreground">Technology We Use</h2>
-                <p className="text-sm md:text-base lg:text-lg text-secondary-foreground mt-4">Teknologi yang selalu kita gunakan</p>
+                <p className="text-sm md:text-base lg:text-lg text-secondary-foreground mt-4">The technology we always use</p>
             </div>
 
             {/* Data techstack */}

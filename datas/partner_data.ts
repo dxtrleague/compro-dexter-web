@@ -1,6 +1,6 @@
 import { Partner } from '@/types/partner';
 
-import antiKode from "@/public/assets/partners/antikode.jpg";
+import antiKode from "@/public/assets/partners/antikode.png";
 import bayarinID from "@/public/assets/partners/bayarinid.jpg";
 import evorts from "@/public/assets/partners/evorts.png";
 import justAbout from "@/public/assets/partners/justabout.jpg";
@@ -11,6 +11,10 @@ import sixtyTwo from "@/public/assets/partners/sixtytwo.png";
 import sonia from "@/public/assets/partners/sonia.png";
 import sprint from "@/public/assets/partners/sprint.png";
 import tic from "@/public/assets/partners/tic.jpg";
+import asia from "@/public/assets/partners/asia.png";
+import hexa from "@/public/assets/partners/hexa.png";
+import oldo from "@/public/assets/partners/oldo.png";
+import zerone from "@/public/assets/partners/zerone.png";
 
 export const partnerData: Partner[] = [
   {
@@ -61,11 +65,31 @@ export const partnerData: Partner[] = [
   {
     id: 10,
     name: "Client Ten",
-    logo: pulsa.src,
+    logo: zerone.src,
   },
   {
     id: 11,
     name: "Client Eleven",
+    logo: asia.src,
+  },
+  {
+    id: 12,
+    name: "Client Twelve",
+    logo: hexa.src,
+  },
+  { 
+    id: 13,
+    name: "Client Thirteen",
     logo: evorts.src,
+  },
+  {
+    id: 14,
+    name: "Client Fourteen",
+    logo: oldo.src, 
+  },
+  {
+    id: 15,
+    name: "Client Fifteen",
+    logo: pulsa.src,
   }
 ];

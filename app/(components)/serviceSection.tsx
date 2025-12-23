@@ -8,7 +8,7 @@ const ServiceSection = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col items-center mb-20">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary-foreground">Our Specialist</h2>
-          <p className="text-sm md:text-base lg:text-lg text-secondary-foreground mt-4">Handal di semua bidang digital</p>
+          <p className="text-sm md:text-base lg:text-lg text-secondary-foreground mt-4">Reliable in all digital fields</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-y-32 gap-y-12">
