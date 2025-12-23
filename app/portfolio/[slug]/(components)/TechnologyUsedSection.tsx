@@ -11,12 +11,12 @@ export default function TechnologyUsedSection({ project }: TechnologyUsedSection
     const technologies = project.technologies.map(techId => getTechStackById(techId)).filter(Boolean);
 
     return (
-        <section className="mb-16">
-            <h3 className="text-[24px] font-bold text-slate-800 mb-6">Technology Used</h3>
+        <section className="mb-8 md:mb-16">
+            <h3 className="text-xl md:text-2xl font-bold text-slate-800 mb-2 md:mb-6">Technology Used</h3>
             <div className="flex flex-wrap gap-3">
                 {technologies.map((tech) => (
                     <div key={tech!.id} className="bg-slate-50 border border-slate-200 px-4 py-2.5 rounded-full flex items-center gap-2">
-                        <div className="w-6 h-6 relative">
+                        <div className="w-4 md:w-6 h-4 md:h-6 relative">
                             <Image
                                 src={tech!.imageUrl}
                                 alt={tech!.name}
@@ -24,7 +24,7 @@ export default function TechnologyUsedSection({ project }: TechnologyUsedSection
                                 className="object-contain"
                             />
                         </div>
-                        <span className="text-[14px] text-slate-800">{tech!.name}</span>
+                        <span className="text-xs md:text-sm text-slate-800">{tech!.name}</span>
                     </div>
                 ))}
             </div>
