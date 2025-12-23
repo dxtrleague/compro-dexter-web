@@ -6,6 +6,7 @@ import Affordable from "./(components)/affordable";
 import TechstackSection from "./(components)/TechstackSection";
 import PortfolioHome from "./(components)/portfolioSection";
 import ServiceSection from "./(components)/serviceSection";
+import OurProduct from "./(components)/OurProduct";
 
 import TellUs from "@/components/layouts/TellUs";
 
@@ -19,6 +20,7 @@ export default function Home() {
       <Affordable />
       <TechstackSection />
       <ServiceSection />
+      <OurProduct />
       <PortfolioHome />
       <TellUs />
     </main>
