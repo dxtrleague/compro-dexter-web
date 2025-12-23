@@ -2,7 +2,7 @@ import { ProjectDetail } from '@/types/portfolio';
 import { getTechStackById } from '@/datas/techstack_data';
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Smartphone, Monitor } from "lucide-react";
+import { ArrowRight, Smartphone, Monitor, Minus } from "lucide-react";
 
 interface PortfolioCardProps {
   project: ProjectDetail;
@@ -49,7 +49,7 @@ export default function PortfolioCard({ project }: PortfolioCardProps) {
 
               {/* 2. Service */}
               <div>
-                <p className="font-bold uppercase tracking-wider text-sm md:text-base mb-1">Services</p>
+                <p className="font-bold uppercase tracking-wider text-sm md:text-base mb-1">Service</p>
                 <p className="text-gray-600 text-sm md:text-base font-medium">{project.service}</p>
               </div>
 
@@ -61,8 +61,10 @@ export default function PortfolioCard({ project }: PortfolioCardProps) {
                     <span key={index}>
                       {device.name === 'Mobile' ? (
                         <Smartphone className="w-5 h-5 text-gray-600" />
-                      ) : (
+                      ) : device.name === 'Web' ? (
                         <Monitor className="w-5 h-5 text-gray-600" />
+                      ) : (
+                        <Minus className="w-5 h-5 text-gray-600" />
                       )}
                     </span>
                   ))}

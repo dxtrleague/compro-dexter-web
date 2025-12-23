@@ -1,6 +1,6 @@
 import { getStatusColor } from "@/utils/status-color";
 import { ProjectDetail } from "@/types/portfolio";
-import { Smartphone, Monitor } from "lucide-react";
+import { Smartphone, Monitor, Minus } from "lucide-react";
 
 interface ProjectDetailSectionProps {
     project: ProjectDetail;
@@ -12,8 +12,18 @@ export default function ProjectDetailSection({ project }: ProjectDetailSectionPr
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {/* Client */}
                 <div>
-                    <p className="text-base font-bold text-black uppercase tracking-[0.5px] mb-2">Client Name</p>
+                    <p className="text-base font-bold text-black uppercase tracking-[0.5px] mb-2">Client</p>
                     <p className="text-sm md:text-base text-slate-500">{project.clientName}</p>
+                </div>
+
+                {/* Service */}
+                <div>
+                    <p className="text-base font-bold text-black uppercase tracking-[0.5px] mb-2">Services</p>
+                    <div className="space-y-1">
+                        {project.services.map((service, index) => (
+                            <p key={index} className="text-sm md:text-base text-slate-500">{service}</p>
+                        ))}
+                    </div>
                 </div>
 
                 {/* Device */}
@@ -23,21 +33,13 @@ export default function ProjectDetailSection({ project }: ProjectDetailSectionPr
                         {project.devices.map((device, index) => (
                             <div key={index} className="flex items-center gap-1">
                                 {device.name === 'Mobile' ? (
-                                    <Smartphone className="w-8 h-8 text-slate-500" />
+                                    <Smartphone className="w-6 md:w-8 h-6 md:h-8 text-slate-500" />
+                                ) : device.name === 'Web' ? (
+                                    <Monitor className="w-6 md:w-8 h-6 md:h-8 text-slate-500" />
                                 ) : (
-                                    <Monitor className="w-8 h-8 text-slate-500" />
+                                    <Minus className="w-6 md:w-8 h-6 md:h-8 text-slate-500" />
                                 )}
                             </div>
-                        ))}
-                    </div>
-                </div>
-
-                {/* Service */}
-                <div>
-                    <p className="text-base font-bold text-black uppercase tracking-[0.5px] mb-2">Service</p>
-                    <div className="space-y-1">
-                        {project.services.map((service, index) => (
-                            <p key={index} className="text-sm md:text-base text-slate-500">{service}</p>
                         ))}
                     </div>
                 </div>
