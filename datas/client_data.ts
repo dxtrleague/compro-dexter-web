@@ -14,6 +14,9 @@ import rasamala from "@/public/assets/client/rasamala.jpg";
 import smf from "@/public/assets/client/smf.jpg";
 import telkom from "@/public/assets/client/telkom.png";
 import ultravoucher from "@/public/assets/client/ultravoucher.png";
+import bkpm from "@/public/assets/client/bkpm.png";
+import djki from "@/public/assets/client/djki.jpg";
+import techinasia from "@/public/assets/client/techinasia.png";
 
 export const clientData: Client[] = [
   {
@@ -29,22 +32,22 @@ export const clientData: Client[] = [
   {
     id: 3,
     name: "Client Three",
-    logo: ocbc.src,
+    logo: djki.src,
   },
   {
     id: 4,
     name: "Client Four",
-    logo: poskota.src,
+    logo: bkpm.src,
   },
   {
     id: 5,
     name: "Client Five",
-    logo: elevenia.src,
+    logo: ocbc.src,
   },
   {
     id: 6,
     name: "Client Six",
-    logo: paskomnas.src,
+    logo: smf.src,
   },
   {
     id: 7,
@@ -54,12 +57,12 @@ export const clientData: Client[] = [
   {
     id: 8,
     name: "Client Eight",
-    logo: smf.src,
+    logo: elevenia.src,
   },
   {
     id: 9,
     name: "Client Nine",
-    logo: montree.src,
+    logo: techinasia.src,
   },
   {
     id: 10,
@@ -85,5 +88,20 @@ export const clientData: Client[] = [
     id: 14,
     name: "Client Fourteen",
     logo: ac.src,
+  },
+  {
+    id: 15,
+    name: "Client Fifteen",
+    logo: poskota.src,
+  },
+  {
+    id: 16,
+    name: "Client Sixteen",
+    logo: paskomnas.src,
+  },
+  {
+    id: 17,
+    name: "Client Seventeen",
+    logo: montree.src,
   }
 ];
