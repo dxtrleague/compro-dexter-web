@@ -4,14 +4,14 @@ import { Services } from '@/types/services';
 
 const ServiceSection = () => {
   return (
-    <section className="w-full py-24 bg-linear-to-b from-white to-[#FAFAFA] font-poppins">
+    <section className="w-full py-12 md:py-14 lg:py-18 bg-linear-to-b from-white to-[#FAFAFA] font-poppins">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col items-center mb-20">
+        <div className="flex flex-col items-center mb-8 md:mb-12">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary-foreground">Our Specialist</h2>
           <p className="text-sm md:text-base lg:text-lg text-secondary-foreground mt-4">Reliable in all digital fields</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-y-32 gap-y-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-y-32 gap-y-12">
           {servicesData.map((service: Services, index: number) => {
             const Icon = service.icon;
 
@@ -32,15 +32,15 @@ const ServiceSection = () => {
                 <div className="absolute left-0 top-8 bottom-8 w-px bg-pink-500" />
                 <div className="absolute right-0 top-8 bottom-8 w-px bg-pink-500" />
 
-                <div className="w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center mb-6 text-[#9C27B0]">
-                  <Icon size={28} strokeWidth={1.5} />
+                <div className="w-13 h-13 md:w-14 md:h-14 bg-slate-50 rounded-2xl flex items-center justify-center mb-6 text-[#9C27B0]">
+                  <Icon className="w-7 h-7 md:w-8 md:h-8" strokeWidth={1.5} />
                 </div>
 
-                <h3 className="text-xl font-bold text-slate-900 mb-3">
+                <h3 className="text-lg md:text-[22px] font-bold text-primary-foreground mb-3">
                   {service.title}
                 </h3>
 
-                <p className="text-slate-600 leading-relaxed">
+                <p className="text-[15px] md:text-base text-secondary-foreground leading-relaxed">
                   {service.descHome}
                 </p>
               </div>

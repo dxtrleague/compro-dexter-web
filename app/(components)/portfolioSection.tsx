@@ -19,7 +19,7 @@ export default function PortfolioHome() {
   const displayedPortfolio = portfolioData.slice(0, 4);
 
   return (
-    <section className="py-20 bg-white font-poppins">
+    <section className="py-12 md:py-16 lg:py-18 bg-white">
       <div className="container mx-auto px-6">
         
         {/* HEADER */}
@@ -56,7 +56,7 @@ export default function PortfolioHome() {
                   {item.services && item.services.slice(0, 3).map((svc, index) => (
                     <span 
                       key={index} 
-                      className="bg-slate-100 text-slate-600 text-[11px] md:text-xs font-bold px-3 py-1.5 rounded-full"
+                      className="bg-foreground text-secondary-foreground text-[11px] md:text-xs font-bold px-3 py-1.5 rounded-full"
                     >
                       {svc}
                     </span>
@@ -64,19 +64,19 @@ export default function PortfolioHome() {
                 </div>
 
                 {/* Title dengan CardTitle */}
-                <CardTitle className="text-xl font-bold text-gray-900 mb-3 line-clamp-1">
+                <CardTitle className="text-xl font-bold text-primary-foreground mb-3 line-clamp-1">
                   {item.title}
                 </CardTitle>
 
                 {/* Description dengan CardDescription */}
-                <CardDescription className="text-gray-500 text-sm leading-relaxed mb-6 grow line-clamp-2">
+                <CardDescription className="text-secondary-foreground text-sm leading-relaxed mb-6 grow line-clamp-2">
                   {item.about && item.about.length > 0 ? item.about[0] : "No description available."}
                 </CardDescription>
 
                 {/* Link Details */}
                 <Link 
                   href={`/portfolio/${item.slug}`} 
-                  className="inline-flex items-center text-[#E91E63] font-bold text-sm hover:underline gap-1 group/link mt-auto"
+                  className="inline-flex items-center text-primary font-bold text-sm hover:underline gap-1 group/link mt-auto"
                 >
                   See Project Details 
                   <ArrowRight size={16} className="transition-transform group-hover/link:translate-x-1" />
@@ -88,12 +88,12 @@ export default function PortfolioHome() {
         </div>
 
         {/* CTA BUTTON */}
-        <div className="w-full bg-linear-to-r from-pink-100 to-purple-100 rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left shadow-sm">
+        <div className="w-full bg-linear-to-r from-primary/20 to-muted/20 rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left shadow-sm">
             <div>
-                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">
+                <h3 className="text-xl md:text-2xl font-bold text-primary-foreground mb-2">
                     See Our Other Projects
                 </h3>
-                <p className="text-gray-600 text-sm md:text-base">
+                <p className="text-secondary-foreground text-sm md:text-base">
                     Explore more of our work across different industries.
                 </p>
             </div>
