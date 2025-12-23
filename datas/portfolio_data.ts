@@ -71,7 +71,7 @@ export const portfolioData: ProjectDetail[] = [
   {
     id: '3',
     slug: 'ama-ssp-mobile-store-sales-point',
-    title: 'Application Mobile Android Store Sales Point (AMA SSP)',
+    title: 'Application Mobile Android Store Sales Point',
     thumbnail: poto.src,
     heroImage: potopoto.src,
     clientName: 'PT Sumber Trijaya Lestari',

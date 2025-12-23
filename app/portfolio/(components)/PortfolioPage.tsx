@@ -48,12 +48,12 @@ export default function PortfolioPage() {
             Our Portfolio
           </h1>
           <p className="font-medium mt-4 text-lg md:text-xl text-gray-500 max-w-3xl mx-auto">
-          Here are some of the projects we have proudly worked on, showcasing our expertise and dedication in every detail.
+            Here are some of the projects we have proudly worked on, showcasing our expertise and dedication in every detail.
           </p>
         </div>
 
         {/* --- BAGIAN KONTEN UTAMA (LIST) --- */}
-        <div className="space-y-12 md:space-y-16">
+        <div className="space-y-6">
           {visibleProjects.map((project) => (
             <PortfolioCard key={project.id} project={project} />
           ))}

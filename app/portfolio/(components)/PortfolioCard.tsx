@@ -43,7 +43,7 @@ export default function PortfolioCard({ project }: PortfolioCardProps) {
           <div>
             {/* Judul dan Subtitle */}
             <h3 className="text-3xl font-bold text-gray-900 mb-2">{project.title}</h3>
-            <p className="text-gray-600 mb-8 leading-relaxed">{subtitle}</p>
+            <p className="text-gray-600 mb-8 leading-relaxed line-clamp-3">{subtitle}</p>
 
             {/* Bagian Informasi Tiga Kolom Sejajar (CLIENT, DATE/ROLE, SERVICE) */}
             <div className="grid grid-cols-3 gap-y-4 mb-8 text-sm">
