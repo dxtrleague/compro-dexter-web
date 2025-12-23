@@ -12,7 +12,7 @@ const OurProduct = () => {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-linear-to-b from-[#FAFAFA] to-white font-poppins">
+    <section className="py-12 md:py-14 lg:py-18 bg-foreground">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
           
@@ -49,7 +49,7 @@ const OurProduct = () => {
             <ul className="space-y-4 mt-2">
               {features.map((feature, index) => (
                 <li key={index} className="flex items-center gap-3 text-slate-700 font-medium text-lg">
-                  <CheckCircle2 className="text-pink-600 w-6 h-6 flex-shrink-0" />
+                  <CheckCircle2 className="text-pink-600 w-6 h-6 shrink-0" />
                   {feature}
                 </li>
               ))}
