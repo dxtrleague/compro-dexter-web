@@ -8,81 +8,72 @@ interface PortfolioCardProps {
   project: ProjectDetail;
 }
 
-// Komponen Badge untuk teknologi
 const TechBadge = ({ children }: { children: React.ReactNode }) => (
-  <span className="inline-block bg-gray-100 text-gray-800 text-xs font-medium mr-2 px-3 py-1 rounded-md">
+  <span className="inline-block bg-gray-100 text-slate-600 text-xs font-medium px-3 py-1 rounded-md">
     {children}
   </span>
 );
 
 export default function PortfolioCard({ project }: PortfolioCardProps) {
-  // Menyesuaikan data dari ProjectDetail ke kebutuhan tampilan Card
   const subtitle = project.about && project.about.length > 0 ? project.about[0] : 'Klik untuk detail lebih lanjut.';
-
-  // Ambil data teknologi lengkap berdasarkan ID
   const technologies = project.technologies.map(techId => getTechStackById(techId)).filter(Boolean);
 
   return (
-    // Tambahkan padding-y di sekitar card agar ada 'lebihan' seperti di design
-    <div className="py-4 font-poppins">
-      <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 flex flex-col md:flex-row group transition-shadow hover:shadow-xl">
+    <div className="font-poppins">
+      <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 flex flex-col lg:flex-row group transition-shadow hover:shadow-xl">
 
-        {/* Bagian Kiri: Gambar ( proporsi tetap 2/5) */}
-        <div className="md:w-2/5 h-64 md:h-auto relative overflow-hidden bg-gray-900">
+        {/* Bagian Kiri: Gambar dengan Hover Zoom */}
+        <div className="lg:w-2/5 h-44 sm:h-64 lg:h-auto relative overflow-hidden bg-gray-900 group">
           <Image
-            src={project.heroImage}
+            src={project.thumbnail}
             alt={`Gambar proyek ${project.title}`}
             fill
             style={{ objectFit: 'cover' }}
-            className="opacity-90"
+            className="opacity-90 transition-transform duration-500 ease-in-out group-hover:scale-110"
           />
         </div>
 
-        {/* Bagian Kanan: Konten (proporsi tetap 3/5) */}
-        <div className="md:w-3/5 p-8 flex flex-col justify-between">
+        {/* Bagian Kanan: Konten */}
+        <div className="lg:w-3/5 p-6 md:p-8 flex flex-col justify-between">
           <div>
             {/* Judul dan Subtitle */}
-            <h3 className="text-3xl font-bold text-gray-900 mb-2">{project.title}</h3>
-            <p className="text-gray-600 mb-8 leading-relaxed line-clamp-3">{subtitle}</p>
+            <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2 md:mb-4">{project.title}</h3>
+            <p className="text-sm md:text-base text-gray-600 mb-4 md:mb-8 leading-relaxed line-clamp-3">{subtitle}</p>
 
-            {/* Bagian Informasi Tiga Kolom Sejajar (CLIENT, DATE/ROLE, SERVICE) */}
-            <div className="grid grid-cols-3 gap-y-4 mb-8 text-sm">
-
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6 text-sm">
               {/* 1. Client */}
               <div>
-                <p className="font-semibold text-gray-500 uppercase tracking-wider text-xs mb-1">CLIENT</p>
-                <p className="text-gray-800 font-medium">{project.clientName}</p>
+                <p className="font-bold uppercase tracking-wider text-sm md:text-base mb-1">Client</p>
+                <p className="text-gray-600 text-sm md:text-base font-medium">{project.clientName}</p>
               </div>
 
-              {/* 2. Devices (Menggantikan Date) */}
+              {/* 2. Service */}
               <div>
-                <p className="font-semibold text-gray-500 uppercase tracking-wider text-xs mb-1">DEVICES</p>
+                <p className="font-bold uppercase tracking-wider text-sm md:text-base mb-1">Services</p>
+                <p className="text-gray-600 text-sm md:text-base font-medium">{project.service}</p>
+              </div>
+
+              {/* 3. Devices */}
+              <div>
+                <p className="font-bold uppercase tracking-widertext-xs md:text-base mb-1">Devices</p>
                 <div className="flex gap-4 items-center">
                   {project.devices.map((device, index) => (
-                    <span key={index} className="text-gray-800 font-medium">
+                    <span key={index}>
                       {device.name === 'Mobile' ? (
-                        <Smartphone className="w-6 h-6 text-slate-600" /> // Ukuran ikon diperkecil agar lebih pas
+                        <Smartphone className="w-5 h-5 text-gray-600" />
                       ) : (
-                        <Monitor className="w-6 h-6 text-slate-600" /> // Ukuran ikon diperkecil agar lebih pas
+                        <Monitor className="w-5 h-5 text-gray-600" />
                       )}
                     </span>
                   ))}
                 </div>
               </div>
-
-              {/* 3. Service */}
-              <div>
-                <p className="font-semibold text-gray-500 uppercase tracking-wider text-xs mb-1">SERVICE</p>
-                <p className="text-gray-800 font-medium">{project.service}</p>
-              </div>
             </div>
-
-            {/* Garis pemisah horizontal di sini */}
             <hr className="border-t border-gray-200 mb-6" />
           </div>
 
           {/* Bagian Bawah: Teknologi (Badges) dan Link Detail */}
-          <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4 lg:gap-0"> {/* Menggunakan items-center untuk menyejajarkan badge dan link */}
+          <div className="flex flex-col md:flex-row justify-between items-start lg:items-center gap-4 lg:gap-0">
 
             {/* Teknologi dalam bentuk Badge (kiri) */}
             <div className="flex flex-wrap gap-2">
@@ -94,7 +85,7 @@ export default function PortfolioCard({ project }: PortfolioCardProps) {
             {/* Link Detail (kanan) */}
             <Link
               href={`/portfolio/${project.slug}`}
-              className="text-pink-600 hover:text-pink-700 font-semibold inline-flex items-center gap-2 group/link text-sm whitespace-nowrap"
+              className="text-pink-600 hover:text-pink-700 font-semibold inline-flex items-center gap-2 group/link text-sm md:text-base whitespace-nowrap"
             >
               See more details
               <ArrowRight className="w-4 h-4 transition-transform group-hover/link:translate-x-1" />
@@ -102,6 +93,6 @@ export default function PortfolioCard({ project }: PortfolioCardProps) {
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 }
