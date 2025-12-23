@@ -8,8 +8,7 @@ interface ProjectOverviewSectionProps {
 export default function ProjectOverviewSection({ project }: ProjectOverviewSectionProps) {
     return (
         <section>
-            <h2 className="text-[30px] text-center font-bold">What We Did</h2>
-            <h2 className="text-[30px] text-center font-bold mb-6">(Project Overview)</h2>
+            <h2 className="text-xl md:text-2xl font-bold mb-2 md:mb-6">Project Overview</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {project.projectOverview.map((imageUrl, index) => (
                     <div

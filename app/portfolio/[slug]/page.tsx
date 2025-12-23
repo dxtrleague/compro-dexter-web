@@ -32,8 +32,8 @@ export default async function DetailPortfolio({ params }: { params: Promise<{ sl
                 <div className="container py-8 px-6 pb-24 mx-auto">
                     {/* Back Link */}
                     <Link href="/portfolio" className="flex items-center gap-2 mb-6 group">
-                        <ArrowLeft className="w-5 h-5 text-slate-500 group-hover:-translate-x-1 transition-transform" />
-                        <span className="text-slate-500 text-[14px] font-normal">Back to Portfolio</span>
+                        <ArrowLeft className="w-4 h-4 text-slate-500 group-hover:-translate-x-1 transition-transform" />
+                        <span className="text-slate-500 text-sm">Back to Portfolio</span>
                     </Link>
 
                     {/* Project Header */}
