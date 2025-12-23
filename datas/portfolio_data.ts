@@ -47,10 +47,10 @@ export const portfolioData: ProjectDetail[] = [
     challenge: 'The existing app suffered from a complex navigation structure and a dated UI, leading to low user retention and engagement. The challenge was to simplify the user experience while introducing new features without overwhelming the user.',
     solution: 'We implemented a user-centric design process, starting with extensive user research and persona development. The new design features a cleaner interface, a more intuitive navigation pattern, and personalized content recommendations, resulting in a significant increase in user activity.',
     projectOverview: [
-      defaultHero.src,
-      defaultHero.src,
-      defaultHero.src,
-      defaultHero.src
+      "https://images.unsplash.com/photo-1632910138458-5bf601f3835e?q=80&w=2831&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1766324934839-313529832615?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1646621720737-13879670125e?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1764096534686-68091ce5ab45?q=80&w=2831&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     ]
   },
   {
