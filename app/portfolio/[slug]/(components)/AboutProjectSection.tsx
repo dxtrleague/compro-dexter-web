@@ -9,7 +9,7 @@ export default function AboutProjectSection({ project }: AboutProjectSectionProp
     return (
         <section className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-16 mb-8 md:mb-16">
             <div className="col-span-2">
-                <h2 className="text-xl md:text-2xl font-bold mb-2 md:mb-6">About The Project</h2>
+                <h2 className="text-slate-800 text-xl md:text-2xl font-bold mb-2 md:mb-6">About The Project</h2>
                 <div className="space-y-4 text-slate-500 text-sm md:text-base leading-7">
                     {project.about.map((paragraph, index) => (
                         <p key={index}>{paragraph}</p>

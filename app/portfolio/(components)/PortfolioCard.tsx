@@ -25,7 +25,7 @@ export default function PortfolioCard({ project }: PortfolioCardProps) {
         {/* Bagian Kiri: Gambar dengan Hover Zoom */}
         <div className="lg:w-2/5 h-44 sm:h-64 lg:h-auto relative overflow-hidden bg-gray-900 group">
           <Image
-            src={project.thumbnail}
+            src={project.heroImage}
             alt={`Gambar proyek ${project.title}`}
             fill
             style={{ objectFit: 'cover' }}
@@ -43,19 +43,19 @@ export default function PortfolioCard({ project }: PortfolioCardProps) {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6 text-sm">
               {/* 1. Client */}
               <div>
-                <p className="font-bold uppercase tracking-wider text-sm md:text-base mb-1">Client</p>
+                <p className="text-black font-bold uppercase tracking-wider text-sm md:text-base mb-1">Client</p>
                 <p className="text-gray-600 text-sm md:text-base font-medium">{project.clientName}</p>
               </div>
 
               {/* 2. Service */}
               <div>
-                <p className="font-bold uppercase tracking-wider text-sm md:text-base mb-1">Service</p>
+                <p className="text-black font-bold uppercase tracking-wider text-sm md:text-base mb-1">Service</p>
                 <p className="text-gray-600 text-sm md:text-base font-medium">{project.service}</p>
               </div>
 
               {/* 3. Devices */}
               <div>
-                <p className="font-bold uppercase tracking-widertext-xs md:text-base mb-1">Devices</p>
+                <p className="text-black font-bold uppercase tracking-widertext-xs md:text-base mb-1">Devices</p>
                 <div className="flex gap-4 items-center">
                   {project.devices.map((device, index) => (
                     <span key={index}>
