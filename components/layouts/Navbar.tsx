@@ -23,8 +23,6 @@ export default function Navbar() {
   const pathname = usePathname();
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  // Variable 'isContactPage' SUDAH DIHAPUS karena tombol mau ditampilkan terus
-
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about-us" },
@@ -41,16 +39,16 @@ export default function Navbar() {
 
   return (
     <header className="w-full bg-white/80 backdrop-blur-md border-b border-gray-100 shadow-sm sticky top-0 z-50 transition-all duration-300">
-      <div className="container mx-auto px-6 h-24 flex items-center justify-between bg-transparent relative z-50 font-poppins">
+      <div className="container mx-auto px-6 py-4 flex items-center justify-between bg-transparent relative z-50 font-poppins">
 
         {/* LOGO */}
-        <Link href="/" className="flex-shrink-0" onClick={() => setIsOpen(false)}>
+        <Link href="/" onClick={() => setIsOpen(false)}>
           <Image
             src={logoDexter.src}
             alt="Dexter League"
-            width={180}
-            height={55}
-            className="object-contain h-10 w-auto lg:h-14"
+            width={100}
+            height={0}
+            className="object-contain"
             priority
           />
         </Link>
@@ -67,10 +65,10 @@ export default function Navbar() {
                       className={cn(
                         navigationMenuTriggerStyle(),
                         // Base Style
-                        "!text-lg font-medium bg-transparent hover:bg-transparent hover:text-primary focus:bg-transparent transition-colors",
+                        "text-lg! font-medium bg-transparent hover:bg-transparent hover:text-primary focus:bg-transparent transition-colors",
                         // Active State
                         isActive(link.href)
-                          ? "!text-primary font-bold"
+                          ? "text-primary! font-bold"
                           : "text-gray-600"
                       )}
                     >
@@ -114,7 +112,7 @@ export default function Navbar() {
 
       {/* --- MOBILE MENU OVERLAY --- */}
       {isOpen && (
-        <div className="lg:hidden fixed top-24 left-0 w-full bg-white z-40 shadow-2xl border-b border-gray-200 flex flex-col items-center py-10 gap-8 animate-in fade-in slide-in-from-top-2 font-poppins">
+        <div className="lg:hidden fixed top-22 left-0 w-full bg-white z-40 shadow-2xl border-b border-gray-200 flex flex-col items-center py-10 gap-8 animate-in fade-in slide-in-from-top-2 font-poppins">
           <nav className="flex flex-col items-center gap-6">
             {navLinks.map((link) => (
               <Link

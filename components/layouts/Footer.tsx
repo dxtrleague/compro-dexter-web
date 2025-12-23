@@ -41,8 +41,8 @@ export default function Footer() {
               <Image
                 src={logoDexter.src}
                 alt="Dexter League"
-                width={140}
-                height={45}
+                width={100}
+                height={0}
                 className="object-contain"
               />
             </Link>
@@ -100,15 +100,15 @@ export default function Footer() {
             <h3 className="text-lg font-bold text-white uppercase tracking-wider">Contact</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-gray-300 group">
-                <Phone size={20} className="mt-1 flex-shrink-0 group-hover:text-pink-600 transition-colors" />
+                <Phone size={20} className="mt-1 shrink-0 group-hover:text-pink-600 transition-colors" />
                 <span className="text-base font-medium group-hover:text-white transition-colors">+62 877 8150 4968</span>
               </li>
               <li className="flex items-start gap-3 text-gray-300 group">
-                <Mail size={20} className="mt-1 flex-shrink-0 group-hover:text-pink-600 transition-colors" />
+                <Mail size={20} className="mt-1 shrink-0 group-hover:text-pink-600 transition-colors" />
                 <span className="text-base font-medium group-hover:text-white transition-colors">hello@dexter.id</span>
               </li>
               <li className="flex items-start gap-3 text-gray-300 group">
-                <MapPin size={20} className="mt-1 flex-shrink-0 group-hover:text-pink-600 transition-colors" />
+                <MapPin size={20} className="mt-1 shrink-0 group-hover:text-pink-600 transition-colors" />
                 <span className="text-base font-medium leading-relaxed group-hover:text-white transition-colors">
                   GMI Building, Jl Srengseng Sawah <br />
                   No. 4, Srengseng Sawah, Jagakarsa, <br /> South Jakarta City, Jakarta 12630
