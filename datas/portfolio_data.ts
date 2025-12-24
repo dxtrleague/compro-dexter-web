@@ -23,6 +23,7 @@ import heroTechinasia from "@/public/assets/portfolio/techinasia/Hero_TechInAsia
 export const portfolioData: ProjectDetail[] = [
   {
     id: '1',
+    preview: true,
     slug: 'mytelkomsel-research-design',
     title: 'MyTelkomsel Research & Design',
     thumbnail: defaultThumbnail.src,
@@ -55,6 +56,7 @@ export const portfolioData: ProjectDetail[] = [
   },
   {
     id: '2',
+    preview: false,
     slug: 'website-exploration-ocbc',
     title: 'Website Exploration',
     thumbnail: defaultThumbnail.src,
@@ -87,6 +89,7 @@ export const portfolioData: ProjectDetail[] = [
   },
   {
     id: '3',
+    preview: true,
     slug: 'ama-ssp-mobile-store-sales-point',
     title: 'Application Mobile Android Store Sales Point',
     thumbnail: defaultThumbnail.src,
@@ -119,6 +122,7 @@ export const portfolioData: ProjectDetail[] = [
   },
   {
     id: '4',
+    preview: true,
     slug: 'loan-origination-system-smf',
     title: 'Loan Origination System (LOS)',
     thumbnail: defaultThumbnail.src,
@@ -151,6 +155,7 @@ export const portfolioData: ProjectDetail[] = [
   },
   {
     id: '5',
+    preview: false,
     slug: 'tree-carbon-monitoring-platform',
     title: 'Tree & Carbon Monitoring Platform',
     thumbnail: defaultThumbnail.src,
@@ -184,6 +189,7 @@ export const portfolioData: ProjectDetail[] = [
   },
   {
     id: '6',
+    preview: false,
     slug: 'wedding-venue-online-catalogue',
     title: 'Wedding Venue Online Catalogue',
     thumbnail: defaultThumbnail.src,
@@ -217,6 +223,7 @@ export const portfolioData: ProjectDetail[] = [
   },
   {
     id: '7',
+    preview: false,
     slug: 'booking-management-system-pondok-rasamala',
     title: 'Booking Management System Pondok Rasamala',
     thumbnail: defaultThumbnail.src,
@@ -250,6 +257,7 @@ export const portfolioData: ProjectDetail[] = [
   },
   {
     id: '8',
+    preview: false,
     slug: 'mobile-microsite-ramadhan',
     title: 'Mobile Microsite Ultra Berkah Ramadhan',
     thumbnail: defaultThumbnail.src,
@@ -282,6 +290,7 @@ export const portfolioData: ProjectDetail[] = [
   },
   {
     id: '9',
+    preview: false,
     slug: 'online-groceries-shopping-platform',
     title: 'Online Groceries Shopping Platform',
     thumbnail: defaultThumbnail.src,
@@ -315,6 +324,7 @@ export const portfolioData: ProjectDetail[] = [
   },
   {
     id: '10',
+    preview: false,
     slug: 'media-publishing-platform-poskota',
     title: 'Media Publishing Platform',
     thumbnail: defaultThumbnail.src,
@@ -339,6 +349,147 @@ export const portfolioData: ProjectDetail[] = [
     ],
     challenge: 'For almost 50 years in national media business, Poskota is not really in to digital transformation. They have a website but its not optimize thus the bounce rate need to reduce.',
     solution: 'Revamp the front page and optimize load performance by restructuring its cloud infrastructure.',
+    projectOverview: [
+      defaultHero.src,
+      defaultHero.src,
+      defaultHero.src,
+      defaultHero.src
+    ]
+  },
+  {
+    id: '11',
+    preview: false,
+    slug: 'ackita-online-shop',
+    title: 'Online Shop',
+    thumbnail: defaultThumbnail.src,
+    heroImage: heroAckita.src,
+    clientName: 'PT Rumakita Kreasi Mandiri',
+    service: 'Shopping Platform',
+    services: [
+      'Shopping Platform',
+      'Web Dashboard',
+      'Cloud Infrastructure',
+      'Remote Development',
+      'Software Development'
+    ],
+    devices: [
+      { name: 'Mobile' },
+      { name: 'Web' }
+    ],
+    status: 'Completed',
+    technologies: ['2', '4', '5', '8'],
+    about: [
+      'ACKita is an innovative on-demand service platform specifically designed for AC maintenance and repair in tropical climates. Unlike conventional services, ACKita is presented as an integrated digital ecosystem, as seen in our portfolio, which includes an online shop, website, and web dashboard.',
+      'We integrate technology to connect customers with certified technicians, ensuring reliable, transparent, and timely service through various digital touchpoints.',
+      'Through this system, users can easily book services, track technician locations, and manage service history all within a single platform that prioritizes trust and standardized pricing.'
+    ],
+    challenge: 'The fragmented AC service market makes it difficult for customers to find reliable service and hinders operational management efficiency for service providers.',
+    solution: 'We build an integrated digital ecosystem that includes a customer booking platform as well as a cloud-based operational management dashboard for scheduling and service automation.',
+    projectOverview: [
+      defaultHero.src,
+      defaultHero.src,
+      defaultHero.src,
+      defaultHero.src
+    ]
+  },
+  {
+    id: '12',
+    preview: false,
+    slug: 'bkpm-website-company-profile',
+    title: 'Website Company Profile',
+    thumbnail: defaultThumbnail.src,
+    heroImage: heroBkpm.src,
+    clientName: 'Ministry of Investment/BKPM',
+    service: 'Government Platform',
+    services: [
+      'Government Platform',
+      'Website Development',
+      'Frontend Development',
+      'Backend Development'
+    ],
+    devices: [
+      { name: 'Web' },
+      { name: 'Mobile' }
+    ],
+    status: 'Completed',
+    technologies: ['1', '3', '6', '7'],
+    about: [
+      'The Ministry of Investment and Downstream Investment (BKPM) plays a crucial role in driving economic growth through national investment. To support strategic decision-making, we collaborated to develop a Company Profile Website platform that also serves as a visual information hub for investment realization across Indonesia.',
+      'This platform aggregates data from various sources and presents it in an intuitive and interactive format, allowing stakeholders to accurately review data by region, sector, and time period.',
+      'By transforming complex datasets into actionable visual intelligence, this site empowers policymakers to identify opportunities and monitor the effectiveness of investment policies, creating a better investment climate.'
+    ],
+    challenge: 'Manual reporting and scattered data sources make it difficult to obtain a holistic view of national investment performance in a timely and transparent manner.',
+    solution: 'We developed an interactive company profile website with integrated advanced data visualization capabilities for real-time monitoring of investment realization.',
+    projectOverview: [
+      defaultHero.src,
+      defaultHero.src,
+      defaultHero.src,
+      defaultHero.src
+    ]
+  },
+  {
+    id: '13',
+    preview: true,
+    slug: 'djki-e-hakcipta',
+    title: 'E-Hakcipta',
+    thumbnail: defaultThumbnail.src,
+    heroImage: heroDjki.src,
+    clientName: 'Directorate General of Intellectual Property',
+    service: 'Public Service',
+    services: [
+      'Public Service',
+      'Software Development',
+      'Frontend Development',
+      'Backend Development',
+      'Web Dashboard'
+    ],
+    devices: [
+      { name: 'Web' },
+      { name: 'Mobile' }
+    ],
+    status: 'Completed',
+    technologies: ['2', '4', '5', '9'],
+    about: [
+      'Intellectual property protection is vital to driving national innovation, so the Directorate General of Intellectual Property (DJKI) requires modernizing its digital infrastructure through the E-Hakcipta system.',
+      'We engineered a robust IP management system to streamline the registration process, from application to certification, covering copyright, patent, and trademark aspects. A key feature of the platform is a powerful search engine that allows the public and examiners to quickly examine existing IP, thereby reducing redundancy and accelerating approval times.',
+      'Designed to be secure, scalable, and user-friendly through a Web Dashboard interface, the system makes IP protection more accessible to creators and businesses across the country, supporting the strengthening of the national creative economy.'
+    ],
+    challenge: 'Previous manual and semi-digital processes were slow and prone to backlogs, making it difficult for creators to protect their works efficiently.',
+    solution: 'We developed a comprehensive E-Copyright digital platform for intellectual property registration and management, equipped with an optimized search engine and automated processing workflows.',
+    projectOverview: [
+      defaultHero.src,
+      defaultHero.src,
+      defaultHero.src,
+      defaultHero.src
+    ]
+  },
+  {
+    id: '14',
+    preview: false,
+    slug: 'tech-in-asia-hack-o-train',
+    title: 'Hack O Train',
+    thumbnail: defaultThumbnail.src,
+    heroImage: heroTechinasia.src,
+    clientName: 'PT Teknologi Indonesia Asia',
+    service: 'Event Technology',
+    services: [
+      'Event Technology',
+      'Networking Platform',
+      'Event Management'
+    ],
+    devices: [
+      { name: 'Mobile' },
+      { name: 'Web' }
+    ],
+    status: 'Completed',
+    technologies: ['1', '5', '8', '10'],
+    about: [
+      'Hack O Train - Moving Innovation On Rails is a unique initiative from Tech In Asia designed to connect Asia\'s startup ecosystem through an unforgettable competition experience. We developed a dedicated conference platform that serves as a digital companion for thousands of attendees, enabling them to interact in a dynamic environment as seen in the footage of the train.',
+      'The platform facilitates intelligent matchmaking for business networking, enabling innovators to connect with relevant investors and industry partners efficiently.',
+      'Featuring personalized agendas, live session streaming, and interactive Q&A, the system is built to handle high usage throughout the event day, ensuring seamless interactions and fostering meaningful knowledge exchange within the tech community.'
+    ],
+    challenge: 'Creating active engagement and maximizing networking value for thousands of attendees at scale and with high mobility is a complex logistical challenge.',
+    solution: 'We deliver a feature-rich event app with matchmaking algorithms, schedule management, and real-time engagement tools to ensure every attendee receives an integrated, innovative experience.',
     projectOverview: [
       defaultHero.src,
       defaultHero.src,
