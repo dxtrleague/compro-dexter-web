@@ -36,11 +36,11 @@ const ServiceSection = () => {
                   <Icon className="w-7 h-7 md:w-8 md:h-8" strokeWidth={1.5} />
                 </div>
 
-                <h3 className="text-lg md:text-[22px] font-bold text-primary-foreground mb-3">
+                <h3 className="text-lg md:text-xl  font-bold text-primary-foreground mb-3">
                   {service.title}
                 </h3>
 
-                <p className="text-[15px] md:text-base text-secondary-foreground leading-relaxed">
+                <p className="text-sm md:text-base text-secondary-foreground leading-relaxed">
                   {service.descHome}
                 </p>
               </div>

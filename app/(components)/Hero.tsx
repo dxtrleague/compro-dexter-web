@@ -32,7 +32,7 @@ const Hero = () => {
         {/* BUTTON GROUP */}
         <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
           {/* Tombol 1: "Why choose us?" */}
-          <Button asChild className="bg-primary hover:bg-[#D81B60] text-white rounded-full px-8 py-6 text-lg font-bold shadow-lg transition-transform hover:scale-105 w-full sm:w-auto">
+          <Button asChild className="bg-primary hover:bg-[#D81B60] text-white rounded-full px-8 py-6 text-md md:text-lg font-bold shadow-lg transition-transform hover:scale-105 w-full sm:w-auto">
             <Link href="/about-us">Why choose us?</Link>
           </Button>
 
