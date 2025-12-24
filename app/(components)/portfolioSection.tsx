@@ -64,19 +64,19 @@ export default function PortfolioHome() {
                 </div>
 
                 {/* Title dengan CardTitle */}
-                <CardTitle className="text-xl font-bold text-primary-foreground mb-3 line-clamp-1">
+                <CardTitle className="text-lg md:text-xl font-bold text-primary-foreground mb-3 line-clamp-1">
                   {item.title}
                 </CardTitle>
 
                 {/* Description dengan CardDescription */}
-                <CardDescription className="text-secondary-foreground text-sm leading-relaxed mb-6 grow line-clamp-2">
+                <CardDescription className="text-secondary-foreground text-sm md:text-base leading-relaxed mb-6 grow line-clamp-2">
                   {item.about && item.about.length > 0 ? item.about[0] : "No description available."}
                 </CardDescription>
 
                 {/* Link Details */}
                 <Link
                   href={`/portfolio/${item.slug}`}
-                  className="inline-flex items-center text-primary font-bold text-sm hover:underline gap-1 group/link mt-auto"
+                  className="inline-flex items-center text-primary font-bold text-sm md:text-base hover:underline gap-1 group/link mt-auto"
                 >
                   See Project Details
                   <ArrowRight size={16} className="transition-transform group-hover/link:translate-x-1" />
@@ -98,7 +98,7 @@ export default function PortfolioHome() {
             </p>
           </div>
 
-          <Button asChild className="bg-primary hover:bg-[#D81B60] text-white rounded-full px-8 py-6 font-bold shadow-md transition-transform hover:scale-105">
+          <Button asChild className="bg-primary hover:bg-[#D81B60] text-base md:text-lg text-white rounded-full px-8 py-6 font-bold shadow-md transition-transform hover:scale-105">
             <Link href="/portfolio">
               Show More Projects
             </Link>
