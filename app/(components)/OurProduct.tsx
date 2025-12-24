@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { CheckCircle2} from "lucide-react";
+import jarwoImage from "@/public/assets/home/JarwoProduct.png";
 
 const OurProduct = () => {
   const features = [
@@ -27,10 +28,10 @@ const OurProduct = () => {
             <div className="w-full relative lg:hidden">
               <div className="relative w-full aspect-square md:aspect-4/3 rounded-3xl overflow-hidden shadow-2xl border border-slate-100 bg-white">
                 <Image
-                  src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1632&auto=format&fit=crop" 
+                  src={jarwoImage}
                   alt="Jarwo AI Dashboard"
                   fill
-                  className="object-cover"
+                  className="object-contain"
                 />
               </div>
             </div>
@@ -72,10 +73,10 @@ const OurProduct = () => {
           <div className="w-full lg:w-1/2 relative hidden lg:block">
             <div className="relative w-full aspect-square md:aspect-4/3 rounded-3xl overflow-hidden shadow-2xl border border-slate-100 bg-white">
               <Image
-                src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1632&auto=format&fit=crop" 
+                src={jarwoImage}
                 alt="Jarwo AI Dashboard"
                 fill
-                className="object-cover"
+                className="object-contain"
               />
             </div>
           </div>

@@ -16,7 +16,7 @@ import {
 import { portfolioData } from "@/datas/portfolio_data";
 
 export default function PortfolioHome() {
-  const displayedPortfolio = portfolioData.slice(0, 4);
+  const displayedPortfolio = portfolioData.filter((item) => item.preview).slice(0, 4);
 
   return (
     <section className="py-12 md:py-16 lg:py-18 bg-white">

@@ -18,4 +18,5 @@ export interface ProjectDetail {
   challenge: string;
   solution: string;
   projectOverview: string[];
+  preview: boolean;
 }
