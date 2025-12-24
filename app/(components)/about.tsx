@@ -51,7 +51,7 @@ const AboutSection = () => {
                 asChild
                 className="bg-transparent border-2 border-muted text-muted hover:bg-[#F3E5F5] rounded-full px-8 py-6 text-lg font-bold shadow-sm transition-all box-border"
               >
-                <Link href="assets/compro-dxtr.pdf" target="_blank" download>
+                <Link href="assets/DXTR_Compro.pdf" target="_blank" download>
                   Download Profile
                 </Link>
               </Button>
