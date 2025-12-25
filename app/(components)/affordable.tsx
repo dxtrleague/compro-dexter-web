@@ -2,10 +2,12 @@ import React from 'react';
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { ScrollReveal } from '@/utils/animations';
 
 const AboutSection = () => {
   return (
     <section className="py-12 md:py-18 bg-white">
+      <ScrollReveal variant="right" className="w-full">
       <div className="container mx-auto px-4">
         <div className="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-20">
           
@@ -60,6 +62,7 @@ const AboutSection = () => {
 
         </div>
       </div>
+      </ScrollReveal>
     </section>
   );
 };
