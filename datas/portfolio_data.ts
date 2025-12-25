@@ -20,6 +20,32 @@ import heroCarisayur from "@/public/assets/portfolio/carisayur/Hero_CariSayur.pn
 import heroDjki from "@/public/assets/portfolio/djki/Hero_DJKI.png";
 import heroTechinasia from "@/public/assets/portfolio/techinasia/Hero_TechInAsia.png";
 
+// Project overview images
+import overviewTelkomsel1 from "@/public/assets/portfolio/telkomsel/Project_Telkom_1.png";
+import overviewTelkomsel2 from "@/public/assets/portfolio/telkomsel/Project_Telkom_2.png";
+import overviewTelkomsel3 from "@/public/assets/portfolio/telkomsel/Project_Telkom_3.png";
+import overviewAlfamart1 from "@/public/assets/portfolio/alfamart/Project_Alfa_1.jpeg";
+import overviewAlfamart2 from "@/public/assets/portfolio/alfamart/Project_Alfa_2.jpeg";
+import overviewAlfamart3 from "@/public/assets/portfolio/alfamart/Project_Alfa_3.jpeg";
+import overviewAlfamart4 from "@/public/assets/portfolio/alfamart/Project_Alfa_4.jpeg";
+import overviewOCBC from "@/public/assets/portfolio/ocbc/Project_OCBC.jpg";
+import overviewSMF from "@/public/assets/portfolio/smf/Project_SMF.jpg";
+import overviewBakaumu from "@/public/assets/portfolio/bakaumu/Project_BakauMu.png";
+import overviewBzwedding from "@/public/assets/portfolio/bzwedding/Project_BZWedding.jpg";
+import overviewRasamala from "@/public/assets/portfolio/rasamala/Project_Rasamala.jpg";
+import overviewUltraVoucher1 from "@/public/assets/portfolio/ultravoucher/Project_UltraVoucher_1.jpg";
+import overviewUltraVoucher2 from "@/public/assets/portfolio/ultravoucher/Project_UltraVoucher_2.jpg";
+import overviewUltraVoucher3 from "@/public/assets/portfolio/ultravoucher/Project_UltraVoucher_3.png";
+import overviewCariSayur from "@/public/assets/portfolio/carisayur/Project_CariSayur.jpg";
+import overviewPoskota from "@/public/assets/portfolio/poskota/Project_PosKota.jpg";
+import overviewAckita from "@/public/assets/portfolio/ackita/Project_ACKita.png";
+import overviewBkpm from "@/public/assets/portfolio/bkpm/Project_BKPM.jpg";
+import overviewDjki from "@/public/assets/portfolio/djki/Project_DJKI.jpg";
+import overviewTechinasia1 from "@/public/assets/portfolio/techinasia/Project_TechInAsia_1.jpg";
+import overviewTechinasia2 from "@/public/assets/portfolio/techinasia/Project_TechInAsia_2.png";
+import overviewTechinasia3 from "@/public/assets/portfolio/techinasia/Project_TechInAsia_3.jpg";
+
+
 export const portfolioData: ProjectDetail[] = [
   {
     id: '1',
@@ -48,10 +74,9 @@ export const portfolioData: ProjectDetail[] = [
     challenge: 'The existing app suffered from a complex navigation structure and a dated UI, leading to low user retention and engagement. The challenge was to simplify the user experience while introducing new features without overwhelming the user.',
     solution: 'We implemented a user-centric design process, starting with extensive user research and persona development. The new design features a cleaner interface, a more intuitive navigation pattern, and personalized content recommendations, resulting in a significant increase in user activity.',
     projectOverview: [
-      "https://images.unsplash.com/photo-1632910138458-5bf601f3835e?q=80&w=2831&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1766324934839-313529832615?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1646621720737-13879670125e?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1764096534686-68091ce5ab45?q=80&w=2831&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      overviewTelkomsel1.src,
+      overviewTelkomsel2.src,
+      overviewTelkomsel3.src
     ]
   },
   {
@@ -82,9 +107,7 @@ export const portfolioData: ProjectDetail[] = [
     challenge: 'The main challenge was to present complex financial information in a way that was easy to understand and engaging for a general audience. Additionally, the platform needed to be seamlessly integrated with the bank\'s existing systems.',
     solution: 'We developed a modular platform with interactive courses, articles, and tools. The system integration allows for a personalized experience, where users can get recommendations based on their banking profile. The remote development model ensured continuous updates and support.',
     projectOverview: [
-      defaultHero.src,
-      defaultHero.src,
-      defaultHero.src
+      overviewOCBC.src
     ]
   },
   {
@@ -114,10 +137,10 @@ export const portfolioData: ProjectDetail[] = [
     challenge: 'The demand of resellers were emerging in retail business. The process of gathering resellers information need to be done effectively.',
     solution: 'Creating mobile application to support officer\'s survey process of resellers outlet. It covers survey process, approval and online order.',
     projectOverview: [
-      defaultHero.src,
-      defaultHero.src,
-      defaultHero.src,
-      defaultHero.src
+      overviewAlfamart1.src,
+      overviewAlfamart2.src,
+      overviewAlfamart3.src,
+      overviewAlfamart4.src
     ]
   },
   {
@@ -147,10 +170,7 @@ export const portfolioData: ProjectDetail[] = [
     challenge: 'The previous loan application process was largely manual, paper-based, and prone to errors. This led to significant delays and a lack of real-time tracking for loan applications.',
     solution: 'We built a robust web-based LOS that automates credit scoring, document verification, and approval workflows. The system provides a centralized dashboard for loan officers to track applications, manage documents, and make informed decisions quickly.',
     projectOverview: [
-      defaultHero.src,
-      defaultHero.src,
-      defaultHero.src,
-      defaultHero.src
+      overviewSMF.src
     ]
   },
   {
@@ -181,10 +201,7 @@ export const portfolioData: ProjectDetail[] = [
     challenge: 'Tracking the growth and health of thousands of trees across vast geographical areas was a significant logistical challenge. The foundation needed a reliable and scalable solution to manage this data.',
     solution: 'We developed a platform with GPS-enabled mobile apps for data collection and a central web dashboard for visualization. The system uses location mapping to track tree plots and generates detailed carbon reports for stakeholders and donors.',
     projectOverview: [
-      defaultHero.src,
-      defaultHero.src,
-      defaultHero.src,
-      defaultHero.src
+      overviewBakaumu.src
     ]
   },
   {
@@ -215,10 +232,7 @@ export const portfolioData: ProjectDetail[] = [
     challenge: 'The client needed a way to reach a wider audience and provide a rich, interactive experience for potential customers. Static images and phone calls were no longer sufficient to capture the essence of their venues.',
     solution: 'We built a responsive web platform with a virtual tour feature and an AI-powered recommendation engine. The cloud infrastructure ensures the site can handle high traffic, especially during peak wedding seasons.',
     projectOverview: [
-      defaultHero.src,
-      defaultHero.src,
-      defaultHero.src,
-      defaultHero.src
+      overviewBzwedding.src
     ]
   },
   {
@@ -249,10 +263,7 @@ export const portfolioData: ProjectDetail[] = [
     challenge: 'For over 10 years active, Pondok Rasamala have significant traction from visitor. With a lot of demand, manual booking processes were prone to problem such as double booked, manual cancelation, staff collaboration and so on. We need an apps to make booking process easier and improve daily operation effectively.',
     solution: 'Mobile Booking Application, Web Dashboard and Responsive Website to reduce bounce rate for who accessing website via mobile device. Also we are giving some advices how to properly transform to digital solution.',
     projectOverview: [
-      defaultHero.src,
-      defaultHero.src,
-      defaultHero.src,
-      defaultHero.src
+      overviewRasamala.src
     ]
   },
   {
@@ -282,10 +293,9 @@ export const portfolioData: ProjectDetail[] = [
     challenge: 'The campaign had a short timeline and needed to reach a massive mobile-first audience quickly. The microsite needed to be engaging and capable of handling high traffic without performance issues.',
     solution: 'We built a progressive web app (PWA) that offered a native app-like experience. The system integration allowed for real-time updates on promotions, and the remote development approach enabled rapid iteration based on user feedback.',
     projectOverview: [
-      defaultHero.src,
-      defaultHero.src,
-      defaultHero.src,
-      defaultHero.src
+      overviewUltraVoucher1.src,
+      overviewUltraVoucher2.src,
+      overviewUltraVoucher3.src
     ]
   },
   {
@@ -316,10 +326,7 @@ export const portfolioData: ProjectDetail[] = [
     challenge: 'The grocery e-commerce market is highly competitive. The challenge was to create a platform that was not only functional but also offered a superior user experience, with features like personalized recommendations and efficient delivery tracking.',
     solution: 'We developed a full-featured e-commerce platform with a focus on user experience and scalability. The platform includes an intelligent recommendation engine, a robust inventory management system, and a real-time order tracking feature for customers.',
     projectOverview: [
-      defaultHero.src,
-      defaultHero.src,
-      defaultHero.src,
-      defaultHero.src
+      overviewCariSayur.src
     ]
   },
   {
@@ -350,10 +357,138 @@ export const portfolioData: ProjectDetail[] = [
     challenge: 'For almost 50 years in national media business, Poskota is not really in to digital transformation. They have a website but its not optimize thus the bounce rate need to reduce.',
     solution: 'Revamp the front page and optimize load performance by restructuring its cloud infrastructure.',
     projectOverview: [
-      defaultHero.src,
-      defaultHero.src,
-      defaultHero.src,
-      defaultHero.src
+      overviewPoskota.src
+    ]
+  },
+  {
+    id: '11',
+    preview: false,
+    slug: 'ackita-online-shop',
+    title: 'Online Shop',
+    thumbnail: defaultThumbnail.src,
+    heroImage: heroAckita.src,
+    clientName: 'PT Rumakita Kreasi Mandiri',
+    service: 'Shopping Platform',
+    services: [
+      'Shopping Platform',
+      'Web Dashboard',
+      'Cloud Infrastructure',
+      'Remote Development',
+      'Software Development'
+    ],
+    devices: [
+      { name: 'Mobile' },
+      { name: 'Web' }
+    ],
+    status: 'Completed',
+    technologies: ['2', '4', '5', '8'],
+    about: [
+      'ACKita is an innovative on-demand service platform specifically designed for AC maintenance and repair in tropical climates. Unlike conventional services, ACKita is presented as an integrated digital ecosystem, as seen in our portfolio, which includes an online shop, website, and web dashboard.',
+      'We integrate technology to connect customers with certified technicians, ensuring reliable, transparent, and timely service through various digital touchpoints.',
+      'Through this system, users can easily book services, track technician locations, and manage service history all within a single platform that prioritizes trust and standardized pricing.'
+    ],
+    challenge: 'The fragmented AC service market makes it difficult for customers to find reliable service and hinders operational management efficiency for service providers.',
+    solution: 'We build an integrated digital ecosystem that includes a customer booking platform as well as a cloud-based operational management dashboard for scheduling and service automation.',
+    projectOverview: [
+      overviewAckita.src
+    ]
+  },
+  {
+    id: '12',
+    preview: false,
+    slug: 'bkpm-website-company-profile',
+    title: 'Website Company Profile',
+    thumbnail: defaultThumbnail.src,
+    heroImage: heroBkpm.src,
+    clientName: 'Ministry of Investment/BKPM',
+    service: 'Government Platform',
+    services: [
+      'Government Platform',
+      'Website Development',
+      'Frontend Development',
+      'Backend Development'
+    ],
+    devices: [
+      { name: 'Web' },
+      { name: 'Mobile' }
+    ],
+    status: 'Completed',
+    technologies: ['1', '3', '6', '7'],
+    about: [
+      'The Ministry of Investment and Downstream Investment (BKPM) plays a crucial role in driving economic growth through national investment. To support strategic decision-making, we collaborated to develop a Company Profile Website platform that also serves as a visual information hub for investment realization across Indonesia.',
+      'This platform aggregates data from various sources and presents it in an intuitive and interactive format, allowing stakeholders to accurately review data by region, sector, and time period.',
+      'By transforming complex datasets into actionable visual intelligence, this site empowers policymakers to identify opportunities and monitor the effectiveness of investment policies, creating a better investment climate.'
+    ],
+    challenge: 'Manual reporting and scattered data sources make it difficult to obtain a holistic view of national investment performance in a timely and transparent manner.',
+    solution: 'We developed an interactive company profile website with integrated advanced data visualization capabilities for real-time monitoring of investment realization.',
+    projectOverview: [
+      overviewBkpm.src
+    ]
+  },
+  {
+    id: '13',
+    preview: true,
+    slug: 'djki-e-hakcipta',
+    title: 'E-Hakcipta',
+    thumbnail: defaultThumbnail.src,
+    heroImage: heroDjki.src,
+    clientName: 'Directorate General of Intellectual Property',
+    service: 'Public Service',
+    services: [
+      'Public Service',
+      'Software Development',
+      'Frontend Development',
+      'Backend Development',
+      'Web Dashboard'
+    ],
+    devices: [
+      { name: 'Web' },
+      { name: 'Mobile' }
+    ],
+    status: 'Completed',
+    technologies: ['2', '4', '5', '9'],
+    about: [
+      'Intellectual property protection is vital to driving national innovation, so the Directorate General of Intellectual Property (DJKI) requires modernizing its digital infrastructure through the E-Hakcipta system.',
+      'We engineered a robust IP management system to streamline the registration process, from application to certification, covering copyright, patent, and trademark aspects. A key feature of the platform is a powerful search engine that allows the public and examiners to quickly examine existing IP, thereby reducing redundancy and accelerating approval times.',
+      'Designed to be secure, scalable, and user-friendly through a Web Dashboard interface, the system makes IP protection more accessible to creators and businesses across the country, supporting the strengthening of the national creative economy.'
+    ],
+    challenge: 'Previous manual and semi-digital processes were slow and prone to backlogs, making it difficult for creators to protect their works efficiently.',
+    solution: 'We developed a comprehensive E-Copyright digital platform for intellectual property registration and management, equipped with an optimized search engine and automated processing workflows.',
+    projectOverview: [
+      overviewDjki.src
+    ]
+  },
+  {
+    id: '14',
+    preview: false,
+    slug: 'tech-in-asia-hack-o-train',
+    title: 'Hack O Train',
+    thumbnail: defaultThumbnail.src,
+    heroImage: heroTechinasia.src,
+    clientName: 'PT Teknologi Indonesia Asia',
+    service: 'Event Technology',
+    services: [
+      'Event Technology',
+      'Networking Platform',
+      'Event Management'
+    ],
+    devices: [
+      { name: 'Mobile' },
+      { name: 'Web' }
+    ],
+    status: 'Completed',
+    technologies: ['1', '5', '8', '10'],
+    about: [
+      'Hack O Train - Moving Innovation On Rails is a unique initiative from Tech In Asia designed to connect Asia\'s startup ecosystem through an unforgettable competition experience. We developed a dedicated conference platform that serves as a digital companion for thousands of attendees, enabling them to interact in a dynamic environment as seen in the footage of the train.',
+      'The platform facilitates intelligent matchmaking for business networking, enabling innovators to connect with relevant investors and industry partners efficiently.',
+      'Featuring personalized agendas, live session streaming, and interactive Q&A, the system is built to handle high usage throughout the event day, ensuring seamless interactions and fostering meaningful knowledge exchange within the tech community.'
+    ],
+    challenge: 'Creating active engagement and maximizing networking value for thousands of attendees at scale and with high mobility is a complex logistical challenge.',
+    solution: 'We deliver a feature-rich event app with matchmaking algorithms, schedule management, and real-time engagement tools to ensure every attendee receives an integrated, innovative experience.',
+    projectOverview: [
+      overviewTechinasia1.src,
+      overviewTechinasia2.src,
+      overviewTechinasia3.src
     ]
   },
   {

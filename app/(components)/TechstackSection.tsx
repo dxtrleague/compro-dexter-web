@@ -5,7 +5,7 @@ export default function TechstackSection() {
     const techstackData = getAllTechStack();
 
     return (
-        <section className="py-12 md:py-14 lg:py-18 bg-foreground flex flex-col gap-8 justify-center items-center">
+        <section className="py-12 md:py-14 lg:py-18 bg-white flex flex-col gap-8 justify-center items-center">
             <div className="container mx-auto ">
                 {/* Title */}
                 <div className="text-center mb-8 md:mb-10">

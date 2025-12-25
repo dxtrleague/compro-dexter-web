@@ -13,7 +13,7 @@ const OurProduct = () => {
   ];
 
   return (
-    <section className="py-12 md:py-14 lg:py-18 bg-foreground">
+    <section className="py-12 md:py-14 lg:py-18 bg-linear-to-b from-[#FAFAFA] to-white font-poppins">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
           

@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
@@ -18,8 +19,20 @@ import { portfolioData } from "@/datas/portfolio_data";
 export default function PortfolioHome() {
   const displayedPortfolio = portfolioData.filter((item) => item.preview).slice(0, 4);
 
+  // Paksa scroll ke section portfolio jika ada hash #portfolio di URL
+  useEffect(() => {
+    if (window.location.hash === "#portfolio") {
+      setTimeout(() => {
+        const element = document.getElementById("portfolio");
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 300); // Delay 300ms untuk memastikan halaman sudah selesai render
+    }
+  }, []);
+
   return (
-    <section className="py-12 md:py-16 lg:py-18 bg-white">
+    <section id="portfolio" className="py-12 md:py-16 lg:py-18 bg-white scroll-mt-24">
       <div className="container mx-auto px-6">
 
         {/* HEADER */}
@@ -75,7 +88,7 @@ export default function PortfolioHome() {
 
                 {/* Link Details */}
                 <Link
-                  href={`/portfolio/${item.slug}`}
+                  href={`/portfolio/${item.slug}?from=home`}
                   className="inline-flex items-center text-primary font-bold text-sm md:text-base hover:underline gap-1 group/link mt-auto"
                 >
                   See Project Details

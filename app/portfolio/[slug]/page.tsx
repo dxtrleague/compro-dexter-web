@@ -1,5 +1,3 @@
-import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
 import { getPortfolioBySlug, getAllPortfolioSlugs } from "@/datas/portfolio_data";
 import { notFound } from "next/navigation";
 import TellUs from "@/components/layouts/TellUs";
@@ -9,6 +7,7 @@ import ProjectDetailSection from "./(components)/ProjectDetailSection";
 import TechnologyUsedSection from "./(components)/TechnologyUsedSection";
 import AboutProjectSection from "./(components)/AboutProjectSection";
 import ProjectOverviewSection from "./(components)/ProjectOverviewSection";
+import BackButton from "./(components)/BackButton";
 
 export async function generateStaticParams() {
     const slugs = getAllPortfolioSlugs();
@@ -31,10 +30,7 @@ export default async function DetailPortfolio({ params }: { params: Promise<{ sl
                 {/* Main Content */}
                 <div className="container py-8 px-6 pb-24 mx-auto">
                     {/* Back Link */}
-                    <Link href="/portfolio" className="flex items-center gap-2 mb-6 group">
-                        <ArrowLeft className="w-4 h-4 text-slate-500 group-hover:-translate-x-1 transition-transform" />
-                        <span className="text-slate-500 text-sm">Back to Portfolio</span>
-                    </Link>
+                    <BackButton />
 
                     {/* Project Header */}
                     <HeaderSection project={project} />
