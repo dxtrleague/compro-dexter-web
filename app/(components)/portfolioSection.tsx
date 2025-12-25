@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ScrollReveal } from '@/utils/animations';
 
 import {
   Card,
@@ -33,6 +34,7 @@ export default function PortfolioHome() {
 
   return (
     <section id="portfolio" className="py-12 md:py-16 lg:py-18 bg-white scroll-mt-24">
+      <ScrollReveal variant="bottom" className="w-full">
       <div className="container mx-auto px-6">
 
         {/* HEADER */}
@@ -119,6 +121,7 @@ export default function PortfolioHome() {
         </div>
 
       </div>
+      </ScrollReveal>
     </section>
   );
 }

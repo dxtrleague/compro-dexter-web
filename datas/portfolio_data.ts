@@ -65,7 +65,7 @@ export const portfolioData: ProjectDetail[] = [
       { name: 'Mobile' }
     ],
     status: 'Completed',
-    technologies: ['1', '5', '4', '2'],
+    technologies: ['7'],
     about: [
       'MyTelkomsel, as the flagship digital portal for Telkomsel\'s millions of users, serves as a critical touchpoint for managing accounts, accessing exclusive content, and a wide array of telecommunication services. Recognizing the need to elevate the user experience, our team was entrusted with the mission of conducting in-depth UX research and a comprehensive redesign of the user interface. The primary objective was to significantly enhance user engagement and satisfaction, transforming the app into an indispensable daily companion for its users.',
       'The project was a monumental undertaking that involved a complete overhaul of the user journey. From the initial login process to daily interactions with various features, every aspect was meticulously re-evaluated and redesigned. Our approach was rooted in a deep understanding of user behavior, pain points, and aspirations, ensuring that the new design would not only be aesthetically pleasing but also functionally superior and intuitive to navigate.',
@@ -98,7 +98,7 @@ export const portfolioData: ProjectDetail[] = [
       { name: 'Web' }
     ],
     status: 'Completed',
-    technologies: ['3', '6', '4', '1'],
+    technologies: ['2', '1', '6'],
     about: [
       'In its commitment to fostering financial literacy and empowering customers, PT Bank OCBC NISP Tbk envisioned a comprehensive financial education platform. The goal was to create a trusted and accessible digital resource that would demystify personal finance, investment strategies, and banking products for a broad audience. This initiative was not just about providing information, but about building confidence and enabling smarter financial decisions for individuals and families alike.',
       'The platform was meticulously designed to cater to a diverse audience, from students just beginning their financial journey to working professionals looking to optimize their investments. We developed a modular content structure, offering interactive courses, insightful articles, and practical tools tailored to different levels of financial expertise. This ensures that every user, regardless of their background, can find value and relevance in the platform\'s offerings.',
@@ -128,7 +128,7 @@ export const portfolioData: ProjectDetail[] = [
       { name: 'Mobile' }
     ],
     status: 'Completed',
-    technologies: ['2', '4', '5', '8'],
+    technologies: ['3', '4', '5'],
     about: [
       'The Alfamart Digital Business represents a groundbreaking innovation by Indonesia\'s largest retailer, designed to meet the evolving demands of the digital age. This comprehensive digital ecosystem aims to make daily necessities more accessible and affordable, empowering both end consumers and entrepreneurs within its vast network. The initiative is a testament to Alfamart\'s forward-thinking approach and its commitment to leveraging technology for societal benefit.',
       'At the heart of this digital transformation are six strategic pillars: Alfamikro, Alfamind, Alfa POP, Alfagift, Alfacart, and Alfatrex. Each pillar serves a distinct purpose, from supporting micro-businesses to providing a seamless e-commerce experience, all integrated into a cohesive O2O (Online-to-Offline) service model. This interconnected structure ensures that users can enjoy a consistent and convenient experience, whether they are shopping online or at a physical store.',
@@ -192,7 +192,7 @@ export const portfolioData: ProjectDetail[] = [
       { name: 'Web' },
     ],
     status: 'Completed',
-    technologies: ['2', '4', '5', '8'],
+    technologies: ['3', '2', '4', '5'],
     about: [
       'Bakau Manfaat Universal Foundation (BakauMU) is at the forefront of environmental conservation and reforestation efforts in Indonesia. To effectively measure and communicate the impact of their vital work, we collaborated to create a sophisticated digital platform for monitoring tree growth and calculating carbon sequestration. This platform is an indispensable tool for tracking the progress of their conservation projects and demonstrating their contribution to combating climate change.',
       'The platform was designed with a dual-interface architecture to cater to different user needs. Field workers are equipped with a user-friendly mobile application that allows them to collect data on tree health, growth, and survival rates directly from the field. This data is then synchronized with a central web dashboard, where researchers, managers, and stakeholders can access real-time analytics and comprehensive reports.',
@@ -223,7 +223,7 @@ export const portfolioData: ProjectDetail[] = [
       { name: 'Web' }
     ],
     status: 'Completed',
-    technologies: ['2', '4', '5', '8'],
+    technologies: ['2', '1', '6', '9'],
     about: [
       'The journey to finding the perfect wedding venue is one of the most significant and emotional parts of wedding planning. For PT Bellazull Purnama Kreasindo, a curator of stunning event spaces, we sought to transform this experience by creating an immersive online catalogue platform. Our goal was to showcase the unique beauty and character of each venue, helping couples envision their special day and find a location that truly resonates with their personal story.',
       'The platform was designed to be more than just a listing of venues; it is a comprehensive discovery tool. We incorporated high-resolution photography, detailed descriptions of amenities and capacity, and, most importantly, an integrated booking inquiry system. This allows couples to not only explore their options but also to take the next step with ease, making the entire venue selection process seamless and enjoyable.',
@@ -254,7 +254,7 @@ export const portfolioData: ProjectDetail[] = [
       { name: 'Web' }
     ],
     status: 'Completed',
-    technologies: ['2', '4', '5', '8'],
+    technologies: ['3', '2', '4', '5'],
     about: [
       'Nestled in a serene natural setting, Pondok Rasamala is a unique resort celebrated for its rustic charm and artistic architecture, crafted primarily from bamboo and wood. For over a decade, it has been a favored destination for those seeking tranquility and a connection with nature. However, with its growing popularity, the resort\'s manual booking system became a bottleneck, struggling to keep up with the increasing demand and leading to operational challenges.',
       'The primary challenge was the inefficiency and error-prone nature of the manual booking process. Issues such as double bookings, cumbersome cancellation procedures, and a lack of real-time collaboration among staff were becoming frequent. This not only affected the guest experience but also put a strain on the resort\'s resources. It became clear that a digital transformation was essential to sustain growth and maintain the high standards of service that Pondok Rasamala is known for.',
@@ -284,7 +284,7 @@ export const portfolioData: ProjectDetail[] = [
       { name: 'Mobile' }
     ],
     status: 'Completed',
-    technologies: ['2', '4', '5', '8'],
+    technologies: ['2', '1', '6'],
     about: [
       'The holy month of Ramadhan is a period of heightened commercial activity and spiritual reflection for PT Trimegah Karya Pratama Tbk. To capitalize on this opportune time and deepen customer engagement, the company launched the "Ultra Berkah Ramadhan" campaign. Our task was to create a dedicated mobile microsite that would serve as the central hub for this campaign, delivering special promotions, spiritual content, and interactive features to a massive mobile-first audience.',
       'The microsite was conceived with a mobile-first philosophy, ensuring an optimal viewing experience on a wide range of devices. It was engineered to be lightweight and fast-loading, a critical factor in retaining user attention and minimizing bounce rates. The design was visually appealing, incorporating thematic elements of Ramadhan, and the user interface was intuitive, allowing users to easily navigate through various sections, including special offers, promotional calendars, and inspirational content.',
@@ -317,7 +317,7 @@ export const portfolioData: ProjectDetail[] = [
       { name: 'Web' }
     ],
     status: 'Completed',
-    technologies: ['2', '4', '5', '8'],
+    technologies: ['3', '2', '4', '6'],
     about: [
       'In an era where convenience is king, PT Paskomnas Niaga Utama recognized the immense potential of the online grocery market. To expand its reach and cater to the evolving needs of modern consumers, the company embarked on a journey to launch a comprehensive online groceries shopping platform. The vision was to create a one-stop-shop where customers could browse a wide selection of products, place orders, and have them delivered to their doorstep, all with a few clicks.',
       'The platform was designed to be more than just a digital storefront. It was built as a full-featured e-commerce ecosystem, with a strong emphasis on user experience and operational efficiency. Key features include a powerful search and filter system, secure and diverse payment options, and a reliable delivery management system. We also incorporated a personalized recommendation engine to help users discover new products and a subscription service for recurring purchases, enhancing customer loyalty.',
@@ -348,7 +348,7 @@ export const portfolioData: ProjectDetail[] = [
       { name: 'Web' }
     ],
     status: 'Completed',
-    technologies: ['2', '4', '5', '8'],
+    technologies: ['2', '1', '6', '8'],
     about: [
       'Poskota, an iconic Indonesian daily newspaper published by PT Media Antarkota Jaya since 1970, has been a staple of news and information for millions of readers. For decades, it has focused on local news, crime reports, and stories that resonate with the mid-lower society. However, in the face of a digital revolution, the newspaper realized that its online presence was not keeping pace with the changing habits of its readership.',
       'The primary challenge was that the existing website was not optimized for the modern web user. It suffered from slow load times, a poor mobile experience, and a structure that was not conducive to search engine visibility. This resulted in a high bounce rate and a missed opportunity to engage with a younger, digitally-native audience. The need for a comprehensive digital transformation was clear.',
@@ -381,7 +381,7 @@ export const portfolioData: ProjectDetail[] = [
       { name: 'Web' }
     ],
     status: 'Completed',
-    technologies: ['2', '4', '5', '8'],
+    technologies: ['3', '2', '4', '5'],
     about: [
       'ACKita is an innovative on-demand service platform specifically designed for AC maintenance and repair in tropical climates. Unlike conventional services, ACKita is presented as an integrated digital ecosystem, as seen in our portfolio, which includes an online shop, website, and web dashboard.',
       'We integrate technology to connect customers with certified technicians, ensuring reliable, transparent, and timely service through various digital touchpoints.',
@@ -413,7 +413,7 @@ export const portfolioData: ProjectDetail[] = [
       { name: 'Mobile' }
     ],
     status: 'Completed',
-    technologies: ['1', '3', '6', '7'],
+    technologies: ['2', '1', '5'],
     about: [
       'The Ministry of Investment and Downstream Investment (BKPM) plays a crucial role in driving economic growth through national investment. To support strategic decision-making, we collaborated to develop a Company Profile Website platform that also serves as a visual information hub for investment realization across Indonesia.',
       'This platform aggregates data from various sources and presents it in an intuitive and interactive format, allowing stakeholders to accurately review data by region, sector, and time period.',
@@ -446,7 +446,7 @@ export const portfolioData: ProjectDetail[] = [
       { name: 'Mobile' }
     ],
     status: 'Completed',
-    technologies: ['2', '4', '5', '9'],
+    technologies: ['2', '4', '6', '8'],
     about: [
       'Intellectual property protection is vital to driving national innovation, so the Directorate General of Intellectual Property (DJKI) requires modernizing its digital infrastructure through the E-Hakcipta system.',
       'We engineered a robust IP management system to streamline the registration process, from application to certification, covering copyright, patent, and trademark aspects. A key feature of the platform is a powerful search engine that allows the public and examiners to quickly examine existing IP, thereby reducing redundancy and accelerating approval times.',
@@ -477,7 +477,7 @@ export const portfolioData: ProjectDetail[] = [
       { name: 'Web' }
     ],
     status: 'Completed',
-    technologies: ['1', '5', '8', '10'],
+    technologies: ['1', '10', '6'],
     about: [
       'Hack O Train - Moving Innovation On Rails is a unique initiative from Tech In Asia designed to connect Asia\'s startup ecosystem through an unforgettable competition experience. We developed a dedicated conference platform that serves as a digital companion for thousands of attendees, enabling them to interact in a dynamic environment as seen in the footage of the train.',
       'The platform facilitates intelligent matchmaking for business networking, enabling innovators to connect with relevant investors and industry partners efficiently.',

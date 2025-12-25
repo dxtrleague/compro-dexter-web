@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { CheckCircle2} from "lucide-react";
 import jarwoImage from "@/public/assets/home/JarwoProduct.png";
+import { ScrollReveal } from "@/utils/animations";
 
 const OurProduct = () => {
   const features = [
@@ -14,6 +15,7 @@ const OurProduct = () => {
 
   return (
     <section className="py-12 md:py-14 lg:py-18 bg-linear-to-b from-[#FAFAFA] to-white font-poppins">
+      <ScrollReveal variant="top" className="w-full">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
           
@@ -83,6 +85,7 @@ const OurProduct = () => {
 
         </div>
       </div>
+      </ScrollReveal>
     </section>
   );
 };
