@@ -48,7 +48,7 @@ export default function ProjectOverviewSection({ project }: ProjectOverviewSecti
                                         alt={`Project Screenshot ${index + 1}`}
                                         width={1000}
                                         height={0}
-                                        style={{ objectFit: 'cover' }}
+                                        style={{ objectFit: 'contain' }}
                                         className="w-full h-full object-cover rounded-xl transition-transform duration-300 group-hover:scale-[1.02]"
                                     />
 
