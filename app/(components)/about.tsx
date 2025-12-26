@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ScrollReveal } from '@/utils/animations';
+import AboutUsImage from "@/public/assets/home/AboutUs.png";
 
 const AboutSection = () => {
   return (
@@ -16,7 +17,7 @@ const AboutSection = () => {
             <div className="relative w-full aspect-square md:aspect-4/3 rounded-3xl overflow-hidden shadow-2xl">
               {/* Pastikan path gambar sesuai dengan aset Anda */}
               <Image
-                src="https://images.unsplash.com/photo-1593642532400-2682810df593?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                src={AboutUsImage.src} 
                 alt="About Us Illustration"
                 fill
                 className="object-cover"
