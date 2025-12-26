@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { FaWhatsapp } from "react-icons/fa";
+import HeroImage from "@/public/assets/home/Hero.png";
+
 
 const Hero = () => {
   return (
@@ -11,7 +13,7 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <div className="absolute z-1 top-0 left-0 w-full h-full bg-linear-to-br from-primary/70 via-muted/60 to-secondary/70"></div>
         <Image
-          src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          src={HeroImage.src}
           alt="Hero Background"
           fill
           priority
@@ -44,14 +46,6 @@ const Hero = () => {
             </Link>
           </Button>
         </div>
-      </div>
-
-      {/* INDIKATOR SCROLL */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex flex-col items-center gap-2 text-white">
-        <div className="w-[30px] h-[50px] border-2 border-white rounded-full flex justify-center pt-2 opacity-90">
-          <div className="w-1 h-2 bg-white rounded-full"></div>
-        </div>
-        <span className="text-sm font-medium opacity-90 whitespace-nowrap">Scroll Down</span>
       </div>
     </section>
   );

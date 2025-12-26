@@ -13,7 +13,7 @@ const PartnerSection: React.FC = () => {
         {/* Layout Grid Horizontal */}
         <div className="flex flex-wrap justify-center gap-8 items-center">
           {partnerData.map((partner) => (
-            <div 
+            <div
               key={partner.id} 
               className="w-[40%] md:w-[30%] lg:w-[14%] flex justify-center p-4 transition-all duration-300"
             >
