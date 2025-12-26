@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { FaWhatsapp } from "react-icons/fa";
-import HeroImage from "@/public/assets/home/Hero.png";
+import HeroImage from "@/public/assets/home/HeroImage.png";
 
 
 const Hero = () => {
