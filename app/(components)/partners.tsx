@@ -1,16 +1,20 @@
 import React from 'react';
 import { partnerData } from "@/datas/partner_data";
+import { ScrollReveal } from '@/utils/animations';
 
 const PartnerSection: React.FC = () => {
   return (
     <section className="py-12 md:py-14 lg:py-18 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8 md:mb-10">
+          <ScrollReveal variant="bottom" className="w-full">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary-foreground">Our Super Partners</h2>
           <p className="text-sm md:text-base lg:text-lg text-secondary-foreground mt-4">Real collaboration, great results.</p>
+          </ScrollReveal>
         </div>
 
         {/* Layout Grid Horizontal */}
+        <ScrollReveal variant="bottom" className="w-full">
         <div className="flex flex-wrap justify-center gap-8 items-center">
           {partnerData.map((partner) => (
             <div
@@ -26,6 +30,7 @@ const PartnerSection: React.FC = () => {
             </div>
           ))}
         </div>
+        </ScrollReveal>
       </div>
     </section>
   );

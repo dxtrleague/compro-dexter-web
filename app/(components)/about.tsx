@@ -2,11 +2,13 @@ import React from 'react';
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { ScrollReveal } from '@/utils/animations';
 import AboutUsImage from "@/public/assets/home/AboutUs.png";
 
 const AboutSection = () => {
   return (
     <section className="py-12 md:py-18 bg-foreground">
+      <ScrollReveal variant="left" className="w-full">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
           
@@ -61,6 +63,7 @@ const AboutSection = () => {
 
         </div>
       </div>
+      </ScrollReveal>
     </section>
   );
 };

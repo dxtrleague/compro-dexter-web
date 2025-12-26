@@ -4,10 +4,12 @@ import reactImage from "@/public/assets/techstack/react.png";
 import nextjsImage from "@/public/assets/techstack/nextjs.png";
 import flutterImage from "@/public/assets/techstack/flutter.png";
 import golangImage from "@/public/assets/techstack/golang.png";
-import postgresImage from "@/public/assets/techstack/postgres.png";
-import mysqlImage from "@/public/assets/techstack/mysql.png";
 import figmaImage from "@/public/assets/techstack/figma.png";
 import dockerImage from "@/public/assets/techstack/docker.png";
+import vertexAI from "@/public/assets/techstack/vertexAI.png";
+import digitalOcean from "@/public/assets/techstack/DigitalOcean.png";
+import awsImage from "@/public/assets/techstack/aws.png";
+import nodejsImage from "@/public/assets/techstack/nodejs.png";
 
 export const techstackData: TechStack[] = [
   {
@@ -33,13 +35,13 @@ export const techstackData: TechStack[] = [
   },
   {
     id: '5',
-    name: 'PostgreSQL',
-    imageUrl: postgresImage.src
+    name: 'DigitalOcean',
+    imageUrl: digitalOcean.src
   },
   {
     id: '6',
-    name: 'MySQL',
-    imageUrl: mysqlImage.src
+    name: 'AWS',
+    imageUrl: awsImage.src
   },
   {
     id: '7',
@@ -51,6 +53,16 @@ export const techstackData: TechStack[] = [
     name: 'Docker',
     imageUrl: dockerImage.src
   },
+  {
+    id: '9',
+    name: 'Vertex AI',
+    imageUrl: vertexAI.src
+  },
+  {
+    id: '10',
+    name: 'Node.js',
+    imageUrl: nodejsImage.src
+  }
 ];
 
 export const getTechStackById = (id: string): TechStack | undefined => {
