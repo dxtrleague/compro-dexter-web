@@ -2,7 +2,6 @@ import { ProjectDetail } from '@/types/portfolio';
 
 // Default images
 import defaultThumbnail from "@/public/assets/portfolio/19.jpg";
-import defaultHero from "@/public/assets/portfolio/19.jpg";
 
 // Hero images for each project
 import heroTelkomsel from "@/public/assets/portfolio/telkomsel/Hero_Telkomsel.png";
@@ -81,37 +80,6 @@ export const portfolioData: ProjectDetail[] = [
   },
   {
     id: '2',
-    preview: false,
-    slug: 'website-exploration-ocbc',
-    title: 'Website Exploration',
-    thumbnail: defaultThumbnail.src,
-    heroImage: heroOcbc.src,
-    clientName: 'PT Bank OCBC NISP Tbk',
-    service: 'Education Platform',
-    services: [
-      'Education Platform',
-      'System Integration',
-      'Remote Development'
-    ],
-    devices: [
-      { name: 'Mobile' },
-      { name: 'Web' }
-    ],
-    status: 'Completed',
-    technologies: ['2', '1', '6'],
-    about: [
-      'In its commitment to fostering financial literacy and empowering customers, PT Bank OCBC NISP Tbk envisioned a comprehensive financial education platform. The goal was to create a trusted and accessible digital resource that would demystify personal finance, investment strategies, and banking products for a broad audience. This initiative was not just about providing information, but about building confidence and enabling smarter financial decisions for individuals and families alike.',
-      'The platform was meticulously designed to cater to a diverse audience, from students just beginning their financial journey to working professionals looking to optimize their investments. We developed a modular content structure, offering interactive courses, insightful articles, and practical tools tailored to different levels of financial expertise. This ensures that every user, regardless of their background, can find value and relevance in the platform\'s offerings.',
-      'A key aspect of the project was the seamless integration with the bank\'s existing systems, allowing for a highly personalized user experience. By leveraging user data (with consent), the platform can provide customized recommendations and learning paths, making the journey to financial literacy more engaging and effective. The remote development model ensured that the platform could be continuously updated with fresh content and features, keeping it relevant in a dynamic financial landscape.'
-    ],
-    challenge: 'The main challenge was to present complex financial information in a way that was easy to understand and engaging for a general audience. Additionally, the platform needed to be seamlessly integrated with the bank\'s existing systems.',
-    solution: 'We developed a modular platform with interactive courses, articles, and tools. The system integration allows for a personalized experience, where users can get recommendations based on their banking profile. The remote development model ensured continuous updates and support.',
-    projectOverview: [
-      overviewOCBC.src
-    ]
-  },
-  {
-    id: '3',
     preview: true,
     slug: 'ama-ssp-mobile-store-sales-point',
     title: 'Application Mobile Android Store Sales Point',
@@ -144,7 +112,136 @@ export const portfolioData: ProjectDetail[] = [
     ]
   },
   {
+    id: '3',
+    preview: false,
+    slug: 'bkpm-website-company-profile',
+    title: 'Website Company Profile',
+    thumbnail: defaultThumbnail.src,
+    heroImage: heroBkpm.src,
+    clientName: 'Ministry of Investment/BKPM',
+    service: 'Government Platform',
+    services: [
+      'Government Platform',
+      'Website Development',
+      'Frontend Development',
+      'Backend Development'
+    ],
+    devices: [
+      { name: 'Web' },
+      { name: 'Mobile' }
+    ],
+    status: 'Completed',
+    technologies: ['2', '1', '5'],
+    about: [
+      'The Ministry of Investment and Downstream Investment (BKPM) plays a crucial role in driving economic growth through national investment. To support strategic decision-making, we collaborated to develop a Company Profile Website platform that also serves as a visual information hub for investment realization across Indonesia.',
+      'This platform aggregates data from various sources and presents it in an intuitive and interactive format, allowing stakeholders to accurately review data by region, sector, and time period.',
+      'By transforming complex datasets into actionable visual intelligence, this site empowers policymakers to identify opportunities and monitor the effectiveness of investment policies, creating a better investment climate.'
+    ],
+    challenge: 'Manual reporting and scattered data sources make it difficult to obtain a holistic view of national investment performance in a timely and transparent manner.',
+    solution: 'We developed an interactive company profile website with integrated advanced data visualization capabilities for real-time monitoring of investment realization.',
+    projectOverview: [
+      overviewBkpm.src
+    ]
+  },
+  {
     id: '4',
+    preview: true,
+    slug: 'djki-e-hakcipta',
+    title: 'E-Hakcipta',
+    thumbnail: defaultThumbnail.src,
+    heroImage: heroDjki.src,
+    clientName: 'Directorate General of Intellectual Property',
+    service: 'Public Service',
+    services: [
+      'Public Service',
+      'Software Development',
+      'Frontend Development',
+      'Backend Development',
+      'Web Dashboard'
+    ],
+    devices: [
+      { name: 'Web' },
+      { name: 'Mobile' }
+    ],
+    status: 'Completed',
+    technologies: ['2', '4', '6', '8'],
+    about: [
+      'Intellectual property protection is vital to driving national innovation, so the Directorate General of Intellectual Property (DJKI) requires modernizing its digital infrastructure through the E-Hakcipta system.',
+      'We engineered a robust IP management system to streamline the registration process, from application to certification, covering copyright, patent, and trademark aspects. A key feature of the platform is a powerful search engine that allows the public and examiners to quickly examine existing IP, thereby reducing redundancy and accelerating approval times.',
+      'Designed to be secure, scalable, and user-friendly through a Web Dashboard interface, the system makes IP protection more accessible to creators and businesses across the country, supporting the strengthening of the national creative economy.'
+    ],
+    challenge: 'Previous manual and semi-digital processes were slow and prone to backlogs, making it difficult for creators to protect their works efficiently.',
+    solution: 'We developed a comprehensive E-Copyright digital platform for intellectual property registration and management, equipped with an optimized search engine and automated processing workflows.',
+    projectOverview: [
+      overviewDjki.src
+    ]
+  },
+  {
+    id: '5',
+    preview: false,
+    slug: 'website-exploration-ocbc',
+    title: 'Website Exploration',
+    thumbnail: defaultThumbnail.src,
+    heroImage: heroOcbc.src,
+    clientName: 'PT Bank OCBC NISP Tbk',
+    service: 'Education Platform',
+    services: [
+      'Education Platform',
+      'System Integration',
+      'Remote Development'
+    ],
+    devices: [
+      { name: 'Mobile' },
+      { name: 'Web' }
+    ],
+    status: 'Completed',
+    technologies: ['2', '1', '6'],
+    about: [
+      'In its commitment to fostering financial literacy and empowering customers, PT Bank OCBC NISP Tbk envisioned a comprehensive financial education platform. The goal was to create a trusted and accessible digital resource that would demystify personal finance, investment strategies, and banking products for a broad audience. This initiative was not just about providing information, but about building confidence and enabling smarter financial decisions for individuals and families alike.',
+      'The platform was meticulously designed to cater to a diverse audience, from students just beginning their financial journey to working professionals looking to optimize their investments. We developed a modular content structure, offering interactive courses, insightful articles, and practical tools tailored to different levels of financial expertise. This ensures that every user, regardless of their background, can find value and relevance in the platform\'s offerings.',
+      'A key aspect of the project was the seamless integration with the bank\'s existing systems, allowing for a highly personalized user experience. By leveraging user data (with consent), the platform can provide customized recommendations and learning paths, making the journey to financial literacy more engaging and effective. The remote development model ensured that the platform could be continuously updated with fresh content and features, keeping it relevant in a dynamic financial landscape.'
+    ],
+    challenge: 'The main challenge was to present complex financial information in a way that was easy to understand and engaging for a general audience. Additionally, the platform needed to be seamlessly integrated with the bank\'s existing systems.',
+    solution: 'We developed a modular platform with interactive courses, articles, and tools. The system integration allows for a personalized experience, where users can get recommendations based on their banking profile. The remote development model ensured continuous updates and support.',
+    projectOverview: [
+      overviewOCBC.src
+    ]
+  },
+  {
+    id: '6',
+    preview: false,
+    slug: 'tech-in-asia-hack-o-train',
+    title: 'Hack O Train',
+    thumbnail: defaultThumbnail.src,
+    heroImage: heroTechinasia.src,
+    clientName: 'PT Teknologi Indonesia Asia',
+    service: 'Event Technology',
+    services: [
+      'Event Technology',
+      'Networking Platform',
+      'Event Management'
+    ],
+    devices: [
+      { name: 'Mobile' },
+      { name: 'Web' }
+    ],
+    status: 'Completed',
+    technologies: ['1', '10', '6'],
+    about: [
+      'Hack O Train - Moving Innovation On Rails is a unique initiative from Tech In Asia designed to connect Asia\'s startup ecosystem through an unforgettable competition experience. We developed a dedicated conference platform that serves as a digital companion for thousands of attendees, enabling them to interact in a dynamic environment as seen in the footage of the train.',
+      'The platform facilitates intelligent matchmaking for business networking, enabling innovators to connect with relevant investors and industry partners efficiently.',
+      'Featuring personalized agendas, live session streaming, and interactive Q&A, the system is built to handle high usage throughout the event day, ensuring seamless interactions and fostering meaningful knowledge exchange within the tech community.'
+    ],
+    challenge: 'Creating active engagement and maximizing networking value for thousands of attendees at scale and with high mobility is a complex logistical challenge.',
+    solution: 'We deliver a feature-rich event app with matchmaking algorithms, schedule management, and real-time engagement tools to ensure every attendee receives an integrated, innovative experience.',
+    projectOverview: [
+      overviewTechinasia1.src,
+      overviewTechinasia2.src,
+      overviewTechinasia3.src
+    ]
+  },
+  {
+    id: '7',
     preview: true,
     slug: 'loan-origination-system-smf',
     title: 'Loan Origination System (LOS)',
@@ -174,69 +271,7 @@ export const portfolioData: ProjectDetail[] = [
     ]
   },
   {
-    id: '5',
-    preview: false,
-    slug: 'tree-carbon-monitoring-platform',
-    title: 'Tree & Carbon Monitoring Platform',
-    thumbnail: defaultThumbnail.src,
-    heroImage: heroBakaumu.src,
-    clientName: 'Bakau Manfaat Universal Foundation (BakauMU)',
-    service: 'Carbon Report',
-    services: [
-      'Carbon Report',
-      'Dashboard Monitoring',
-      'Location Mapping'
-    ],
-    devices: [
-      { name: 'Mobile' },
-      { name: 'Web' },
-    ],
-    status: 'Completed',
-    technologies: ['3', '2', '4', '5'],
-    about: [
-      'Bakau Manfaat Universal Foundation (BakauMU) is at the forefront of environmental conservation and reforestation efforts in Indonesia. To effectively measure and communicate the impact of their vital work, we collaborated to create a sophisticated digital platform for monitoring tree growth and calculating carbon sequestration. This platform is an indispensable tool for tracking the progress of their conservation projects and demonstrating their contribution to combating climate change.',
-      'The platform was designed with a dual-interface architecture to cater to different user needs. Field workers are equipped with a user-friendly mobile application that allows them to collect data on tree health, growth, and survival rates directly from the field. This data is then synchronized with a central web dashboard, where researchers, managers, and stakeholders can access real-time analytics and comprehensive reports.',
-      'One of the platform\'s most powerful features is its use of location mapping technology. Each tree or plot of land is geotagged, enabling precise tracking and visualization of the reforestation areas. This not only aids in operational management but also enhances transparency, allowing donors and partners to see the tangible results of their contributions. The platform\'s ability to generate detailed carbon reports is crucial for securing future funding and supporting global climate initiatives.'
-    ],
-    challenge: 'Tracking the growth and health of thousands of trees across vast geographical areas was a significant logistical challenge. The foundation needed a reliable and scalable solution to manage this data.',
-    solution: 'We developed a platform with GPS-enabled mobile apps for data collection and a central web dashboard for visualization. The system uses location mapping to track tree plots and generates detailed carbon reports for stakeholders and donors.',
-    projectOverview: [
-      overviewBakaumu.src
-    ]
-  },
-  {
-    id: '6',
-    preview: false,
-    slug: 'wedding-venue-online-catalogue',
-    title: 'Wedding Venue Online Catalogue',
-    thumbnail: defaultThumbnail.src,
-    heroImage: heroBzwedding.src,
-    clientName: 'PT Bellazull Purnama Kreasindo',
-    service: 'Wedding Platform',
-    services: [
-      'Wedding Platform',
-      'Cloud Infrastructure',
-      'Artificial Intelligence'
-    ],
-    devices: [
-      { name: 'Mobile' },
-      { name: 'Web' }
-    ],
-    status: 'Completed',
-    technologies: ['2', '1', '6', '9'],
-    about: [
-      'The journey to finding the perfect wedding venue is one of the most significant and emotional parts of wedding planning. For PT Bellazull Purnama Kreasindo, a curator of stunning event spaces, we sought to transform this experience by creating an immersive online catalogue platform. Our goal was to showcase the unique beauty and character of each venue, helping couples envision their special day and find a location that truly resonates with their personal story.',
-      'The platform was designed to be more than just a listing of venues; it is a comprehensive discovery tool. We incorporated high-resolution photography, detailed descriptions of amenities and capacity, and, most importantly, an integrated booking inquiry system. This allows couples to not only explore their options but also to take the next step with ease, making the entire venue selection process seamless and enjoyable.',
-      'To elevate the user experience further, we integrated cutting-edge technologies. A cloud-based infrastructure ensures the platform can handle high traffic, especially during peak wedding seasons, without compromising on performance. The inclusion of an AI-powered recommendation engine provides personalized venue suggestions based on a couple\'s preferences, making the search for their dream venue both efficient and delightful.'
-    ],
-    challenge: 'The client needed a way to reach a wider audience and provide a rich, interactive experience for potential customers. Static images and phone calls were no longer sufficient to capture the essence of their venues.',
-    solution: 'We built a responsive web platform with a virtual tour feature and an AI-powered recommendation engine. The cloud infrastructure ensures the site can handle high traffic, especially during peak wedding seasons.',
-    projectOverview: [
-      overviewBzwedding.src
-    ]
-  },
-  {
-    id: '7',
+    id: '8',
     preview: false,
     slug: 'booking-management-system-pondok-rasamala',
     title: 'Booking Management System Pondok Rasamala',
@@ -267,7 +302,7 @@ export const portfolioData: ProjectDetail[] = [
     ]
   },
   {
-    id: '8',
+    id: '9',
     preview: false,
     slug: 'mobile-microsite-ramadhan',
     title: 'Mobile Microsite Ultra Berkah Ramadhan',
@@ -296,37 +331,6 @@ export const portfolioData: ProjectDetail[] = [
       overviewUltraVoucher1.src,
       overviewUltraVoucher2.src,
       overviewUltraVoucher3.src
-    ]
-  },
-  {
-    id: '9',
-    preview: false,
-    slug: 'online-groceries-shopping-platform',
-    title: 'Online Groceries Shopping Platform',
-    thumbnail: defaultThumbnail.src,
-    heroImage: heroCarisayur.src,
-    clientName: 'PT Paskomnas Niaga Utama',
-    service: 'Ecommerce Platform',
-    services: [
-      'Ecommerce Platform',
-      'Software Development',
-      'Remote Development'
-    ],
-    devices: [
-      { name: 'Mobile' },
-      { name: 'Web' }
-    ],
-    status: 'Completed',
-    technologies: ['3', '2', '4', '6'],
-    about: [
-      'In an era where convenience is king, PT Paskomnas Niaga Utama recognized the immense potential of the online grocery market. To expand its reach and cater to the evolving needs of modern consumers, the company embarked on a journey to launch a comprehensive online groceries shopping platform. The vision was to create a one-stop-shop where customers could browse a wide selection of products, place orders, and have them delivered to their doorstep, all with a few clicks.',
-      'The platform was designed to be more than just a digital storefront. It was built as a full-featured e-commerce ecosystem, with a strong emphasis on user experience and operational efficiency. Key features include a powerful search and filter system, secure and diverse payment options, and a reliable delivery management system. We also incorporated a personalized recommendation engine to help users discover new products and a subscription service for recurring purchases, enhancing customer loyalty.',
-      'Behind the scenes, the platform is powered by a robust inventory management system that ensures real-time stock accuracy and a sophisticated logistics module that optimizes delivery routes. The remote development approach allowed us to build and deploy the platform in phases, gathering user feedback and making continuous improvements. This agile methodology ensured that the final product was not only technically sound but also perfectly aligned with the needs and expectations of the target market.'
-    ],
-    challenge: 'The grocery e-commerce market is highly competitive. The challenge was to create a platform that was not only functional but also offered a superior user experience, with features like personalized recommendations and efficient delivery tracking.',
-    solution: 'We developed a full-featured e-commerce platform with a focus on user experience and scalability. The platform includes an intelligent recommendation engine, a robust inventory management system, and a real-time order tracking feature for customers.',
-    projectOverview: [
-      overviewCariSayur.src
     ]
   },
   {
@@ -363,6 +367,99 @@ export const portfolioData: ProjectDetail[] = [
   {
     id: '11',
     preview: false,
+    slug: 'online-groceries-shopping-platform',
+    title: 'Online Groceries Shopping Platform',
+    thumbnail: defaultThumbnail.src,
+    heroImage: heroCarisayur.src,
+    clientName: 'PT Paskomnas Niaga Utama',
+    service: 'Ecommerce Platform',
+    services: [
+      'Ecommerce Platform',
+      'Software Development',
+      'Remote Development'
+    ],
+    devices: [
+      { name: 'Mobile' },
+      { name: 'Web' }
+    ],
+    status: 'Completed',
+    technologies: ['3', '2', '4', '6'],
+    about: [
+      'In an era where convenience is king, PT Paskomnas Niaga Utama recognized the immense potential of the online grocery market. To expand its reach and cater to the evolving needs of modern consumers, the company embarked on a journey to launch a comprehensive online groceries shopping platform. The vision was to create a one-stop-shop where customers could browse a wide selection of products, place orders, and have them delivered to their doorstep, all with a few clicks.',
+      'The platform was designed to be more than just a digital storefront. It was built as a full-featured e-commerce ecosystem, with a strong emphasis on user experience and operational efficiency. Key features include a powerful search and filter system, secure and diverse payment options, and a reliable delivery management system. We also incorporated a personalized recommendation engine to help users discover new products and a subscription service for recurring purchases, enhancing customer loyalty.',
+      'Behind the scenes, the platform is powered by a robust inventory management system that ensures real-time stock accuracy and a sophisticated logistics module that optimizes delivery routes. The remote development approach allowed us to build and deploy the platform in phases, gathering user feedback and making continuous improvements. This agile methodology ensured that the final product was not only technically sound but also perfectly aligned with the needs and expectations of the target market.'
+    ],
+    challenge: 'The grocery e-commerce market is highly competitive. The challenge was to create a platform that was not only functional but also offered a superior user experience, with features like personalized recommendations and efficient delivery tracking.',
+    solution: 'We developed a full-featured e-commerce platform with a focus on user experience and scalability. The platform includes an intelligent recommendation engine, a robust inventory management system, and a real-time order tracking feature for customers.',
+    projectOverview: [
+      overviewCariSayur.src
+    ]
+  },
+  {
+    id: '12',
+    preview: false,
+    slug: 'tree-carbon-monitoring-platform',
+    title: 'Tree & Carbon Monitoring Platform',
+    thumbnail: defaultThumbnail.src,
+    heroImage: heroBakaumu.src,
+    clientName: 'Bakau Manfaat Universal Foundation (BakauMU)',
+    service: 'Carbon Report',
+    services: [
+      'Carbon Report',
+      'Dashboard Monitoring',
+      'Location Mapping'
+    ],
+    devices: [
+      { name: 'Mobile' },
+      { name: 'Web' },
+    ],
+    status: 'Completed',
+    technologies: ['3', '2', '4', '5'],
+    about: [
+      'Bakau Manfaat Universal Foundation (BakauMU) is at the forefront of environmental conservation and reforestation efforts in Indonesia. To effectively measure and communicate the impact of their vital work, we collaborated to create a sophisticated digital platform for monitoring tree growth and calculating carbon sequestration. This platform is an indispensable tool for tracking the progress of their conservation projects and demonstrating their contribution to combating climate change.',
+      'The platform was designed with a dual-interface architecture to cater to different user needs. Field workers are equipped with a user-friendly mobile application that allows them to collect data on tree health, growth, and survival rates directly from the field. This data is then synchronized with a central web dashboard, where researchers, managers, and stakeholders can access real-time analytics and comprehensive reports.',
+      'One of the platform\'s most powerful features is its use of location mapping technology. Each tree or plot of land is geotagged, enabling precise tracking and visualization of the reforestation areas. This not only aids in operational management but also enhances transparency, allowing donors and partners to see the tangible results of their contributions. The platform\'s ability to generate detailed carbon reports is crucial for securing future funding and supporting global climate initiatives.'
+    ],
+    challenge: 'Tracking the growth and health of thousands of trees across vast geographical areas was a significant logistical challenge. The foundation needed a reliable and scalable solution to manage this data.',
+    solution: 'We developed a platform with GPS-enabled mobile apps for data collection and a central web dashboard for visualization. The system uses location mapping to track tree plots and generates detailed carbon reports for stakeholders and donors.',
+    projectOverview: [
+      overviewBakaumu.src
+    ]
+  },
+  {
+    id: '13',
+    preview: false,
+    slug: 'wedding-venue-online-catalogue',
+    title: 'Wedding Venue Online Catalogue',
+    thumbnail: defaultThumbnail.src,
+    heroImage: heroBzwedding.src,
+    clientName: 'PT Bellazull Purnama Kreasindo',
+    service: 'Wedding Platform',
+    services: [
+      'Wedding Platform',
+      'Cloud Infrastructure',
+      'Artificial Intelligence'
+    ],
+    devices: [
+      { name: 'Mobile' },
+      { name: 'Web' }
+    ],
+    status: 'Completed',
+    technologies: ['2', '1', '6', '9'],
+    about: [
+      'The journey to finding the perfect wedding venue is one of the most significant and emotional parts of wedding planning. For PT Bellazull Purnama Kreasindo, a curator of stunning event spaces, we sought to transform this experience by creating an immersive online catalogue platform. Our goal was to showcase the unique beauty and character of each venue, helping couples envision their special day and find a location that truly resonates with their personal story.',
+      'The platform was designed to be more than just a listing of venues; it is a comprehensive discovery tool. We incorporated high-resolution photography, detailed descriptions of amenities and capacity, and, most importantly, an integrated booking inquiry system. This allows couples to not only explore their options but also to take the next step with ease, making the entire venue selection process seamless and enjoyable.',
+      'To elevate the user experience further, we integrated cutting-edge technologies. A cloud-based infrastructure ensures the platform can handle high traffic, especially during peak wedding seasons, without compromising on performance. The inclusion of an AI-powered recommendation engine provides personalized venue suggestions based on a couple\'s preferences, making the search for their dream venue both efficient and delightful.'
+    ],
+    challenge: 'The client needed a way to reach a wider audience and provide a rich, interactive experience for potential customers. Static images and phone calls were no longer sufficient to capture the essence of their venues.',
+    solution: 'We built a responsive web platform with a virtual tour feature and an AI-powered recommendation engine. The cloud infrastructure ensures the site can handle high traffic, especially during peak wedding seasons.',
+    projectOverview: [
+      overviewBzwedding.src
+    ]
+  }, 
+  {
+    id: '14',
+    preview: false,
     slug: 'ackita-online-shop',
     title: 'Online Shop',
     thumbnail: defaultThumbnail.src,
@@ -391,245 +488,6 @@ export const portfolioData: ProjectDetail[] = [
     solution: 'We build an integrated digital ecosystem that includes a customer booking platform as well as a cloud-based operational management dashboard for scheduling and service automation.',
     projectOverview: [
       overviewAckita.src
-    ]
-  },
-  {
-    id: '12',
-    preview: false,
-    slug: 'bkpm-website-company-profile',
-    title: 'Website Company Profile',
-    thumbnail: defaultThumbnail.src,
-    heroImage: heroBkpm.src,
-    clientName: 'Ministry of Investment/BKPM',
-    service: 'Government Platform',
-    services: [
-      'Government Platform',
-      'Website Development',
-      'Frontend Development',
-      'Backend Development'
-    ],
-    devices: [
-      { name: 'Web' },
-      { name: 'Mobile' }
-    ],
-    status: 'Completed',
-    technologies: ['2', '1', '5'],
-    about: [
-      'The Ministry of Investment and Downstream Investment (BKPM) plays a crucial role in driving economic growth through national investment. To support strategic decision-making, we collaborated to develop a Company Profile Website platform that also serves as a visual information hub for investment realization across Indonesia.',
-      'This platform aggregates data from various sources and presents it in an intuitive and interactive format, allowing stakeholders to accurately review data by region, sector, and time period.',
-      'By transforming complex datasets into actionable visual intelligence, this site empowers policymakers to identify opportunities and monitor the effectiveness of investment policies, creating a better investment climate.'
-    ],
-    challenge: 'Manual reporting and scattered data sources make it difficult to obtain a holistic view of national investment performance in a timely and transparent manner.',
-    solution: 'We developed an interactive company profile website with integrated advanced data visualization capabilities for real-time monitoring of investment realization.',
-    projectOverview: [
-      overviewBkpm.src
-    ]
-  },
-  {
-    id: '13',
-    preview: true,
-    slug: 'djki-e-hakcipta',
-    title: 'E-Hakcipta',
-    thumbnail: defaultThumbnail.src,
-    heroImage: heroDjki.src,
-    clientName: 'Directorate General of Intellectual Property',
-    service: 'Public Service',
-    services: [
-      'Public Service',
-      'Software Development',
-      'Frontend Development',
-      'Backend Development',
-      'Web Dashboard'
-    ],
-    devices: [
-      { name: 'Web' },
-      { name: 'Mobile' }
-    ],
-    status: 'Completed',
-    technologies: ['2', '4', '6', '8'],
-    about: [
-      'Intellectual property protection is vital to driving national innovation, so the Directorate General of Intellectual Property (DJKI) requires modernizing its digital infrastructure through the E-Hakcipta system.',
-      'We engineered a robust IP management system to streamline the registration process, from application to certification, covering copyright, patent, and trademark aspects. A key feature of the platform is a powerful search engine that allows the public and examiners to quickly examine existing IP, thereby reducing redundancy and accelerating approval times.',
-      'Designed to be secure, scalable, and user-friendly through a Web Dashboard interface, the system makes IP protection more accessible to creators and businesses across the country, supporting the strengthening of the national creative economy.'
-    ],
-    challenge: 'Previous manual and semi-digital processes were slow and prone to backlogs, making it difficult for creators to protect their works efficiently.',
-    solution: 'We developed a comprehensive E-Copyright digital platform for intellectual property registration and management, equipped with an optimized search engine and automated processing workflows.',
-    projectOverview: [
-      overviewDjki.src
-    ]
-  },
-  {
-    id: '14',
-    preview: false,
-    slug: 'tech-in-asia-hack-o-train',
-    title: 'Hack O Train',
-    thumbnail: defaultThumbnail.src,
-    heroImage: heroTechinasia.src,
-    clientName: 'PT Teknologi Indonesia Asia',
-    service: 'Event Technology',
-    services: [
-      'Event Technology',
-      'Networking Platform',
-      'Event Management'
-    ],
-    devices: [
-      { name: 'Mobile' },
-      { name: 'Web' }
-    ],
-    status: 'Completed',
-    technologies: ['1', '10', '6'],
-    about: [
-      'Hack O Train - Moving Innovation On Rails is a unique initiative from Tech In Asia designed to connect Asia\'s startup ecosystem through an unforgettable competition experience. We developed a dedicated conference platform that serves as a digital companion for thousands of attendees, enabling them to interact in a dynamic environment as seen in the footage of the train.',
-      'The platform facilitates intelligent matchmaking for business networking, enabling innovators to connect with relevant investors and industry partners efficiently.',
-      'Featuring personalized agendas, live session streaming, and interactive Q&A, the system is built to handle high usage throughout the event day, ensuring seamless interactions and fostering meaningful knowledge exchange within the tech community.'
-    ],
-    challenge: 'Creating active engagement and maximizing networking value for thousands of attendees at scale and with high mobility is a complex logistical challenge.',
-    solution: 'We deliver a feature-rich event app with matchmaking algorithms, schedule management, and real-time engagement tools to ensure every attendee receives an integrated, innovative experience.',
-    projectOverview: [
-      overviewTechinasia1.src,
-      overviewTechinasia2.src,
-      overviewTechinasia3.src
-    ]
-  },
-  {
-    id: '11',
-    preview: false,
-    slug: 'ackita-online-shop',
-    title: 'Online Shop',
-    thumbnail: defaultThumbnail.src,
-    heroImage: heroAckita.src,
-    clientName: 'PT Rumakita Kreasi Mandiri',
-    service: 'Shopping Platform',
-    services: [
-      'Shopping Platform',
-      'Web Dashboard',
-      'Cloud Infrastructure',
-      'Remote Development',
-      'Software Development'
-    ],
-    devices: [
-      { name: 'Mobile' },
-      { name: 'Web' }
-    ],
-    status: 'Completed',
-    technologies: ['2', '4', '5', '8'],
-    about: [
-      'ACKita is an innovative on-demand service platform specifically designed for AC maintenance and repair in tropical climates. Unlike conventional services, ACKita is presented as an integrated digital ecosystem, as seen in our portfolio, which includes an online shop, website, and web dashboard.',
-      'We integrate technology to connect customers with certified technicians, ensuring reliable, transparent, and timely service through various digital touchpoints.',
-      'Through this system, users can easily book services, track technician locations, and manage service history all within a single platform that prioritizes trust and standardized pricing.'
-    ],
-    challenge: 'The fragmented AC service market makes it difficult for customers to find reliable service and hinders operational management efficiency for service providers.',
-    solution: 'We build an integrated digital ecosystem that includes a customer booking platform as well as a cloud-based operational management dashboard for scheduling and service automation.',
-    projectOverview: [
-      defaultHero.src,
-      defaultHero.src,
-      defaultHero.src,
-      defaultHero.src
-    ]
-  },
-  {
-    id: '12',
-    preview: false,
-    slug: 'bkpm-website-company-profile',
-    title: 'Website Company Profile',
-    thumbnail: defaultThumbnail.src,
-    heroImage: heroBkpm.src,
-    clientName: 'Ministry of Investment/BKPM',
-    service: 'Government Platform',
-    services: [
-      'Government Platform',
-      'Website Development',
-      'Frontend Development',
-      'Backend Development'
-    ],
-    devices: [
-      { name: 'Web' },
-      { name: 'Mobile' }
-    ],
-    status: 'Completed',
-    technologies: ['1', '3', '6', '7'],
-    about: [
-      'The Ministry of Investment and Downstream Investment (BKPM) plays a crucial role in driving economic growth through national investment. To support strategic decision-making, we collaborated to develop a Company Profile Website platform that also serves as a visual information hub for investment realization across Indonesia.',
-      'This platform aggregates data from various sources and presents it in an intuitive and interactive format, allowing stakeholders to accurately review data by region, sector, and time period.',
-      'By transforming complex datasets into actionable visual intelligence, this site empowers policymakers to identify opportunities and monitor the effectiveness of investment policies, creating a better investment climate.'
-    ],
-    challenge: 'Manual reporting and scattered data sources make it difficult to obtain a holistic view of national investment performance in a timely and transparent manner.',
-    solution: 'We developed an interactive company profile website with integrated advanced data visualization capabilities for real-time monitoring of investment realization.',
-    projectOverview: [
-      defaultHero.src,
-      defaultHero.src,
-      defaultHero.src,
-      defaultHero.src
-    ]
-  },
-  {
-    id: '13',
-    preview: true,
-    slug: 'djki-e-hakcipta',
-    title: 'E-Hakcipta',
-    thumbnail: defaultThumbnail.src,
-    heroImage: heroDjki.src,
-    clientName: 'Directorate General of Intellectual Property',
-    service: 'Public Service',
-    services: [
-      'Public Service',
-      'Software Development',
-      'Frontend Development',
-      'Backend Development',
-      'Web Dashboard'
-    ],
-    devices: [
-      { name: 'Web' },
-      { name: 'Mobile' }
-    ],
-    status: 'Completed',
-    technologies: ['2', '4', '5', '9'],
-    about: [
-      'Intellectual property protection is vital to driving national innovation, so the Directorate General of Intellectual Property (DJKI) requires modernizing its digital infrastructure through the E-Hakcipta system.',
-      'We engineered a robust IP management system to streamline the registration process, from application to certification, covering copyright, patent, and trademark aspects. A key feature of the platform is a powerful search engine that allows the public and examiners to quickly examine existing IP, thereby reducing redundancy and accelerating approval times.',
-      'Designed to be secure, scalable, and user-friendly through a Web Dashboard interface, the system makes IP protection more accessible to creators and businesses across the country, supporting the strengthening of the national creative economy.'
-    ],
-    challenge: 'Previous manual and semi-digital processes were slow and prone to backlogs, making it difficult for creators to protect their works efficiently.',
-    solution: 'We developed a comprehensive E-Copyright digital platform for intellectual property registration and management, equipped with an optimized search engine and automated processing workflows.',
-    projectOverview: [
-      defaultHero.src,
-      defaultHero.src,
-      defaultHero.src,
-      defaultHero.src
-    ]
-  },
-  {
-    id: '14',
-    preview: false,
-    slug: 'tech-in-asia-hack-o-train',
-    title: 'Hack O Train',
-    thumbnail: defaultThumbnail.src,
-    heroImage: heroTechinasia.src,
-    clientName: 'PT Teknologi Indonesia Asia',
-    service: 'Event Technology',
-    services: [
-      'Event Technology',
-      'Networking Platform',
-      'Event Management'
-    ],
-    devices: [
-      { name: 'Mobile' },
-      { name: 'Web' }
-    ],
-    status: 'Completed',
-    technologies: ['1', '5', '8', '10'],
-    about: [
-      'Hack O Train - Moving Innovation On Rails is a unique initiative from Tech In Asia designed to connect Asia\'s startup ecosystem through an unforgettable competition experience. We developed a dedicated conference platform that serves as a digital companion for thousands of attendees, enabling them to interact in a dynamic environment as seen in the footage of the train.',
-      'The platform facilitates intelligent matchmaking for business networking, enabling innovators to connect with relevant investors and industry partners efficiently.',
-      'Featuring personalized agendas, live session streaming, and interactive Q&A, the system is built to handle high usage throughout the event day, ensuring seamless interactions and fostering meaningful knowledge exchange within the tech community.'
-    ],
-    challenge: 'Creating active engagement and maximizing networking value for thousands of attendees at scale and with high mobility is a complex logistical challenge.',
-    solution: 'We deliver a feature-rich event app with matchmaking algorithms, schedule management, and real-time engagement tools to ensure every attendee receives an integrated, innovative experience.',
-    projectOverview: [
-      defaultHero.src,
-      defaultHero.src,
-      defaultHero.src,
-      defaultHero.src
     ]
   }
 ];
