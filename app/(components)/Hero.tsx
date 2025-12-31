@@ -24,7 +24,7 @@ const Hero = () => {
       {/* CONTENT */}
       <div className="container px-4 mx-auto h-full flex flex-col items-center justify-center gap-6 text-white relative z-10 pb-24">
         <h1 className="text-[28px] md:text-5xl lg:text-6xl font-extrabold tracking-tight drop-shadow-md text-center leading-tight max-w-5xl">
-          Build Better with the Right <br /> Digital Solutions
+          Build Better with the Right <br /> Digital Solution
         </h1>
 
         <p className="text-base md:text-xl lg:text-2xl max-w-2xl font-medium drop-shadow-sm text-center">
