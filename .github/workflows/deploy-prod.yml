@@ -27,10 +27,10 @@ jobs:
       - name: Push to Target Repository
         uses: cpina/github-action-push-to-another-repository@main
         env:
-          API_TOKEN_GITHUB: ${{ secrets.AUTO_DEPLOY_TOKEN }} # PAT Github
+          API_TOKEN_GITHUB: ${{ secrets.DEPLOY_PROD_TOKEN }} # PAT Github
         with:
           source-directory: "out"
-          destination-github-username: "JinXVIII" # nama username
-          destination-repository-name: "latihan-html" # branch tujuan
-          user-email: your-email@example.com
-          target-branch: main
+          destination-github-username: "dxtrleague" # nama username
+          destination-repository-name: "dxtrleague.github.io" # repo tujuan
+          user-email: comprodexter@yopmail.com
+          target-branch: compro-v2 # branch tujuan
