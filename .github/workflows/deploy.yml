@@ -1,0 +1,37 @@
+name: Deploy Next.js to Different Repo
+
+on:
+  push:
+    branches: ["master"] # Pastikan branch sesuai (master atau main)
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build with Next.js
+        run: npm run build
+
+      - name: Push to Target Repository
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          # Token yang Anda buat di Developer Settings & disimpan di Secret Repo Source
+          API_TOKEN_GITHUB: ${{ secrets.AUTO_DEPLOY_TOKEN }}
+        with:
+          source-directory: "out"
+          destination-github-username: "JinXVIII" # Nama owner/organisasi tujuan
+          destination-repository-name: "latihan-html" # Nama repo tujuan
+          user-email: your-email@example.com
+          target-branch: main # Branch tujuan di repo 'latihan-html'
